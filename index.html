@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="layout.js"></script>
+    <script src="titles.js"></script>
+    <script src="text.js"></script>
+  </head>
+  <body>
+    <div id="book-container">
+      <div id="page-content"></div>
+      <div class="nav-buttons">
+        <button onclick="prevPage()">⬅ Previous</button>
+        <button onclick="nextPage()">Next ➡</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
