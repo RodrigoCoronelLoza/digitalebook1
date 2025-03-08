@@ -11,12 +11,16 @@
   </head>
   <body>
     <div id="book-container">
+      <div id="home-button">
+        <button onclick="setPage(0)">Home</button>
+      </div>
       <div id="page-content"></div>
       <div class="nav-buttons">
         <button onclick="prevPage()">⬅ Previous</button>
         <button onclick="nextPage()">Next ➡</button>
       </div>
     </div>
+    <div id="overlay"></div>
     <script src="script.js"></script>
   </body>
 </html>
