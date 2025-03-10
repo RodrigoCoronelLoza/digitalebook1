@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
-  background-color: #f4f4f4;
+  background-color:#c2e5ef ;
   flex-direction: column;
   margin: 0;
 }
@@ -27,25 +27,25 @@ body {
   color: blueviolet;
 }
 
-.layout1 {
+.Alayout {
   font-size: 18px;
   line-height: 1.6;
   background-color: red;
 }
 
-.layout2 {
+.Blayout {
   /* display: flex; */
   justify-content: space-between;
   text-align: left;
   background-color: green;
 }
 
-.layout2 img {
+.Blayout img {
   max-width: 40%;
   border-radius: 5px;
 }
 
-.layout3 {
+.Clayout {
   column-count: 2;
   column-gap: 20px;
   background-color: yellow;
