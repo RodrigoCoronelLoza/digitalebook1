@@ -5,17 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
     <script src="text.js"></script>
   </head>
   <body>
     <div id="book-container">
-      <div id="home-button">
-        <button onclick="setPage(0)">Home</button>
+      <div id="book-title-container">
+        <div id="book-title">ENFOQUE RESTAURATIVO DENTRO DEL SISTEMA EDUCATIVO </div>
+      </div>
+      <div id="menu-header">
+        <div id="menu-buttons">
+          <button class="jump-buttons">Presentacion</button>
+          <button class="jump-buttons" onclick="setPage(2)">Tema1</button>
+          <button class="jump-buttons">Tema2</button>
+          <button class="jump-buttons">Tema3</button>
+          <button class="jump-buttons">Menu</button>
+        </div>
+        <div id="menu-image-container">
+          <img src="images/unefco_logo.jpeg" />
+        </div>
       </div>
       <div id="page-content"></div>
-      <div class="nav-buttons">
-        <button onclick="prevPage()">⬅ Previous</button>
-        <button onclick="nextPage()">Next ➡</button>
+
+      <div id="adv-buttons">
+        <button class="nav-buttons" onclick="prevPage()">⬅ Previous</button>
+        <button class="jump-buttons" id="home-button" onclick="setPage(0)">
+          H
+        </button>
+        <button class="nav-buttons" onclick="nextPage()">Next ➡</button>
       </div>
     </div>
     <div id="overlay"></div>

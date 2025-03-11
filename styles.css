@@ -1,54 +1,193 @@
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
+  font-family: Roboto;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
-  background-color:#c2e5ef ;
-  flex-direction: column;
+  background-color: #c2e5ef;
+  /* flex-direction: column; */
   margin: 0;
 }
 
 #book-container {
-  width: 60%;
+  width: 90%;
   background: white;
   padding: 20px;
+  padding-top: 0px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  /* margin-bottom: 5%; */
+  /* height: 1000px; */
 }
 
-.menu {
-  font-size: 18px;
-  line-height: 1.6;
-  background-color: olive;
+#book-title-container {
+  /* background-color: goldenrod; */
+  padding-top: 0px;
+  margin-top: 0px;
 }
-.menu .menutitle {
-  color: blueviolet;
+#book-title {
+  color: white;
+  background-color: #3c96d2;
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 3px;
+  /* border-top: 30px; */
+  position: relative;
+  bottom: 20px;
+  font-size: 1.5em;
 }
 
-.Alayout {
-  font-size: 18px;
-  line-height: 1.6;
-  background-color: red;
+.caratula-container {
+  /* background-color: black; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.caratula {
+  content: url("images/caratula.jpeg");
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  /* border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px; */
+  /* position: relative; */
 }
 
-.Blayout {
-  /* display: flex; */
-  justify-content: space-between;
+.button-caratula-container {
+  position: absolute;
+  /* position: fixed; */
+  bottom: 0%;
+  left: 10%;
+  /* margin-left: 250px; */
+  /* margin-bottom: 100px; */
+  width: 300px;
+  height: 10%;
+  /* background-color: black; */
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-buttons {
+  color: white;
+  background-color: #3c96d2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+
+#comenzar-button {
+  width: 100%;
+  height: 100%;
+  font-size: xx-large;
+  padding: 0;
+  border: 0;
+  margin-left: 0px;
+}
+
+.jump-buttons {
+  color: white;
+  background-color: #1d3e8b;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: large;
+  border-radius: 20px;
+  border: none;
+  width: 120px;
+  height: 40px;
+}
+
+#home-button {
+  width: 40px;
+  font-size: large;
+}
+#menu-header {
+  display: flex;
+}
+#menu-buttons {
+  /* background-color: greenyellow; */
   text-align: left;
-  background-color: green;
+  width: 50%;
+  /* background-color: aqua; */
+}
+#menu-image-container {
+  text-align: right;
+  /* background-color: black; */
+  width: 50%;
 }
 
-.Blayout img {
-  max-width: 40%;
-  border-radius: 5px;
+#adv-buttons {
+  text-align: right;
+}
+.Blayout {
+  font-size: 20px;
+  padding: 30px;
+  line-height: 1.6;
+  /* background-color: red; */
+}
+
+.Blayout h1 {
+  text-align: left;
+  color: #3c96d2;
+  /* background-color: yellow; */
+}
+.Blayout p {
+  text-align: justify;
+  /* background-color: yellow; */
 }
 
 .Clayout {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  line-height: 1.6;
+  text-align: left;
+  padding: 30px;
+  /* background-color: green; */
+}
+
+.Clayout h1 {
+  text-align: left;
+  color: #3c96d2;
+}
+
+.Clayout #index-buttons {
   column-count: 2;
   column-gap: 20px;
-  background-color: yellow;
+}
+
+.Clayout .button-index-container {
+  /* background-color: red; */
+  /* width:70%; */
+  padding: 3px;
+}
+
+.Dlayout {
+  /* background-color: yellow; */
+  display: flex;
+}
+.Dlayout #Dbutton {
+  background-color: greenyellow;
+}
+
+.Dlayout #Dtext {
+  background-color: purple;
+}
+
+.Dlayout #Dimage {
+  background-color: aqua;
 }
 
 .modal {

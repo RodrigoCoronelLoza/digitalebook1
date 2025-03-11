@@ -1,16 +1,24 @@
 let currentPage = 0;
-const pageContent = document.getElementById("page-content");
+
 function renderPage() {
-  const homeButton = document.getElementById("home-button");
+  const pageContent = document.getElementById("page-content");
+  const titleContainer = document.getElementById("book-title-container");
+  const menuHeader = document.getElementById("menu-header");
+  const advButton = document.getElementById("adv-buttons");
+
   const overlay = document.getElementById("overlay");
 
   pageContent.addEventListener("click", handleDomCLick);
   overlay.addEventListener("click", handleOverlayClick);
 
   if (currentPage === 0) {
-    homeButton.style.display = "none";
+    menuHeader.style.visibility = "hidden";
+    titleContainer.style.display = "none";
+    advButton.style.display = "none";
   } else {
-    homeButton.style.display = "block";
+    menuHeader.style.visibility = "visible";
+    titleContainer.style.display = "block";
+    advButton.style.display = "block";
   }
 
   pageContent.className = layoutData[currentPage];
@@ -31,7 +39,7 @@ const handleDomCLick = (event) => {
   if (classIdentifier === "open") {
     modal = document.querySelector(clickedBtn.dataset.modalTarget);
     openModal(modal);
-  } else if (classIdentifier === "close-button") {
+  } else if (classIdentifier === "clos") {
     modal = clickedBtn.closest(".modal");
     closeModal(modal);
   }
@@ -70,27 +78,58 @@ function setPage(value) {
 function createStructure(titles, text, layout, page, popUp) {
   let currentLayout = layout[page];
   let content = "";
-  if (currentLayout === "menu") {
-    content = menuLayoutGenerator(titles, text, page);
-  } else if (currentLayout === "Alayout") {
-    content = ALayOutGenerator(titles, text, page);
+  if (currentLayout === "Alayout") {
+    content = ALayoutGenerator(titles, text, page);
   } else if (currentLayout === "Blayout") {
-    content = BLayOutGenerator(titles, text, page, popUp);
+    content = BLayOutGenerator(titles, text, page);
   } else if (currentLayout === "Clayout") {
     content = CLayOutGenerator(titles, text, page);
+  } else if (currentLayout === "Dlayout") {
+    content = DLayOutGenerator(titles, text, page);
+  } else if (currentLayout === "Wlayout") {
+    content = WLayOutGenerator(titles, text, page, popUp);
   }
   return content;
 }
 
-function menuLayoutGenerator(titles, text, page) {
-  return `<h1 class="menutitle">${titles[page]}</h1> <div><button onclick="setPage(2)">Tema1</button><button>Tema2</button></div> <p>${text[page]}</p> `;
+function ALayoutGenerator(titles, text, page) {
+  return `<div class="caratula-container">
+  <img class="caratula"> <div class="button-caratula-container"><button class="nav-buttons" id="comenzar-button" onclick="nextPage()">Comienza</button></div></div>  `;
 }
 
-function ALayOutGenerator(titles, text, page) {
-  return `<p>${text[page]}</p><h1>${titles[page]}</h1>`;
+function BLayOutGenerator(titles, text, page) {
+  return ` <h1>${titles[page]}</h1><p>${text[page]}</p>`;
 }
 
-function BLayOutGenerator(titles, text, page, popUp) {
+function CLayOutGenerator(titles, text, page) {
+  return ` <h1>${titles[page]}</h1><div id="index-buttons">
+  <div class="button-index-container"><button class="jump-buttons">Ir</button> Presentacion</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">Ir</button>Tema 1 Base Normativa</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>Actividad de inicio</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>1.1.Normativa internacional</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>1.2.Normativa nacional</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>1.3.Ministerio de educacion</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>Tema 2 Comprender el conflicto en el entorno educativo</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>Actividad de inicio</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>2.1.Conflicto en el ámbito educativo</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>2.2.Factores de riesgo en la Unidad Educativa</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">Ir</button>2.3.Resolución de conflictos</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>2.4.Protagonismo estudiantil para la resolución de conflictos</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>Tema 3</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>Actividad de inicio</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>3.1.Enfoque de derechos como base para el enfoque restaurativo</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>3.2.Enfoque restaurativo</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>3.3.Características y principios del enfoque restaurativo</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>Glosario</div>
+  <div class="button-index-container"><button class="jump-buttons">Ir</button>Bibliografia</div>
+  </div>`;
+}
+
+function DLayOutGenerator(titles, text, page) {
+  return `<div id="Dbutton">Hola</div><div id="Dtext">Bola</div><div id="Dimage">Hola</div>`;
+}
+
+function WLayOutGenerator(titles, text, page, popUp) {
   return `<h2>${
     titles[page]
   }</h2> <button data-modal-target="#modal0" class="open-button0">Open Modal</button>
@@ -113,10 +152,6 @@ function BLayOutGenerator(titles, text, page, popUp) {
         ${modalExtractor(popUp, page, "contentModal", 1)}
       </div>
     </div>`;
-}
-
-function CLayOutGenerator(titles, text, page) {
-  return `<h1>${titles[page]}</h1><p>${text[page]}</p>`;
 }
 
 function modalExtractor(popUps, page, partofModal, numberModal) {
