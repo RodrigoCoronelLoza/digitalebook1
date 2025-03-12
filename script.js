@@ -28,8 +28,11 @@ function renderPage() {
     textData,
     layoutData,
     currentPage,
-    popUpData
+    popUpData,
+    imagesData
   );
+
+  console.log(modalGenerator(popUpData, 4));
 }
 
 const handleDomCLick = (event) => {
@@ -75,7 +78,7 @@ function setPage(value) {
   renderPage();
 }
 
-function createStructure(titles, text, layout, page, popUp) {
+function createStructure(titles, text, layout, page, popUp, images) {
   let currentLayout = layout[page];
   let content = "";
   if (currentLayout === "Alayout") {
@@ -85,7 +88,13 @@ function createStructure(titles, text, layout, page, popUp) {
   } else if (currentLayout === "Clayout") {
     content = CLayOutGenerator(titles, text, page);
   } else if (currentLayout === "Dlayout") {
-    content = DLayOutGenerator(titles, text, page);
+    content = DLayOutGenerator(titles, text, page, images, popUp);
+  } else if (currentLayout === "Elayout") {
+    content = ELayOutGenerator(images, page);
+  } else if (currentLayout === "Flayout") {
+    content = FLayOutGenerator(titles, text, images, page);
+  } else if (currentLayout === "Glayout") {
+    content = GLayOutGenerator(titles, text, page, popUp);
   } else if (currentLayout === "Wlayout") {
     content = WLayOutGenerator(titles, text, page, popUp);
   }
@@ -98,11 +107,11 @@ function ALayoutGenerator(titles, text, page) {
 }
 
 function BLayOutGenerator(titles, text, page) {
-  return ` <h1>${titles[page]}</h1><p>${text[page]}</p>`;
+  return ` <h1 class="titles">${titles[page]}</h1><p class="text">${text[page]}</p>`;
 }
 
 function CLayOutGenerator(titles, text, page) {
-  return ` <h1>${titles[page]}</h1><div id="index-buttons">
+  return ` <h1 class="titles">${titles[page]}</h1><div id="index-buttons">
   <div class="button-index-container"><button class="jump-buttons">Ir</button> Presentacion</div>
   <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">Ir</button>Tema 1 Base Normativa</div>
   <div class="button-index-container"><button class="jump-buttons">Ir</button>Actividad de inicio</div>
@@ -125,10 +134,59 @@ function CLayOutGenerator(titles, text, page) {
   </div>`;
 }
 
-function DLayOutGenerator(titles, text, page) {
-  return `<div id="Dbutton">Hola</div><div id="Dtext">Bola</div><div id="Dimage">Hola</div>`;
+function DLayOutGenerator(titles, text, page, images, popUp) {
+  return `<h1 class="titles">${
+    titles[page]
+  }</h1><div id="Dlayout-container"><div id="Dbutton">${modalGenerator(
+    popUp,
+    page
+  )}</div><div id="Dtext"><p class="text">${
+    text[page]
+  }</p></div><div id="Dimage-container"><img id="Dimage" src="images/${
+    images[page]
+  }"></div></div>`;
 }
 
+function ELayOutGenerator(images, page) {
+  return `<div id="Elayout-container"><div id="Eimage-container"><img id="Eimage" src="images/${images[page]}"></div>
+  <div id="index-button-container"><div id="index-buttons">
+  <div class="button-index-container"><button class="jump-buttons">Actividad de inicio</button></div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">1.1 Normativa internacional</button></div>
+  <div class="button-index-container"><button class="jump-buttons">1.2. Normativa nacional</button></div>
+  <div class="button-index-container"><button class="jump-buttons">1.3. Ministerio de educacion</button></div>
+  </div></div></div>`;
+  // return `<div>${images[page]}</div>`;
+}
+
+function FLayOutGenerator(title, text, images, page) {
+  return `<div id="Flayout-container">
+  <div id="Fcolumn1">
+  <img id="act-inicio-img" src="images/actividad_inicio.jpeg">
+  <h1 class="titles">${title[page]}</h1>
+  <p class="text"> ${text[page]}</p>
+  </div>
+  <div id="Fcolumn2">
+  <img id="Flayout-img" src="images/${images[page]}">
+  <button class="nav-buttons" id="Fdownload-button"> DESCARGAR</button>
+  </div>
+  </div>`;
+}
+
+function GLayOutGenerator(title, text, page, popUp) {
+  return `<div id="Glayout-container">
+  <div id="Grow1">
+  <h1 class="titles">${title[page][0]}</h1>
+  <p class="text">${text[page][0]}</p>
+  </div>
+  <div id="Grow2">
+  <h1 class="titles">${title[page][1]}</h1>
+  </div>
+  <div id="Grow3"> 
+  <div id="Gmodal-container">${modalGenerator(popUp, page)}</div> 
+  <div id="Gnext-modal"><p class="text">${text[page][1]}</p></div>
+  </div>
+  </div>`;
+}
 function WLayOutGenerator(titles, text, page, popUp) {
   return `<h2>${
     titles[page]
@@ -142,7 +200,7 @@ function WLayOutGenerator(titles, text, page, popUp) {
         ${modalExtractor(popUp, page, "contentModal", 0)}
       </div>
     </div>
-    </h2> <button data-modal-target="#modal1" class="open-button1">Open Modal</button>
+    <button data-modal-target="#modal1" class="open-button1">Open Modal</button>
     <div class="modal" id="modal1">
       <div class="modal-header">
         <div class="title">${modalExtractor(popUp, page, "title", 1)}</div>
@@ -154,11 +212,46 @@ function WLayOutGenerator(titles, text, page, popUp) {
     </div>`;
 }
 
+function modalGenerator(popUp, page) {
+  const numberOfModals = popUp[page].length;
+  let result = `<div class="modals-container">`;
+
+  for (let i = 0; i < numberOfModals; i++) {
+    result =
+      result +
+      `<div id="modal-container${i}"><button data-modal-target="#modal${i}" class="open-button${i}">${modalExtractor(
+        popUp,
+        page,
+        "buttonName",
+        i
+      )}</button>
+    <div class="modal" id="modal${i}">
+      <div class="modal-header">
+        <div class="title">${modalExtractor(popUp, page, "title", i)}</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        ${modalExtractor(popUp, page, "contentModal", i)}
+      </div>
+    </div>
+    </div>`;
+  }
+  result = result + `</div>`;
+  return result;
+}
 function modalExtractor(popUps, page, partofModal, numberModal) {
   if (partofModal === "title") {
     return popUps[page][numberModal].title;
   } else if (partofModal === "contentModal") {
-    return popUps[page][numberModal].contentModal;
+    if (popUps[page][numberModal].typeofContent === "text") {
+      return popUps[page][numberModal].contentModal;
+    } else {
+      return `<img id="image-modal-body" src="images/${popUps[page][numberModal].contentModal}">`;
+    }
+  } else if (partofModal === "buttonName") {
+    return popUps[page][numberModal].buttonName;
+  } else if (partofModal === "typeofContent") {
+    return popUps[page][numberModal].typeofContent;
   }
 }
 
