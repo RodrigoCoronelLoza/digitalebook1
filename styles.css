@@ -145,17 +145,35 @@ body {
   /* font-size: 20px; */
   padding: 30px;
   line-height: 1.6;
+  height: 40em;
   /* background-color: red; */
+  /* border: 1px solid green; */
 }
 
-/* .Blayout h1 { */
-/* text-align: left; */
-/* color: #3c96d2; */
-/* } */
+.Blayout #Blayout-container {
+  /* border: 1px solid black; */
+  height: 100%;
+}
+.Blayout #Btitle {
+  /* border: 1px solid red; */
+  margin: 0;
+}
 
-/* .Blayout p { */
-/* text-align: justify; */
-/* } */
+.Blayout #Blayout-container #Btext-container {
+  margin-top: 10px;
+  /* border: 1px solid blue; */
+  margin: 0;
+  height: 90%;
+  position: relative;
+}
+
+.Blayout #Blayout-container #Btext {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 .Clayout {
   /* display: flex; */
@@ -163,17 +181,31 @@ body {
   line-height: 1.6;
   text-align: left;
   padding: 30px;
+  height: 40em;
   /* background-color: green; */
+  /* border: 1px solid palegreen; */
+}
+
+.Clayout #Clayout-container {
+  height: 100%;
+  /* border: 1px green solid; */
 }
 
 /* .Clayout h1 {
   text-align: left;
   color: #3c96d2;
 } */
-
-.Clayout #index-buttons {
+.Clayout #Clayout-container #Ctitle {
+  /* border: 2px solid orange; */
+  margin: 0;
+  height: 20%;
+}
+.Clayout #Cindex-buttons {
   column-count: 2;
   column-gap: 20px;
+  /* border: 1px solid seagreen; */
+  height: 80%;
+  position: relative;
 }
 
 .Clayout .button-index-container {
@@ -190,8 +222,8 @@ body {
   height: 40em;
 }
 .Dlayout h1 {
-  text-align: left;
-  color: #3c96d2;
+  /* text-align: left;
+  color: #3c96d2; */
   /* border: 2px solid red; */
   margin: 0;
   height: 10%;
@@ -203,42 +235,45 @@ body {
   height: 90%;
   /* border: 3px solid blue; */
 }
-.Dlayout #Dbutton {
+.Dlayout #Dlayout-container #Dbutton {
   /* background-color: black; */
+  /* border: 1px solid red; */
   width: 5%;
   height: 100%;
   /* border: 3px solid green; */
 }
 
-.Dlayout #Dlayout-container #Dbutton .modals-container {
-  border-radius: 20px;
+.Dlayout #Dlayout-container #Dbutton #Dmodals-container {
+  /* border-radius: 20px; */
   height: 100%;
-  /* border: 3px solid orange; */
-  /* background-color: aqua; */
 }
 
-.Dlayout #Dbutton #modal-container0 {
-  /* background-color: #3c96d2; */
+.Dlayout #Dlayout-container #Dbutton #Dmodals-container #modal-container0 {
+  /* border: 1px solid black; */
   height: 10%;
+  width: 100%;
 }
 
-.Dlayout #Dbutton #modal-container1 {
+.Dlayout #Dlayout-container #Dbutton #Dmodals-container #modal-container1 {
   /* background-color: #1d3e8b; */
+  /* border: 1px solid black; */
   height: 90%;
+  width: 100%;
+  margin: 0;
   /* border-radius: 20px; */
 }
 
 .Dlayout #Dbutton .open-button0 {
   background-color: #1d3e8b;
-  width: 80%;
+  width: 50%;
   height: 100%;
   border-radius: 50%;
   border: none;
   color: white;
 }
-.Dlayout #Dbutton .open-button1 {
+.Dlayout #Dlayout-container #Dbutton .open-button1 {
   background-color: #3c96d2;
-  width: 100%;
+  width: 80%;
   height: 100%;
   border: none;
   border-radius: 20px;
@@ -416,10 +451,435 @@ body {
 }
 
 .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0 {
-  background-color:#1d3e8b;
+  background-color: #1d3e8b;
   color: white;
   width: 50%;
   height: 10em;
+  border-radius: 10px;
+}
+
+.Hlayout {
+  padding: 30px;
+  line-height: 1.6;
+  height: 40em;
+  /* border: 1px solid palevioletred; */
+}
+
+.Hlayout #Hlayout-container {
+  height: 100%;
+  /* border: 1px solid gray; */
+  width: 100%;
+}
+
+.Hlayout #Hlayout-container #Hrow1 {
+  /* border: 1px solid green; */
+  height: 50%;
+}
+
+.Hlayout #Hlayout-container #Hrow2 {
+  /* border: 1px solid green; */
+  height: 50%;
+}
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1,
+#Hmodals-container2 {
+  /* border: 1px solid pink; */
+  text-align: center;
+  /* padding-left: 25%; */
+  padding-right: auto;
+  display: flex;
+  justify-content: center;
+  height: 40%;
+}
+
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 #modal-container0,
+#modal-container1,
+#modal-container2,
+#modal-container3,
+#modal-container4 {
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 100%;
+}
+
+.Hlayout #Hlayout-container #Hmodals-container2 #modal-container5,
+#modal-container6,
+#modal-container7,
+#modal-container8,
+#modal-container9 {
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 100%;
+}
+
+/* .Hlayout
+  #Hlayout-container
+  #Hrow1
+  #Hmodals-container1
+  #modal-container0
+  .open-button0 {
+  
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+} */
+
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0,
+.open-button1,
+.open-button2,
+.open-button3,
+.open-button4 {
+  background-color: #1d3e8b;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button5,
+.open-button6,
+.open-button7,
+.open-button8,
+.open-button9 {
+  background-color: #1d3e8b;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.Ilayout {
+  padding: 30px;
+  line-height: 1.6;
+  height: 40em;
+  /* border: 1px solid violet; */
+}
+
+.Ilayout #Ilayout-container {
+  height: 100%;
+  /* border: 1px solid green; */
+  display: flex;
+}
+
+.Ilayout #Ilayout-container #Icolumn1 {
+  width: 50%;
+  /* border: 1px solid blue; */
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.Ilayout #Ilayout-container #Icolumn2 {
+  width: 25%;
+  /* border: 1px solid yellowgreen; */
+}
+
+.Ilayout #Ilayout-container #Icolumn2-image-container {
+  /* width: 100%; */
+  height: 60%;
+  margin: 5%;
+  margin-top: 20%;
+}
+
+.Ilayout #Ilayout-container #Icolumn2-image-container #Iimage-column2 {
+  width: 100%;
+  height: 100%;
+}
+
+.Ilayout #Ilayout-container #Icolumn2 #Idownload-button {
+  margin-top: 40px;
+  width: 80%;
+  /* height: 70%; */
+}
+
+.Ilayout #Ilayout-container #Icolumn3 {
+  width: 25%;
+  /* border: 1px solid pink; */
+}
+
+.Ilayout #Ilayout-container #Icolumn3-image-container {
+  /* width: 100%; */
+  height: 80%;
+  margin: 5%;
+  margin-top: 20%;
+}
+
+.Ilayout #Ilayout-container #Icolumn3-image-container #Iimage-column3 {
+  width: 100%;
+  height: 100%;
+}
+
+.Jlayout {
+  padding: 30px;
+  line-height: 1.6;
+  height: 40em;
+  /* border: 1px solid violet; */
+}
+
+.Jlayout #Jlayout-container {
+  /* border: 2px solid green; */
+  height: 100%;
+}
+
+.Jlayout #Jtitle {
+  /* border: 1px solid black; */
+  height: 15%;
+  margin: 0;
+}
+
+.Jlayout #Jcarousel-container {
+  /* border: 1px solid black; */
+  height: 85%;
+}
+.Jlayout #Jcarousel-container #Jimage {
+  /* border: 1px solid black; */
+  height: 80%;
+  margin: 20px;
+}
+
+.Klayout {
+  padding: 30px;
+  line-height: 1.6;
+  height: 40em;
+  /* border: 1px solid violet; */
+}
+
+.Klayout #Klayout-container {
+  height: 100%;
+  /* border: 1px solid green; */
+}
+.Klayout #Klayout-container #Ktitle {
+  /* border: 2px solid orange; */
+  margin: 0;
+  height: 10%;
+}
+.Klayout #Klayout-container #Ktext-container1,
+#Ktext-container2 {
+  margin-top: 10px;
+  /* border: 1px solid blue; */
+  margin: 0;
+  height: 30%;
+  position: relative;
+}
+
+.Klayout #Klayout-container #Ktext1,
+#Ktext2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.Klayout #Klayout-container #Ktext1 {
+  background-color: #3c96d2;
+  color: white;
+}
+.Klayout #Klayout-container #Kimage-container {
+  /* border: 1px solid blue; */
+  height: 30%;
+  /* padding: 20px; */
+}
+
+.Klayout #Klayout-container #Kimage-container #Kbanner {
+  height: 100%;
+  width: 100%;
+}
+
+.Llayout {
+  padding: 30px;
+  line-height: 1.6;
+  height: 40em;
+  /* border: 1px solid violet; */
+}
+
+.Llayout #Llayout-container {
+  height: 100%;
+  /* border: 1px solid green; */
+}
+
+.Llayout #Llayout-container #Ltitle {
+  /* border: 2px solid orange; */
+  margin: 0;
+  height: 10%;
+}
+
+.Llayout #Llayout-container #Ltext-container {
+  margin-top: 10px;
+  /* border: 1px solid blue; */
+  margin: 0;
+  height: 70%;
+  position: relative;
+}
+
+.Llayout #Llayout-container #Ltext {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.Llayout #Llayout-container #Lmodals-container {
+  /* border: 1px solid pink; */
+  text-align: center;
+  /* padding-left: 25%; */
+  padding-right: auto;
+  display: flex;
+  justify-content: center;
+  height: 20%;
+}
+
+.Llayout #Llayout-container #Lmodals-container #modal-container0,
+#modal-container1,
+#modal-container2,
+#modal-container3,
+#modal-container4 {
+  /* width: 15%; */
+  /* border: 1px solid black; */
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 100%;
+}
+
+.Llayout #Llayout-container #Lmodals-container .open-button0,
+.open-button1,
+.open-button2,
+.open-button3,
+.open-button4 {
+  background-color: #1d3e8b;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.Mlayout {
+  padding: 30px;
+  line-height: 1.6;
+  height: 40em;
+  /* border: 1px §solid violet; */
+}
+
+.Mlayout #Mlayout-container {
+  height: 100%;
+  /* border: 1px solid green; */
+}
+
+.Mlayout #Mlayout-container #Mtitle {
+  /* border: 2px solid orange; */
+  margin: 0;
+  height: 10%;
+}
+
+.Mlayout #Mlayout-container #Mtext-container {
+  margin-top: 10px;
+  /* border: 1px solid blue; */
+  margin: 0;
+  height: 30%;
+  position: relative;
+}
+
+.Mlayout #Mlayout-container #Mtext {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.Mlayout #Mcarousel-container {
+  /* border: 1px solid black; */
+  height: 60%;
+}
+.Mlayout #Mcarousel-container #Mimage {
+  /* border: 1px solid black; */
+  height: 100%;
+  /* margin: 20px; */
+}
+
+.Nlayout {
+  padding: 30px;
+  line-height: 1.6;
+  height: 40em;
+  /* border: 1px solid violet; */
+}
+
+.Nlayout #Nlayout-container {
+  height: 100%;
+  /* border: 1px solid green; */
+}
+
+.Nlayout #Nlayout-container #Ntitle {
+  /* border: 2px solid orange; */
+  margin: 0;
+  height: 10%;
+}
+
+.Nlayout #Nlayout-container #Ntext-container {
+  height: 60%;
+  /* border: 1px solid purple; */
+  display: flex;
+}
+
+.Nlayout #Nlayout-container #Ntext-container #Ntext-containerLeft,
+#Ntext-containerRight {
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid blue; */
+  /* padding: 1%; */
+  position: relative;
+}
+
+.Nlayout #Nlayout-container #Ntext-container #Ltext1,
+#Ltext2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.Nlayout #Nlayout-container #Nmodals-container {
+  /* border: 1px solid violet; */
+  height: 30%;
+  display: flex;
+  /* text-align: center; */
+  /* padding-left: 25%; */
+  /* padding-right: auto; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Nlayout #Nlayout-container #Nmodals-container #modal-container0 {
+  width: 30%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+}
+
+.Nlayout #Nlayout-container #Nmodals-container #modal-container1 {
+  width: 30%;
+  /* border: 1px solid black; */
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+}
+
+.Nlayout #Nlayout-container #Nmodals-container .open-button0{
+  background-color: #1d3e8b;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+.Nlayout #Nlayout-container #Nmodals-container .open-button1{
+  background-color: #1d3e8b;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .modal {

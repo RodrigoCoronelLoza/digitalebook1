@@ -32,7 +32,7 @@ function renderPage() {
     imagesData
   );
 
-  console.log(modalGenerator(popUpData, 4));
+  // console.log(modalGenerator(popUpData, 4));
 }
 
 const handleDomCLick = (event) => {
@@ -73,7 +73,7 @@ function prevPage() {
 }
 
 function setPage(value) {
-  console.log(value);
+  // console.log(value);
   currentPage = value;
   renderPage();
 }
@@ -95,6 +95,20 @@ function createStructure(titles, text, layout, page, popUp, images) {
     content = FLayOutGenerator(titles, text, images, page);
   } else if (currentLayout === "Glayout") {
     content = GLayOutGenerator(titles, text, page, popUp);
+  } else if (currentLayout === "Hlayout") {
+    content = HLayOutGenerator(titles, text, page, popUp);
+  } else if (currentLayout === "Ilayout") {
+    content = ILayOutGenerator(titles, text, images, page);
+  } else if (currentLayout === "Jlayout") {
+    content = JLayOutGenerator(titles, images, page);
+  } else if (currentLayout === "Klayout") {
+    content = KLayOutGenerator(titles, text, images, page);
+  } else if (currentLayout === "Llayout") {
+    content = LLayOutGenerator(titles, text, page, popUp);
+  } else if (currentLayout === "Mlayout") {
+    content = MLayOutGenerator(titles, text, images, page);
+  } else if (currentLayout === "Nlayout") {
+    content = NLayOutGenerator(titles, text, page, popUp);
   } else if (currentLayout === "Wlayout") {
     content = WLayOutGenerator(titles, text, page, popUp);
   }
@@ -107,11 +121,20 @@ function ALayoutGenerator(titles, text, page) {
 }
 
 function BLayOutGenerator(titles, text, page) {
-  return ` <h1 class="titles">${titles[page]}</h1><p class="text">${text[page]}</p>`;
+  return ` <div id="Blayout-container">
+  <h1 class="titles" id="Btitle">${titles[page]}</h1>
+  <div id="Btext-container">
+  <p class="text" id="Btext">${text[page]}</p>
+  </div>
+  </div>`;
 }
 
 function CLayOutGenerator(titles, text, page) {
-  return ` <h1 class="titles">${titles[page]}</h1><div id="index-buttons">
+  return ` 
+  <div id="Clayout-container">
+  <h1 class="titles" id="Ctitle">${titles[page]}</h1>
+  <div id="Cindex-buttons">
+  
   <div class="button-index-container"><button class="jump-buttons">Ir</button> Presentacion</div>
   <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">Ir</button>Tema 1 Base Normativa</div>
   <div class="button-index-container"><button class="jump-buttons">Ir</button>Actividad de inicio</div>
@@ -131,20 +154,26 @@ function CLayOutGenerator(titles, text, page) {
   <div class="button-index-container"><button class="jump-buttons">Ir</button>3.3.Características y principios del enfoque restaurativo</div>
   <div class="button-index-container"><button class="jump-buttons">Ir</button>Glosario</div>
   <div class="button-index-container"><button class="jump-buttons">Ir</button>Bibliografia</div>
+  
+  </div>
   </div>`;
 }
 
 function DLayOutGenerator(titles, text, page, images, popUp) {
-  return `<h1 class="titles">${
-    titles[page]
-  }</h1><div id="Dlayout-container"><div id="Dbutton">${modalGenerator(
-    popUp,
-    page
-  )}</div><div id="Dtext"><p class="text">${
-    text[page]
-  }</p></div><div id="Dimage-container"><img id="Dimage" src="images/${
-    images[page]
-  }"></div></div>`;
+  return `<h1 class="titles">${titles[page]}</h1>
+  <div id="Dlayout-container">
+  <div id="Dbutton">
+    <div id="Dmodals-container">
+    ${modalGenerator(popUp, page, 0)}
+    </div>
+  </div> 
+  <div id="Dtext">
+    <p class="text">${text[page]}</p>
+  </div>
+  <div id="Dimage-container">
+  <img id="Dimage" src="images/${images[page]}">
+  </div>
+  </div>`;
 }
 
 function ELayOutGenerator(images, page) {
@@ -182,8 +211,113 @@ function GLayOutGenerator(title, text, page, popUp) {
   <h1 class="titles">${title[page][1]}</h1>
   </div>
   <div id="Grow3"> 
-  <div id="Gmodal-container">${modalGenerator(popUp, page)}</div> 
+  <div id="Gmodal-container">${modalGenerator(popUp, page, 0)}</div> 
   <div id="Gnext-modal"><p class="text">${text[page][1]}</p></div>
+  </div>
+  </div>`;
+}
+
+function HLayOutGenerator(title, text, page, popUp) {
+  console.log(modalGenerator(popUp, page, 0));
+  return `<div id="Hlayout-container">
+  <div id="Hrow1">
+  <h1 class="titles">${title[page][0]}</h1>
+  <p class="text">${text[page][0]}</p>
+  <div id="Hmodals-container1">
+  ${modalGenerator(popUp, page, 0)}
+  </div>
+  </div>
+  <div id="Hrow2">
+  <h1 class="titles">${title[page][1]}</h1>
+  <p class="text">${text[page][1]}</p>
+  <div id="Hmodals-container2">
+  ${modalGenerator(popUp, page, 1)}
+  </div>
+  </div>
+  <div>
+  </div>
+
+  </div>`;
+}
+function ILayOutGenerator(title, text, images, page) {
+  // console.log(images[page][0]);
+  return `<div id="Ilayout-container">
+  <div id="Icolumn1">
+  <div id="Icolumn1-image-container">
+      <img src="/images/para_profundizar.jpeg" />
+  </div>
+    <h1 class="titles">${title[page]}</h1>
+    <p class="text">${text[page]}</p>
+  </div>
+  <div id="Icolumn2">
+  <div id="Icolumn2-image-container">
+      <img id ="Iimage-column2" src="/images/${images[page][0]}" />
+  </div>
+  <button class="nav-buttons" id="Idownload-button"> DESCARGAR</button>
+  </div>
+  <div id="Icolumn3">
+  <div id="Icolumn3-image-container">
+      <img id ="Iimage-column3" src="/images/${images[page][1]}" />
+  </div></div>
+</div>`;
+}
+function JLayOutGenerator(title, images, page) {
+  return `<div id="Jlayout-container">
+  <h1 class="titles" id="Jtitle">${title[page]}</h1>
+  <div id="Jcarousel-container">
+    <img id="Jimage" src="/images/${images[page][0]}">
+  </div>
+</div>`;
+}
+function KLayOutGenerator(title, text, images, page) {
+  return `<div id="Klayout-container">
+  <h1 class="titles" id="Ktitle">${title[page]}</h1>
+  <div id="Ktext-container1">
+  <p class="text" id="Ktext1">${text[page][0]}</p>
+  </div>
+  <div id="Kimage-container">
+  <img id="Kbanner" src="/images/${images[page]}">
+  </div>
+  <div id="Ktext-container2">
+  <p class="text" id="Ktext2">${text[page][1]}</p>
+  </div>
+</div>`;
+}
+function LLayOutGenerator(title, text, page, popUp) {
+  return `<div id="Llayout-container">
+  <h1 class="titles" id="Ltitle">${title[page]}</h1>
+  <div id="Ltext-container">
+  <p class="text" id="Ltext">${text[page]}</p>
+  </div>
+  <div id="Lmodals-container">
+  ${modalGenerator(popUp, page, 0)}
+  </div>
+  </div>`;
+}
+function MLayOutGenerator(title, text, images, page) {
+  return `<div id="Mlayout-container">
+  <h1 class="titles" id="Mtitle">${title[page]}</h1>
+  <div id="Mtext-container">
+  <p class="text" id="Mtext">${text[page]}</p>
+  </div>
+  <div id="Mcarousel-container">
+    <img id="Mimage" src="/images/${images[page]}">
+  </div>
+</div>`;
+}
+function NLayOutGenerator(title, text, page, popUp) {
+  return `<div id="Nlayout-container">
+  <h1 class="titles" id="Ntitle">${title[page]}</h1>
+  <div id="Ntext-container">
+    <div id="Ntext-containerLeft">
+      <p class="text" id="Ltext1">${text[page][0]}</p>
+    </div>
+    <div id="Ntext-containerRight">
+      <p class="text" id="Ltext2">${text[page][1]}</p>
+    </div>
+  </div>
+  <div id="Nmodals-container">
+  ${modalGenerator(popUp, page, 0)}
   </div>
   </div>`;
 }
@@ -212,11 +346,26 @@ function WLayOutGenerator(titles, text, page, popUp) {
     </div>`;
 }
 
-function modalGenerator(popUp, page) {
+function modalGenerator(popUp, page, selector) {
+  let initial = 0;
+  let final = 0;
   const numberOfModals = popUp[page].length;
-  let result = `<div class="modals-container">`;
+  final = numberOfModals;
+  if (numberOfModals > 4) {
+    if (selector === 0) {
+      initial = 0;
+      final = 5;
+    } else {
+      initial = 5;
+      final = 10;
+    }
+  }
 
-  for (let i = 0; i < numberOfModals; i++) {
+  // let result = `<div class="modals-container">`;
+
+  let result = "";
+
+  for (let i = initial; i < final; i++) {
     result =
       result +
       `<div id="modal-container${i}"><button data-modal-target="#modal${i}" class="open-button${i}">${modalExtractor(
@@ -236,7 +385,7 @@ function modalGenerator(popUp, page) {
     </div>
     </div>`;
   }
-  result = result + `</div>`;
+  // result = result + `</div>`;
   return result;
 }
 function modalExtractor(popUps, page, partofModal, numberModal) {
