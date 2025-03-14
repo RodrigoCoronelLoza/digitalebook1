@@ -244,20 +244,20 @@ function ILayOutGenerator(title, text, images, page) {
   return `<div id="Ilayout-container">
   <div id="Icolumn1">
   <div id="Icolumn1-image-container">
-      <img src="/images/para_profundizar.jpeg" />
+      <img src="images/para_profundizar.jpeg" />
   </div>
     <h1 class="titles">${title[page]}</h1>
     <p class="text">${text[page]}</p>
   </div>
   <div id="Icolumn2">
   <div id="Icolumn2-image-container">
-      <img id ="Iimage-column2" src="/images/${images[page][0]}" />
+      <img id ="Iimage-column2" src="images/${images[page][0]}" />
   </div>
   <button class="nav-buttons" id="Idownload-button"> DESCARGAR</button>
   </div>
   <div id="Icolumn3">
   <div id="Icolumn3-image-container">
-      <img id ="Iimage-column3" src="/images/${images[page][1]}" />
+      <img id ="Iimage-column3" src="images/${images[page][1]}" />
   </div></div>
 </div>`;
 }
@@ -265,7 +265,7 @@ function JLayOutGenerator(title, images, page) {
   return `<div id="Jlayout-container">
   <h1 class="titles" id="Jtitle">${title[page]}</h1>
   <div id="Jcarousel-container">
-    <img id="Jimage" src="/images/${images[page][0]}">
+    <img id="Jimage" src="images/${images[page][0]}">
   </div>
 </div>`;
 }
@@ -276,7 +276,7 @@ function KLayOutGenerator(title, text, images, page) {
   <p class="text" id="Ktext1">${text[page][0]}</p>
   </div>
   <div id="Kimage-container">
-  <img id="Kbanner" src="/images/${images[page]}">
+  <img id="Kbanner" src="images/${images[page]}">
   </div>
   <div id="Ktext-container2">
   <p class="text" id="Ktext2">${text[page][1]}</p>
@@ -301,7 +301,7 @@ function MLayOutGenerator(title, text, images, page) {
   <p class="text" id="Mtext">${text[page]}</p>
   </div>
   <div id="Mcarousel-container">
-    <img id="Mimage" src="/images/${images[page]}">
+    <img id="Mimage" src="images/${images[page]}">
   </div>
 </div>`;
 }
