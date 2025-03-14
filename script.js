@@ -219,24 +219,26 @@ function GLayOutGenerator(title, text, page, popUp) {
 
 function HLayOutGenerator(title, text, page, popUp) {
   console.log(modalGenerator(popUp, page, 0));
-  return `<div id="Hlayout-container">
-  <div id="Hrow1">
-  <h1 class="titles">${title[page][0]}</h1>
-  <p class="text">${text[page][0]}</p>
-  <div id="Hmodals-container1">
-  ${modalGenerator(popUp, page, 0)}
-  </div>
-  </div>
-  <div id="Hrow2">
-  <h1 class="titles">${title[page][1]}</h1>
-  <p class="text">${text[page][1]}</p>
-  <div id="Hmodals-container2">
-  ${modalGenerator(popUp, page, 1)}
-  </div>
-  </div>
-  <div>
-  </div>
-
+  return `
+  <div id="Hlayout-container">
+    <div id="Hrow1">
+      <h1 class="titles" id="Htitle1">${title[page][0]}</h1>
+      <div id="Htext1">
+        <p class="text">${text[page][0]}</p>
+      </div>
+      <div id="Hmodals-container1">
+        ${modalGenerator(popUp, page, 0)}
+      </div>
+    </div>
+    <div id="Hrow2">
+      <h1 class="titles" id="Htitle2">${title[page][1]}</h1>
+      <div id="Htext2">
+        <p class="text">${text[page][1]}</p>
+      </div>
+      <div id="Hmodals-container2">
+        ${modalGenerator(popUp, page, 1)}
+      </div>
+    </div>
   </div>`;
 }
 function ILayOutGenerator(title, text, images, page) {
@@ -244,10 +246,12 @@ function ILayOutGenerator(title, text, images, page) {
   return `<div id="Ilayout-container">
   <div id="Icolumn1">
   <div id="Icolumn1-image-container">
-      <img src="images/para_profundizar.jpeg" />
+      <img id="Iimage-column1" src="images/para_profundizar.jpeg" />
   </div>
-    <h1 class="titles">${title[page]}</h1>
-    <p class="text">${text[page]}</p>
+    <h1 class="titles" id="Ititle">${title[page]}</h1>
+    <div id="Itext-container">
+      <p class="text" id="Itext">${text[page]}</p>
+    </div>
   </div>
   <div id="Icolumn2">
   <div id="Icolumn2-image-container">
@@ -262,26 +266,30 @@ function ILayOutGenerator(title, text, images, page) {
 </div>`;
 }
 function JLayOutGenerator(title, images, page) {
-  return `<div id="Jlayout-container">
-  <h1 class="titles" id="Jtitle">${title[page]}</h1>
-  <div id="Jcarousel-container">
-    <img id="Jimage" src="images/${images[page][0]}">
-  </div>
-</div>`;
+  return `
+  <div id="Jlayout-container">
+    <h1 class="titles" id="Jtitle">${title[page]}</h1>
+    <div id="Jcarousel-container">
+        <div id="Jcarousel">
+          <img id="Jimage" src="images/${images[page][0]}">
+        </div>
+    </div>
+  </div>`;
 }
 function KLayOutGenerator(title, text, images, page) {
-  return `<div id="Klayout-container">
-  <h1 class="titles" id="Ktitle">${title[page]}</h1>
-  <div id="Ktext-container1">
-  <p class="text" id="Ktext1">${text[page][0]}</p>
-  </div>
-  <div id="Kimage-container">
-  <img id="Kbanner" src="images/${images[page]}">
-  </div>
-  <div id="Ktext-container2">
-  <p class="text" id="Ktext2">${text[page][1]}</p>
-  </div>
-</div>`;
+  return `
+  <div id="Klayout-container">
+    <h1 class="titles" id="Ktitle">${title[page]}</h1>
+    <div id="Ktext-container1">
+      <p class="text" id="Ktext1">${text[page][0]}</p>
+    </div>
+    <div id="Kimage-container">
+      <img id="Kbanner" src="images/${images[page]}">
+    </div>
+    <div id="Ktext-container2">
+      <p class="text" id="Ktext2">${text[page][1]}</p>
+    </div>
+  </div>`;
 }
 function LLayOutGenerator(title, text, page, popUp) {
   return `<div id="Llayout-container">
