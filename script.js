@@ -117,7 +117,7 @@ function createStructure(titles, text, layout, page, popUp, images) {
 
 function ALayoutGenerator(titles, text, page) {
   return `<div class="caratula-container">
-  <img class="caratula"> <div class="button-caratula-container"><button class="nav-buttons" id="comenzar-button" onclick="nextPage()">Comienza</button></div></div>  `;
+  <img id="caratula" src="images/caratula.jpeg"> <div class="button-caratula-container"><button class="nav-buttons" id="comenzar-button" onclick="nextPage()">Comienza</button></div></div>  `;
 }
 
 function BLayOutGenerator(titles, text, page) {

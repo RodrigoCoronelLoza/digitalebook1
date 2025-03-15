@@ -20,20 +20,23 @@ body {
   margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
+  /* border: 3px solid orange; */
   /* margin-bottom: 5%; */
-  /* height: 1000px; */
+  height: 55em;
 }
 
 #book-title-container {
   /* background-color: goldenrod; */
+  /* border: 1px solid green; */
   padding-top: 0px;
   margin-top: 0px;
+  /* height: 50%; */
 }
 #book-title {
   color: white;
   background-color: #3c96d2;
-  width: 60%;
-  height: 40px;
+  width: 50%;
+  /* height: 40px; */
   border-radius: 20px;
   margin-left: auto;
   margin-right: 0;
@@ -44,17 +47,18 @@ body {
   /* border-top: 30px; */
   position: relative;
   bottom: 20px;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  /* border: 3px solid gray; */
 }
 
 .caratula-container {
-  /* background-color: black; */
-  height: 100%;
-  width: 100%;
+  /* border: 1px solid red; */
+  height: 50em;
+  /* width: 100%; */
   position: relative;
 }
-.caratula {
-  content: url("images/caratula.jpeg");
+.caratula-container #caratula {
+  /* content: url("images/caratula.jpeg"); */
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -85,8 +89,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   border-radius: 20px;
-  width: 150px;
-  height: 40px;
+  width: 8em;
+  height: 2em;
   border: none;
 }
 
@@ -106,8 +110,8 @@ body {
   font-size: large;
   border-radius: 20px;
   border: none;
-  width: 120px;
-  height: 40px;
+  width: 4em;
+  height: 2em;
 }
 
 #home-button {
@@ -116,17 +120,24 @@ body {
 }
 #menu-header {
   display: flex;
+  /* border: 1px solid red; */
+  height: 10%;
 }
 #menu-buttons {
-  /* background-color: greenyellow; */
   text-align: left;
   width: 70%;
-  /* background-color: aqua; */
+  /* border: 1px solid aqua; */
 }
 #menu-image-container {
   text-align: right;
-  /* background-color: black; */
+  /* border: 1px solid violet; */
   width: 30%;
+  height: 100%;
+}
+
+#menu-image-container #logo {
+  height: 100%;
+  width: 80%;
 }
 
 #adv-buttons {
@@ -198,13 +209,13 @@ body {
 .Clayout #Clayout-container #Ctitle {
   /* border: 2px solid orange; */
   margin: 0;
-  height: 20%;
+  height: 10%;
 }
 .Clayout #Cindex-buttons {
   column-count: 2;
-  column-gap: 20px;
+  column-gap: 10px;
   /* border: 1px solid seagreen; */
-  height: 80%;
+  height: 90%;
   position: relative;
 }
 
@@ -265,7 +276,7 @@ body {
 
 .Dlayout #Dbutton .open-button0 {
   background-color: #1d3e8b;
-  width: 50%;
+  width: 100%;
   height: 100%;
   border-radius: 50%;
   border: none;
@@ -273,7 +284,7 @@ body {
 }
 .Dlayout #Dlayout-container #Dbutton .open-button1 {
   background-color: #3c96d2;
-  width: 80%;
+  width: 100%;
   height: 100%;
   border: none;
   border-radius: 20px;
@@ -303,11 +314,13 @@ body {
   padding: 30px;
   line-height: 1.6;
   height: 40em;
+  /* border: 1px solid green; */
 }
 
 .Elayout #Elayout-container {
   display: flex;
   height: 100%;
+  /* border: 1px solid blue; */
 }
 
 .Elayout #Eimage-container {
@@ -319,6 +332,7 @@ body {
 }
 .Elayout #Elayout-container #index-button-container {
   /* background-color: red; */
+  /* border: 1px solid black; */
   width: 30%;
   height: 100%;
   /* text-align: center; */
@@ -349,7 +363,7 @@ body {
   #index-buttons
   .button-index-container {
   /* background-color: green; */
-  padding: 4px;
+  padding: 15px;
   /* width: 50%; */
   /* height: 100%; */
   /* padding: 10%; */
@@ -360,7 +374,7 @@ body {
   #index-button-container
   #index-buttons
   .jump-buttons {
-  width: 50%;
+  width: 90%;
 }
 
 .Flayout {
@@ -462,12 +476,12 @@ body {
   padding: 30px;
   line-height: 1.6;
   height: 40em;
-  border: 1px solid palevioletred;
+  /* border: 1px solid palevioletred; */
 }
 
 .Hlayout #Hlayout-container {
   height: 100%;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   width: 100%;
 }
 
@@ -477,35 +491,35 @@ body {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Htitle1 {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   height: 15%;
   margin: 0;
 }
 
-.Hlayout #Hlayout-container #Hrow1 #Htext1{
+.Hlayout #Hlayout-container #Hrow1 #Htext1 {
   height: 45%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .Hlayout #Hlayout-container #Hrow2 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 50%;
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Htitle2 {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   height: 15%;
   margin: 0;
 }
 
-.Hlayout #Hlayout-container #Hrow2 #Htext2{
+.Hlayout #Hlayout-container #Hrow2 #Htext2 {
   height: 45%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1,
 #Hmodals-container2 {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   text-align: center;
   /* padding-left: 25%; */
   padding-right: auto;
@@ -519,19 +533,19 @@ body {
 #modal-container2,
 #modal-container3,
 #modal-container4 {
-  margin-left: 60px;
-  margin-right: 60px;
-  height: 100%;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 80%;
 }
 
-.Hlayout #Hlayout-container #Hmodals-container2 #modal-container5,
+.Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 #modal-container5,
 #modal-container6,
 #modal-container7,
 #modal-container8,
 #modal-container9 {
-  margin-left: 60px;
-  margin-right: 60px;
-  height: 100%;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 80%;
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0,
@@ -660,27 +674,27 @@ body {
   padding: 30px;
   line-height: 1.6;
   height: 40em;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
 }
 
 .Jlayout #Jlayout-container {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: 100%;
 }
 
 .Jlayout #Jlayout-container #Jtitle {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   height: 15%;
   margin: 0;
 }
 
 .Jlayout #Jlayout-container #Jcarousel-container {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 85%;
   position: relative;
 }
 .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
   height: 80%;
   width: 60%;
   margin: 0;
@@ -801,9 +815,9 @@ body {
 #modal-container4 {
   /* width: 15%; */
   /* border: 1px solid black; */
-  margin-left: 60px;
-  margin-right: 60px;
-  height: 100%;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 80%;
 }
 
 .Llayout #Llayout-container #Lmodals-container .open-button0,
@@ -821,23 +835,23 @@ body {
   padding: 30px;
   line-height: 1.6;
   height: 40em;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
 }
 
 .Mlayout #Mlayout-container {
   height: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .Mlayout #Mlayout-container #Mtitle {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   margin: 0;
   height: 10%;
 }
 
 .Mlayout #Mlayout-container #Mtext-container {
   margin-top: 10px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin: 0;
   height: 30%;
   position: relative;
@@ -852,7 +866,7 @@ body {
 }
 
 .Mlayout #Mcarousel-container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 60%;
 }
 .Mlayout #Mcarousel-container #Mimage {
