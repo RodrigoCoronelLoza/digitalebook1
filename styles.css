@@ -715,6 +715,43 @@ body {
   width: 100%;
 }
 
+.Jlayout #Jlayout-container #Jcarousel-container #JnextSlide-container {
+  /* border: 3px solid green; */
+  position: absolute;
+  margin: 0;
+  bottom: 35%;
+  left: 75%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 5%;
+  height: 5em;
+}
+
+.Jlayout #Jlayout-container #Jcarousel-container #JprevSlide-container {
+  position: absolute;
+  margin: 0;
+  bottom: 35%;
+  left: 20%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 5%;
+  height: 5em;
+}
+
+.Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: x-large;
+  border: none;
+}
+
+.Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+}
+
 .Klayout {
   padding: 30px;
   line-height: 1.6;
@@ -844,13 +881,13 @@ body {
 }
 
 .Mlayout #Mlayout-container #Mtitle {
-  /* border: 2px solid orange; */
+  /* border: 1px solid orange; */
   margin: 0;
   height: 10%;
 }
 
 .Mlayout #Mlayout-container #Mtext-container {
-  margin-top: 10px;
+  margin-top: 2em;
   /* border: 1px solid blue; */
   margin: 0;
   height: 30%;
@@ -867,14 +904,87 @@ body {
 
 .Mlayout #Mcarousel-container {
   /* border: 1px solid black; */
-  height: 60%;
+  height: 58%;
+  /* margin-top: 2%; */
+  background-color: #c2e5ef;
+  padding-top: 1em;
+  /* width: 60%; */
+  justify-content: center;
 }
-.Mlayout #Mcarousel-container #Mimage {
-  /* border: 1px solid black; */
-  width: 50%;
-  height: 100%;
+
+.Mlayout #Mcarousel-container #Mbuttons {
+  /* border: 2px solid orange; */
+  width: 80%;
+  height: 14%;
+  margin: auto;
+  /* padding: 3em; */
+  position: relative;
+  background-color: white;
+
   /* margin: 20px; */
 }
+
+.Mlayout #Mcarousel-container #Mbuttons #Mbuttons-container {
+  display: inline-block;
+  /* border: 1px solid greenyellow; */
+  width: 96%;
+  height: 100%;
+  padding-left: 0%;
+  margin-left: 2%;
+  /* align-items: left; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* background-color: white; */
+
+  /* margin: auto; */
+  /* margin: 20px; */
+}
+
+.Mlayout #Mcarousel-container #Mparag-container {
+  /* border: 1px solid #1d3e8b; */
+  background-color: white;
+
+  /* border-radius: 20px; */
+  width: 80%;
+  height: 74%;
+  margin: auto;
+  padding-top: 1%;
+  /* position: relative; */
+  /* justify-content: center; */
+  /* margin: 20px; */
+}
+
+.Mlayout #Mcarousel-container #Mparag-container #Mparag {
+  /* border: 1px solid blue; */
+  /* width: 100%; */
+  height: 100%;
+  margin: 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  /* justify-content: center; */
+  /* margin: 20px; */
+}
+
+.Mlayout #Mcarousel-container #Mbuttons #Mbuttons-container .paragButton {
+  background-color: #3c96d2;
+  color: white;
+  height: 100%;
+  border-radius: 1em;
+  border: none;
+  width: 7em;
+  margin-right: 1%;
+  /* width: 10%; */
+}
+
+/* .Mlayout #Mcarousel-container #Mbuttons #Mbuttons-container .paragButton:focus {
+  background-color: red;
+  color: black;
+} */
 
 .Nlayout {
   padding: 30px;

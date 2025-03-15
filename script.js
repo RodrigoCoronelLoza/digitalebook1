@@ -1,4 +1,6 @@
 let currentPage = 0;
+let currentSlideNumberCarousel = 0;
+let currentParagNumber = 1;
 
 function renderPage() {
   const pageContent = document.getElementById("page-content");
@@ -37,7 +39,9 @@ function renderPage() {
 
 const handleDomCLick = (event) => {
   const clickedBtn = event.target;
+  console.log(clickedBtn);
   const classIdentifier = clickedBtn.className.slice(0, 4);
+  console.log(classIdentifier);
   let modal = {};
   if (classIdentifier === "open") {
     modal = document.querySelector(clickedBtn.dataset.modalTarget);
@@ -45,6 +49,11 @@ const handleDomCLick = (event) => {
   } else if (classIdentifier === "clos") {
     modal = clickedBtn.closest(".modal");
     closeModal(modal);
+  } else if (classIdentifier === "para") {
+    let targetIdButton = "buttonParag" + currentParagNumber;
+    // console.log(typeof targetIdButton);
+    const pointedButton = document.getElementById(targetIdButton);
+    pointedButton.style.backgroundColor = "#1d3e8b";
   }
 };
 
@@ -61,21 +70,23 @@ const handleOverlayClick = (event) => {
 function nextPage() {
   if (currentPage < Object.keys(textData).length - 1) {
     currentPage++;
-    renderPage();
+    setSlidetoInitial();
+    setParagh(1);
+    masterRender();
   }
 }
 
 function prevPage() {
   if (currentPage > 0) {
     currentPage--;
-    renderPage();
+    masterRender();
   }
 }
 
 function setPage(value) {
   // console.log(value);
   currentPage = value;
-  renderPage();
+  masterRender();
 }
 
 function createStructure(titles, text, layout, page, popUp, images) {
@@ -218,7 +229,7 @@ function GLayOutGenerator(title, text, page, popUp) {
 }
 
 function HLayOutGenerator(title, text, page, popUp) {
-  console.log(modalGenerator(popUp, page, 0));
+  // console.log(modalGenerator(popUp, page, 0));
   return `
   <div id="Hlayout-container">
     <div id="Hrow1">
@@ -266,15 +277,43 @@ function ILayOutGenerator(title, text, images, page) {
 </div>`;
 }
 function JLayOutGenerator(title, images, page) {
+  let numberOfSlidesCarousel = images[page].length;
+  // console.log(numberOfSlidesCarousel);
   return `
   <div id="Jlayout-container">
     <h1 class="titles" id="Jtitle">${title[page]}</h1>
     <div id="Jcarousel-container">
         <div id="Jcarousel">
-          <img id="Jimage" src="images/${images[page][0]}">
+          <img id="Jimage" src="images/${images[page][currentSlideNumberCarousel]}">
+        </div>
+        <div id="JnextSlide-container">
+          <button class="SlideCarouselButton" onclick ="nextSlide(${numberOfSlidesCarousel})" >❯</button>
+        </div>
+        <div id="JprevSlide-container">  
+            <button class="SlideCarouselButton" onclick ="prevSlide()">❮</button>
         </div>
     </div>
   </div>`;
+}
+
+function nextSlide(numberOfSlides) {
+  if (currentSlideNumberCarousel < numberOfSlides - 1) {
+    currentSlideNumberCarousel++;
+    console.log(currentSlideNumberCarousel);
+    masterRender();
+  }
+}
+
+function prevSlide() {
+  if (currentSlideNumberCarousel > 0) {
+    currentSlideNumberCarousel--;
+  }
+  console.log(currentSlideNumberCarousel);
+  masterRender();
+}
+
+function setSlidetoInitial() {
+  currentSlideNumberCarousel = 0;
 }
 function KLayOutGenerator(title, text, images, page) {
   return `
@@ -303,15 +342,39 @@ function LLayOutGenerator(title, text, page, popUp) {
   </div>`;
 }
 function MLayOutGenerator(title, text, images, page) {
-  return `<div id="Mlayout-container">
-  <h1 class="titles" id="Mtitle">${title[page]}</h1>
-  <div id="Mtext-container">
-  <p class="text" id="Mtext">${text[page]}</p>
-  </div>
-  <div id="Mcarousel-container">
-    <img id="Mimage" src="images/${images[page]}">
-  </div>
-</div>`;
+  let numberOfParagraphs = text[page].length;
+  // console.log(numberOfParagraphs);
+  return `
+  <div id="Mlayout-container">
+    <h1 class="titles" id="Mtitle">${title[page]}</h1>
+    <div id="Mtext-container">
+      <p class="text" id="Mtext">${text[page][0]}</p>
+    </div>
+    <div id="Mcarousel-container">
+      <div id="Mbuttons">
+        <div id="Mbuttons-container">
+          ${MbuttonGenerator(numberOfParagraphs)}
+        </div>
+      </div>
+      <div id="Mparag-container">
+        <p class="text" id="Mparag">${text[page][currentParagNumber]}</p>
+      </div>
+    </div>
+  </div>`;
+}
+function MbuttonGenerator(numberOfParagraphs) {
+  let result = "";
+  for (let i = 1; i < numberOfParagraphs; i++) {
+    result =
+      result +
+      `<button class="paragButton" id="buttonParag${i}" onclick ="setParagh(${i})" >Parrafo${i}</button>`;
+  }
+  return result;
+}
+
+function setParagh(numberToSet) {
+  currentParagNumber = numberToSet;
+  masterRender();
 }
 function NLayOutGenerator(title, text, page, popUp) {
   return `<div id="Nlayout-container">
@@ -424,4 +487,12 @@ function closeModal(modal) {
   overlay.classList.remove("active");
 }
 // Initial render
-renderPage();
+function masterRender() {
+  renderPage();
+  const pointedButton = document.getElementById("buttonParag1");
+  if(pointedButton && currentParagNumber===1){
+    pointedButton.style.backgroundColor = "#1d3e8b";
+  }
+  // console.log(pointedButton);
+}
+masterRender();
