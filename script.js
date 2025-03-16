@@ -111,7 +111,7 @@ function createStructure(titles, text, layout, page, popUp, images) {
   } else if (currentLayout === "Ilayout") {
     content = ILayOutGenerator(titles, text, images, page);
   } else if (currentLayout === "Jlayout") {
-    content = JLayOutGenerator(titles, images, page);
+    content = JLayOutGenerator(titles, text, images, page);
   } else if (currentLayout === "Klayout") {
     content = KLayOutGenerator(titles, text, images, page);
   } else if (currentLayout === "Llayout") {
@@ -188,43 +188,52 @@ function DLayOutGenerator(titles, text, page, images, popUp) {
 }
 
 function ELayOutGenerator(images, page) {
-  return `<div id="Elayout-container"><div id="Eimage-container"><img id="Eimage" src="images/${images[page]}"></div>
-  <div id="index-button-container"><div id="index-buttons">
-  <div class="button-index-container"><button class="jump-buttons">Actividad de inicio</button></div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">1.1 Normativa internacional</button></div>
-  <div class="button-index-container"><button class="jump-buttons">1.2. Normativa nacional</button></div>
-  <div class="button-index-container"><button class="jump-buttons">1.3. Ministerio de educacion</button></div>
-  </div></div></div>`;
+  return `
+  <div id="Elayout-container">
+    <div id="Eimage-container">
+      <img id="Eimage" src="images/${images[page]}">
+    </div>
+    <div id="index-button-container">
+      <div id="index-buttons">
+        <div class="button-index-container"><button class="jump-buttons">Actividad de inicio</button></div>
+        <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">1.1 Normativa internacional</button></div>
+        <div class="button-index-container"><button class="jump-buttons">1.2. Normativa nacional</button></div>
+        <div class="button-index-container"><button class="jump-buttons">1.3. Ministerio de educacion</button></div>
+      </div>
+    </div>
+  </div>`;
   // return `<div>${images[page]}</div>`;
 }
 
 function FLayOutGenerator(title, text, images, page) {
-  return `<div id="Flayout-container">
-  <div id="Fcolumn1">
-  <img id="act-inicio-img" src="images/actividad_inicio.jpeg">
-  <h1 class="titles">${title[page]}</h1>
-  <p class="text"> ${text[page]}</p>
-  </div>
-  <div id="Fcolumn2">
-  <img id="Flayout-img" src="images/${images[page]}">
-  <button class="nav-buttons" id="Fdownload-button"> DESCARGAR</button>
-  </div>
+  return `
+  <div id="Flayout-container">
+    <div id="Fcolumn1">
+      <img id="act-inicio-img" src="images/actividad_inicio.jpeg">
+      <h1 class="titles">${title[page]}</h1>
+      <p class="text"> ${text[page]}</p>
+    </div>
+    <div id="Fcolumn2">
+      <img id="Flayout-img" src="images/${images[page]}">
+      <button class="nav-buttons" id="Fdownload-button"> DESCARGAR</button>
+    </div>
   </div>`;
 }
 
 function GLayOutGenerator(title, text, page, popUp) {
-  return `<div id="Glayout-container">
-  <div id="Grow1">
-  <h1 class="titles">${title[page][0]}</h1>
-  <p class="text">${text[page][0]}</p>
-  </div>
-  <div id="Grow2">
-  <h1 class="titles">${title[page][1]}</h1>
-  </div>
-  <div id="Grow3"> 
-  <div id="Gmodal-container">${modalGenerator(popUp, page, 0)}</div> 
-  <div id="Gnext-modal"><p class="text">${text[page][1]}</p></div>
-  </div>
+  return `
+  <div id="Glayout-container">
+    <div id="Grow1">
+      <h1 class="titles" id ="Gtitle1">${title[page][0]}</h1>
+      <p class="text">${text[page][0]}</p>
+    </div>
+    <div id="Grow2">
+      <h1 class="titles" id ="Gtitle2">${title[page][1]}</h1>
+    </div>
+    <div id="Grow3"> 
+      <div id="Gmodal-container">${modalGenerator(popUp, page, 0)}</div> 
+      <div id="Gnext-modal"><p class="text">${text[page][1]}</p></div>
+    </div>
   </div>`;
 }
 
@@ -254,34 +263,39 @@ function HLayOutGenerator(title, text, page, popUp) {
 }
 function ILayOutGenerator(title, text, images, page) {
   // console.log(images[page][0]);
-  return `<div id="Ilayout-container">
-  <div id="Icolumn1">
-  <div id="Icolumn1-image-container">
-      <img id="Iimage-column1" src="images/para_profundizar.jpeg" />
-  </div>
-    <h1 class="titles" id="Ititle">${title[page]}</h1>
-    <div id="Itext-container">
-      <p class="text" id="Itext">${text[page]}</p>
+  return `
+  <div id="Ilayout-container">
+    <div id="Icolumn1">
+      <div id="Icolumn1-image-container">
+        <img id="Iimage-column1" src="images/para_profundizar.jpeg" />
+      </div>
+      <h1 class="titles" id="Ititle">${title[page]}</h1>
+      <div id="Itext-container">
+        <p class="text" id="Itext">${text[page]}</p>
+      </div>
     </div>
-  </div>
-  <div id="Icolumn2">
-  <div id="Icolumn2-image-container">
-      <img id ="Iimage-column2" src="images/${images[page][0]}" />
-  </div>
-  <button class="nav-buttons" id="Idownload-button"> DESCARGAR</button>
-  </div>
-  <div id="Icolumn3">
-  <div id="Icolumn3-image-container">
-      <img id ="Iimage-column3" src="images/${images[page][1]}" />
-  </div></div>
-</div>`;
+    <div id="Icolumn2">
+      <div id="Icolumn2-image-container">
+        <img id ="Iimage-column2" src="images/${images[page][0]}" />
+      </div>
+      <button class="nav-buttons" id="Idownload-button"> DESCARGAR</button>
+    </div>
+    <div id="Icolumn3">
+      <div id="Icolumn3-image-container">
+        <img id ="Iimage-column3" src="images/${images[page][1]}" />
+      </div>
+    </div>
+  </div>`;
 }
-function JLayOutGenerator(title, images, page) {
+function JLayOutGenerator(title, text, images, page) {
   let numberOfSlidesCarousel = images[page].length;
   // console.log(numberOfSlidesCarousel);
   return `
   <div id="Jlayout-container">
     <h1 class="titles" id="Jtitle">${title[page]}</h1>
+    <div id= "Jtext-container">
+      <p class="text" id="Jtext">${text[page]}</p>
+    </div>
     <div id="Jcarousel-container">
         <div id="Jcarousel">
           <img id="Jimage" src="images/${images[page][currentSlideNumberCarousel]}">
@@ -490,7 +504,7 @@ function closeModal(modal) {
 function masterRender() {
   renderPage();
   const pointedButton = document.getElementById("buttonParag1");
-  if(pointedButton && currentParagNumber===1){
+  if (pointedButton && currentParagNumber === 1) {
     pointedButton.style.backgroundColor = "#1d3e8b";
   }
   // console.log(pointedButton);
