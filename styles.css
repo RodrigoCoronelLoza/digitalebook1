@@ -1029,7 +1029,7 @@ body {
 }
 
 .Nlayout #Nlayout-container #Ntext-container {
-  height: 40%;
+  height: 60%;
   /* border: 1px solid purple; */
   display: flex;
 }
@@ -1057,7 +1057,7 @@ body {
 }
 .Nlayout #Nlayout-container #Nmodals-container {
   /* border: 1px solid violet; */
-  height: 50%;
+  height: 30%;
   display: flex;
   /* text-align: center; */
   /* padding-left: 25%; */
