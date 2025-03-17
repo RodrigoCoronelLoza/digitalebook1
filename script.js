@@ -169,25 +169,25 @@ function CLayOutGenerator(titles, text, page) {
   <h1 class="titles" id="Ctitle">${titles[page]}</h1>
   <div id="Cindex-buttons">
   
-  <div class="button-index-container"><button class="jump-buttons">Ir</button> Presentacion</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">Ir</button>Tema 1 Base Normativa</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>Actividad de inicio</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>1.1.Normativa internacional</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>1.2.Normativa nacional</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>1.3.Ministerio de educacion</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>Tema 2 Comprender el conflicto en el entorno educativo</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>Actividad de inicio</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>2.1.Conflicto en el ámbito educativo</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>2.2.Factores de riesgo en la Unidad Educativa</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">Ir</button>2.3.Resolución de conflictos</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>2.4.Protagonismo estudiantil para la resolución de conflictos</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>Tema 3</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>Actividad de inicio</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>3.1.Enfoque de derechos como base para el enfoque restaurativo</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>3.2.Enfoque restaurativo</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>3.3.Características y principios del enfoque restaurativo</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>Glosario</div>
-  <div class="button-index-container"><button class="jump-buttons">Ir</button>Bibliografia</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">Ir</button> Presentacion</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(5)">Ir</button>Tema 1 Base Normativa</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(5)">Ir</button>Actividad de inicio</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(5)">Ir</button>1.1.Normativa internacional</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(5)">Ir</button>1.2.Normativa nacional</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(5)">Ir</button>1.3.Ministerio de educacion</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(12)">Ir</button>Tema 2 Comprender el conflicto en el entorno educativo</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(12)">Ir</button>Actividad de inicio</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(12)">Ir</button>2.1.Conflicto en el ámbito educativo</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(12)">Ir</button>2.2.Factores de riesgo en la Unidad Educativa</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(12)">Ir</button>2.3.Resolución de conflictos</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(12)">Ir</button>2.4.Protagonismo estudiantil para la resolución de conflictos</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(34)">Ir</button>Tema 3</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(34)">Ir</button>Actividad de inicio</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(34)">Ir</button>3.1.Enfoque de derechos como base para el enfoque restaurativo</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(34)">Ir</button>3.2.Enfoque restaurativo</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(34)">Ir</button>3.3.Características y principios del enfoque restaurativo</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(50)">Ir</button>Glosario</div>
+  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(52)">Ir</button>Bibliografia</div>
   
   </div>
   </div>`;
@@ -290,7 +290,7 @@ function ILayOutGenerator(title, text, images, page) {
   <div id="Ilayout-container">
     <div id="Icolumn1">
       <div id="Icolumn1-image-container">
-        <img id="Iimage-column1" src="images/para_profundizar.jpeg" />
+        <img id="Iimage-column1" src="images/para-profundizar.jpeg" />
       </div>
       <h1 class="titles" id="Ititle">${title[page]}</h1>
       <div id="Itext-container">
