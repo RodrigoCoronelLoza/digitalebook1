@@ -31,7 +31,8 @@ function renderPage() {
     layoutData,
     currentPage,
     popUpData,
-    imagesData
+    imagesData,
+    buttonsNameData
   );
 
   // console.log(modalGenerator(popUpData, 4));
@@ -89,7 +90,15 @@ function setPage(value) {
   masterRender();
 }
 
-function createStructure(titles, text, layout, page, popUp, images) {
+function createStructure(
+  titles,
+  text,
+  layout,
+  page,
+  popUp,
+  images,
+  buttonName
+) {
   let currentLayout = layout[page];
   let content = "";
   if (currentLayout === "Alayout") {
@@ -101,7 +110,7 @@ function createStructure(titles, text, layout, page, popUp, images) {
   } else if (currentLayout === "Dlayout") {
     content = DLayOutGenerator(titles, text, page, images, popUp);
   } else if (currentLayout === "Elayout") {
-    content = ELayOutGenerator(images, page);
+    content = ELayOutGenerator(images, page, buttonName);
   } else if (currentLayout === "Flayout") {
     content = FLayOutGenerator(titles, text, images, page);
   } else if (currentLayout === "Glayout") {
@@ -117,7 +126,7 @@ function createStructure(titles, text, layout, page, popUp, images) {
   } else if (currentLayout === "Llayout") {
     content = LLayOutGenerator(titles, text, page, popUp);
   } else if (currentLayout === "Mlayout") {
-    content = MLayOutGenerator(titles, text, images, page);
+    content = MLayOutGenerator(titles, text, images, page, buttonName);
   } else if (currentLayout === "Nlayout") {
     content = NLayOutGenerator(titles, text, page, popUp);
   } else if (currentLayout === "Wlayout") {
@@ -187,7 +196,8 @@ function DLayOutGenerator(titles, text, page, images, popUp) {
   </div>`;
 }
 
-function ELayOutGenerator(images, page) {
+function ELayOutGenerator(images, page, buttonName) {
+  console.log(buttonName[0]);
   return `
   <div id="Elayout-container">
     <div id="Eimage-container">
@@ -195,10 +205,10 @@ function ELayOutGenerator(images, page) {
     </div>
     <div id="index-button-container">
       <div id="index-buttons">
-        <div class="button-index-container"><button class="jump-buttons">Actividad de inicio</button></div>
-        <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">1.1 Normativa internacional</button></div>
-        <div class="button-index-container"><button class="jump-buttons">1.2. Normativa nacional</button></div>
-        <div class="button-index-container"><button class="jump-buttons">1.3. Ministerio de educacion</button></div>
+        <div class="button-index-container"><button class="jump-buttons">${buttonName[page][0]}</button></div>
+        <div class="button-index-container"><button class="jump-buttons" onclick="setPage(2)">${buttonName[page][1]}</button></div>
+        <div class="button-index-container"><button class="jump-buttons">${buttonName[page][2]}</button></div>
+        <div class="button-index-container"><button class="jump-buttons">${buttonName[page][3]}</</button></div>
       </div>
     </div>
   </div>`;
@@ -355,7 +365,7 @@ function LLayOutGenerator(title, text, page, popUp) {
   </div>
   </div>`;
 }
-function MLayOutGenerator(title, text, images, page) {
+function MLayOutGenerator(title, text, images, page, buttonName) {
   let numberOfParagraphs = text[page].length;
   // console.log(numberOfParagraphs);
   return `
@@ -367,7 +377,7 @@ function MLayOutGenerator(title, text, images, page) {
     <div id="Mcarousel-container">
       <div id="Mbuttons">
         <div id="Mbuttons-container">
-          ${MbuttonGenerator(numberOfParagraphs)}
+          ${MbuttonGenerator(numberOfParagraphs, page, buttonName)}
         </div>
       </div>
       <div id="Mparag-container">
@@ -376,12 +386,12 @@ function MLayOutGenerator(title, text, images, page) {
     </div>
   </div>`;
 }
-function MbuttonGenerator(numberOfParagraphs) {
+function MbuttonGenerator(numberOfParagraphs, page, buttonName) {
   let result = "";
   for (let i = 1; i < numberOfParagraphs; i++) {
     result =
       result +
-      `<button class="paragButton" id="buttonParag${i}" onclick ="setParagh(${i})" >Parrafo${i}</button>`;
+      `<button class="paragButton" id="buttonParag${i}" onclick ="setParagh(${i})" >${buttonName[page][i-1]}</button>`;
   }
   return result;
 }
