@@ -1,4 +1,8 @@
+let candidate = Number(localStorage["boo1Unefco"]);
 let currentPage = 0;
+if (candidate > -1 && candidate < Object.keys(textData).length - 1) {
+  currentPage = candidate;
+}
 let currentSlideNumberCarousel = 0;
 let currentParagNumber = 1;
 
@@ -34,15 +38,14 @@ function renderPage() {
     imagesData,
     buttonsNameData
   );
+  console.log(Number(localStorage["boo1Unefco"]));
 
   // console.log(modalGenerator(popUpData, 4));
 }
 
 const handleDomCLick = (event) => {
   const clickedBtn = event.target;
-  console.log(clickedBtn);
   const classIdentifier = clickedBtn.className.slice(0, 4);
-  console.log(classIdentifier);
   let modal = {};
   if (classIdentifier === "open") {
     modal = document.querySelector(clickedBtn.dataset.modalTarget);
@@ -73,6 +76,7 @@ function nextPage() {
     currentPage++;
     setSlidetoInitial();
     setParagh(1);
+    cachePage();
     masterRender();
   }
 }
@@ -80,6 +84,7 @@ function nextPage() {
 function prevPage() {
   if (currentPage > 0) {
     currentPage--;
+    cachePage();
     masterRender();
   }
 }
@@ -87,7 +92,16 @@ function prevPage() {
 function setPage(value) {
   // console.log(value);
   currentPage = value;
+  setSlidetoInitial();
+  setParagh(1);
+  cachePage();
   masterRender();
+}
+
+function cachePage() {
+  let currentPageString = String(currentPage);
+  localStorage["boo1Unefco"] = currentPageString;
+  // console.log(currentPageString);
 }
 
 function createStructure(
@@ -197,7 +211,6 @@ function DLayOutGenerator(titles, text, page, images, popUp) {
 }
 
 function ELayOutGenerator(images, page, buttonName) {
-  console.log(buttonName[0]);
   return `
   <div id="Elayout-container">
     <div id="Eimage-container">
@@ -323,7 +336,6 @@ function JLayOutGenerator(title, text, images, page) {
 function nextSlide(numberOfSlides) {
   if (currentSlideNumberCarousel < numberOfSlides - 1) {
     currentSlideNumberCarousel++;
-    console.log(currentSlideNumberCarousel);
     masterRender();
   }
 }
@@ -331,9 +343,8 @@ function nextSlide(numberOfSlides) {
 function prevSlide() {
   if (currentSlideNumberCarousel > 0) {
     currentSlideNumberCarousel--;
+    masterRender();
   }
-  console.log(currentSlideNumberCarousel);
-  masterRender();
 }
 
 function setSlidetoInitial() {
@@ -391,7 +402,9 @@ function MbuttonGenerator(numberOfParagraphs, page, buttonName) {
   for (let i = 1; i < numberOfParagraphs; i++) {
     result =
       result +
-      `<button class="paragButton" id="buttonParag${i}" onclick ="setParagh(${i})" >${buttonName[page][i-1]}</button>`;
+      `<button class="paragButton" id="buttonParag${i}" onclick ="setParagh(${i})" >${
+        buttonName[page][i - 1]
+      }</button>`;
   }
   return result;
 }
