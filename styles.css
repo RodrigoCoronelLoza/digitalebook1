@@ -27,7 +27,7 @@ body {
   margin-top: 2%;
   margin-right: auto;
   margin-left: auto;
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   /* margin-bottom: 5%; */
   height: 90%;
 }
@@ -54,7 +54,7 @@ body {
   bottom: 1em;
   /* font-size: 1.1em; */
   font-size: 1.2vw;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 /* #book-container #big-container {
@@ -95,7 +95,7 @@ body {
   left: 10%;
   /* margin-left: 250px; */
   /* margin-bottom: 100px; */
-  width:20vw;
+  width: 20vw;
   height: 10%;
   /* background-color: black; */
   max-width: 80%;
@@ -139,7 +139,7 @@ body {
 }
 #menu-header {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 7%;
 }
 #menu-buttons {
@@ -166,7 +166,7 @@ body {
 }
 
 #adv-buttons {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   text-align: right;
   height: 7%;
 }
@@ -186,8 +186,8 @@ body {
   padding: 2%;
   line-height: 1em;
   height: 80%;
-  font-size: 1.2vw;
-  border: 1px solid green;
+  font-size: 1.2vmax;
+  /* border: 1px solid green; */
 }
 
 .Blayout #Blayout-container {
@@ -250,7 +250,7 @@ body {
   /* border: 1px solid orange; */
   height: 5%;
   /* width:70%; */
-  padding: 2%;
+  padding: 1.5%;
 }
 
 .Clayout .button-index-container .jump-buttons {
@@ -267,7 +267,7 @@ body {
   /* margin: 30px; */
   /* line-height: 1.6; */
   height: 80%;
-  font-size: 1.2vw;
+  font-size: 1.2vmax;
 }
 .Dlayout h1 {
   /* text-align: left;
@@ -331,7 +331,9 @@ body {
 .Dlayout #Dtext {
   /* background-color: purple; */
   width: 55%;
-  padding: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  /* margin-top: -2%; */
   /* text-align: justify; */
 }
 
