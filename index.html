@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <script src="text.js"></script>
+    <script src="text_2.js"></script>
   </head>
   <body>
     <div id="book-container">
@@ -18,7 +18,7 @@
       </div>
       <div id="menu-header">
         <div id="menu-buttons">
-          <button class="jump-buttons" onclick="setPage(2)">&#x2302</button>
+          <button class="jump-buttons"id="home-button" onclick="setPage(2)">&#x2302</button>
           <button class="jump-buttons" onclick="setPage(5)">Tema1</button>
           <button class="jump-buttons" onclick="setPage(12)">Tema2</button>
           <button class="jump-buttons" onclick="setPage(34)">Tema3</button>
@@ -33,11 +33,11 @@
       
 
       <div id="adv-buttons">
-        <button class="nav-buttons" onclick="prevPage()">⬅ Anterior</button>
+        <button class="nav-buttons" onclick="prevPage()">⬅Anterior</button>
         <button class="jump-buttons" id="home-button" onclick="setPage(2)">
           &#x2302
         </button>
-        <button class="nav-buttons" onclick="nextPage()">Siguiente ➡</button>
+        <button class="nav-buttons" onclick="nextPage()">Siguiente➡</button>
       </div>
     </div>
     <div id="overlay"></div>

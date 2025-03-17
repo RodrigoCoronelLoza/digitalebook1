@@ -431,14 +431,15 @@ function KLayOutGenerator(title, text, images, page) {
   </div>`;
 }
 function LLayOutGenerator(title, text, page, popUp) {
-  return `<div id="Llayout-container">
-  <h1 class="titles" id="Ltitle">${title[page]}</h1>
-  <div id="Ltext-container">
-  <p class="text" id="Ltext">${text[page]}</p>
-  </div>
-  <div id="Lmodals-container">
-  ${modalGenerator(popUp, page, 0)}
-  </div>
+  return `
+  <div id="Llayout-container">
+    <h1 class="titles" id="Ltitle">${title[page]}</h1>
+    <div id="Ltext-container">
+      <p class="text" id="Ltext">${text[page]}</p>
+    </div>
+    <div id="Lmodals-container">
+      ${modalGenerator(popUp, page, 0)}
+    </div>
   </div>`;
 }
 function MLayOutGenerator(title, text, images, page, buttonName) {
