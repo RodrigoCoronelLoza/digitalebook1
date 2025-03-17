@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}
 body {
   font-family: Roboto;
   /* display: flex; */
@@ -7,29 +12,29 @@ body {
   background-color: #c2e5ef;
   /* flex-direction: column; */
   margin: 0;
+  height: 100%;
+  padding: 0;
 }
 
 #book-container {
   width: 90%;
   background: white;
-  padding: 20px;
-  padding-top: 0px;
+  padding: 2%;
+  padding-top: 0;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 40px;
+  margin-top: 2%;
   margin-right: auto;
   margin-left: auto;
   /* border: 3px solid orange; */
   /* margin-bottom: 5%; */
-  height: 55em;
+  height: 90%;
 }
 
 #book-title-container {
   /* border: 1px solid green; */
-  padding-top: 0px;
-  margin-top: 0px;
-  /* height: 50%; */
+  height: 2%;
 }
 #book-title {
   color: white;
@@ -40,27 +45,41 @@ body {
   margin-left: auto;
   margin-right: 0;
   /* text-align: right; */
-  padding-right: 20px;
-  padding-top: 12px;
-  padding-bottom: 3px;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
   /* border-top: 30px; */
   position: relative;
-  bottom: 20px;
+  bottom: 1em;
   font-size: 1.2em;
   /* border: 3px solid gray; */
 }
 
-.caratula-container {
-  /* border: 1px solid red; */
-  height: 50em;
+/* #book-container #big-container {
+  height: 100%;
+  border: 4px solid gray;
+}
+#book-container #big-container {
+  height: 100%;
+  border: 4px solid gray;
+} */
+
+.Alayout {
+  /* border: 3px solid green; */
+  height: 90%;
+}
+
+.Alayout-container {
+  /* border: 5px solid red; */
+  height: 100%;
   /* width: 100%; */
   position: relative;
 }
-.caratula-container #caratula {
+.Alayout-container #caratula {
   /* content: url("images/caratula.jpeg"); */
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
   /* border-bottom: 0px;
   padding-bottom: 0px;
   margin-bottom: 0px; */
@@ -89,7 +108,7 @@ body {
   font-size: large;
   border-radius: 20px;
   width: 8em;
-  height: 2em;
+  height: 80%;
   border: none;
 }
 
@@ -110,17 +129,17 @@ body {
   border-radius: 20px;
   border: none;
   width: 4em;
-  height: 2em;
+  height: 80%;
 }
 
 #home-button {
-  width: 40px;
+  width: 3em;
   font-size: large;
 }
 #menu-header {
   display: flex;
   /* border: 1px solid red; */
-  height: 10%;
+  height: 7%;
 }
 #menu-buttons {
   text-align: left;
@@ -130,7 +149,7 @@ body {
 #menu-image-container {
   text-align: right;
   /* border: 1px solid violet; */
-  width: 30%;
+  width: 40%;
   height: 100%;
 }
 
@@ -140,7 +159,9 @@ body {
 }
 
 #adv-buttons {
+  /* border: 1px solid orange; */
   text-align: right;
+  height: 7%;
 }
 
 .titles {
@@ -150,11 +171,13 @@ body {
 
 .text {
   text-align: justify;
+  font-size: 1.2em;
+  line-height: 1.2em;
 }
 .Blayout {
-  padding: 30px;
-  line-height: 1.6;
-  height: 40em;
+  padding: 2%;
+  line-height: 1.6em;
+  height: 80%;
   /* border: 1px solid green; */
 }
 
@@ -188,9 +211,9 @@ body {
   /* justify-content: space-between; */
   line-height: 1.6;
   text-align: left;
-  padding: 30px;
-  height: 40em;
-  /* background-color: green; */
+  padding: 2%;
+  height: 80%;
+  font-size: 1.2em;
   /* border: 1px solid palegreen; */
 }
 
@@ -207,23 +230,34 @@ body {
 .Clayout #Cindex-buttons {
   column-count: 2;
   column-gap: 10px;
-  /* border: 1px solid seagreen; */
+  /* border: 3px solid seagreen; */
   height: 90%;
   position: relative;
 }
 
 .Clayout .button-index-container {
+  display: flex;
   /* background-color: red; */
+  /* border: 1px solid orange; */
+  height: 5%;
   /* width:70%; */
-  padding: 3px;
+  padding: 2%;
+}
+
+.Clayout .button-index-container .jump-buttons {
+  height: 150%;
+}
+
+.Clayout .button-index-container .index-text {
+  padding-left: 3em;
 }
 
 .Dlayout {
   /* border: 3px solid green; */
-  padding: 30px;
+  padding: 2%;
   /* margin: 30px; */
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
 }
 .Dlayout h1 {
   /* text-align: left;
@@ -304,9 +338,9 @@ body {
 }
 
 .Elayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid green; */
 }
 
@@ -371,9 +405,9 @@ body {
 }
 
 .Flayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid gray; */
 }
 
@@ -403,6 +437,7 @@ body {
 .Flayout #Flayout-container #Fcolumn2 #Flayout-img {
   width: 80%;
   height: 70%;
+  /* border: 1px solid blue; */
 }
 
 .Flayout #Flayout-container #Fcolumn2 #Fdownload-button {
@@ -412,10 +447,36 @@ body {
   font-size: 1.2em;
 }
 
+.Flayout #Flayout-container #Fcolumn2 #Flink-container {
+  margin-top: 2em;
+  width: 80%;
+  height: 15%;
+  font-size: 1.2em;
+  /* border: 1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #3c96d2;
+  border-radius: 15px;
+}
+
+.Flayout #Flayout-container #Fcolumn2 #Flink-container #Flink {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  /* border: 1px solid red; */
+}
+
 .Glayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 2px solid orchid; */
 }
 
@@ -480,9 +541,9 @@ body {
 }
 
 .Hlayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid palevioletred; */
 }
 
@@ -586,9 +647,9 @@ body {
 }
 
 .Ilayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid violet; */
 }
 
@@ -670,6 +731,32 @@ body {
   /* height: 70%; */
 }
 
+.Ilayout #Ilayout-container #Icolumn2 #Ilink-container {
+  margin-top: 2em;
+  width: 80%;
+  height: 15%;
+  font-size: 1.2em;
+  /* border: 1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #3c96d2;
+  border-radius: 15px;
+}
+
+.Ilayout #Ilayout-container #Icolumn2 #Ilink-container #Ilink {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  /* border: 1px solid red; */
+}
+
 .Ilayout #Ilayout-container #Icolumn3 {
   width: 25%;
   /* border: 1px solid pink; */
@@ -689,9 +776,9 @@ body {
 }
 
 .Jlayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid violet; */
 }
 
@@ -776,9 +863,9 @@ body {
 }
 
 .Klayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid violet; */
 }
 
@@ -824,9 +911,9 @@ body {
 }
 
 .Llayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid violet; */
 }
 
@@ -893,9 +980,9 @@ body {
 }
 
 .Mlayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid violet; */
 }
 
@@ -1011,9 +1098,9 @@ body {
 } */
 
 .Nlayout {
-  padding: 30px;
+  padding: 2%;
   line-height: 1.6;
-  height: 40em;
+  height: 80%;
   /* border: 1px solid violet; */
 }
 
@@ -1145,6 +1232,7 @@ body {
 
 .modal-body {
   padding: 10px 15px;
+  text-align: left;
 }
 
 .modal-body #image-modal-body {

@@ -37,7 +37,8 @@ function renderPage() {
     popUpData,
     imagesData,
     buttonsNameData,
-    buttonsPageNumberData
+    buttonsPageNumberData,
+    linksData
   );
   console.log(Number(localStorage["boo1Unefco"]));
 
@@ -113,7 +114,8 @@ function createStructure(
   popUp,
   images,
   buttonName,
-  buttonsPageNumber
+  buttonsPageNumber,
+  links
 ) {
   let currentLayout = layout[page];
   let content = "";
@@ -128,13 +130,13 @@ function createStructure(
   } else if (currentLayout === "Elayout") {
     content = ELayOutGenerator(images, page, buttonName, buttonsPageNumber);
   } else if (currentLayout === "Flayout") {
-    content = FLayOutGenerator(titles, text, images, page);
+    content = FLayOutGenerator(titles, text, images, page, links);
   } else if (currentLayout === "Glayout") {
     content = GLayOutGenerator(titles, text, page, popUp);
   } else if (currentLayout === "Hlayout") {
     content = HLayOutGenerator(titles, text, page, popUp);
   } else if (currentLayout === "Ilayout") {
-    content = ILayOutGenerator(titles, text, images, page);
+    content = ILayOutGenerator(titles, text, images, page, links);
   } else if (currentLayout === "Jlayout") {
     content = JLayOutGenerator(titles, text, images, page);
   } else if (currentLayout === "Klayout") {
@@ -152,8 +154,13 @@ function createStructure(
 }
 
 function ALayoutGenerator(titles, text, page) {
-  return `<div class="caratula-container">
-  <img id="caratula" src="images/caratula.jpeg"> <div class="button-caratula-container"><button class="nav-buttons" id="comenzar-button" onclick="nextPage()">Comienza</button></div></div>  `;
+  return `
+  <div class="Alayout-container">
+    <img id="caratula" src="images/caratula.jpeg">
+      <div class="button-caratula-container">
+        <button class="nav-buttons" id="comenzar-button" onclick="nextPage()">Comienza</button>
+      </div>
+  </div>  `;
 }
 
 function BLayOutGenerator(titles, text, page) {
@@ -168,29 +175,81 @@ function BLayOutGenerator(titles, text, page) {
 function CLayOutGenerator(titles, text, page) {
   return ` 
   <div id="Clayout-container">
-  <h1 class="titles" id="Ctitle">${titles[page]}</h1>
-  <div id="Cindex-buttons">
-  
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(3)">Ir</button> Presentacion</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(5)">Ir</button>TEMA 1: BASE NORMATIVA</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(7)">Ir</button>Normativa internacional</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(8)">Ir</button>Normativa nacional</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(10)">Ir</button>Protocolo de prevención</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(11)">Ir</button>Estrategias para la Prevención de Conflictos</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(12)">Ir</button>TEMA 2: COMPREDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(15)">Ir</button>El conflicto y sus características </div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(19)">Ir</button>Conflictos entre estudiantes </div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(22)">Ir</button>Factores de riesgo en la unidad educativa</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(24)">Ir</button>Violencia en el ámbito educativo </div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(26)">Ir</button>Glosario de violencia </div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(34)">Ir</button>TEMA 3: ENFOQUE RESTAURATIVO</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(38)">Ir</button>Diferencias entre el enfoque restaurativo y punitivo en el ámbito educativo</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(42)">Ir</button>Características y principios del enfoque restaurativo</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(45)">Ir</button>Ventana de la disciplina social</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(51)">Ir</button>Glosario</div>
-  <div class="button-index-container"><button class="jump-buttons" onclick="setPage(52)">Ir</button>Bibliografia</div>
-  
-  </div>
+    <h1 class="titles" id="Ctitle">${titles[page]}</h1>
+    <div id="Cindex-buttons">
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(3)">Ir</button> 
+        <p class="index-text">Presentacion</p>
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(5)">Ir</button>
+        <p class="index-text">TEMA 1: BASE NORMATIVA</p> 
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(7)">Ir</button>
+        <p class="index-text">Normativa internacional</p>
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(8)">Ir</button>
+        <p class="index-text">Normativa nacional</p>
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(10)">Ir</button>
+        <p class="index-text">Protocolo de prevención</p>
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(11)">Ir</button>
+        <p class="index-text">Estrategias para la Prevención de Conflictos</p>   
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(12)">Ir</button>
+        <p class="index-text">TEMA 2: COMPREDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</p>   
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(15)">Ir</button>
+        <p class="index-text">El conflicto y sus características</p>     
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(19)">Ir</button>
+        <p class="index-text">Conflictos entre estudiantes</p>       
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(22)">Ir</button>
+        <p class="index-text">Factores de riesgo en la unidad educativa</p>       
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(24)">Ir</button>
+        <p class="index-text">Violencia en el ámbito educativo</p>       
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(26)">Ir</button>
+        <p class="index-text">Glosario de violencia</p>         
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(34)">Ir</button>
+        <p class="index-text">TEMA 3: ENFOQUE RESTAURATIVO</p>         
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(38)">Ir</button>
+        <p class="index-text">Diferencias entre el enfoque restaurativo y punitivo en el ámbito educativo</p>         
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(42)">Ir</button>
+        <p class="index-text">Características y principios del enfoque restaurativo</p>         
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(45)">Ir</button>
+        <p class="index-text">Ventana de la disciplina social</p>         
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(51)">Ir</button>
+        <p class="index-text">Glosario</p>         
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(52)">Ir</button>
+        <p class="index-text">Bibliografia</p>          
+      </div>
+    </div>
   </div>`;
 }
 
@@ -229,20 +288,20 @@ function ELayOutGenerator(images, page, buttonName, buttonsPageNumber) {
   // return `<div>${images[page]}</div>`;
 }
 
-function FLayOutGenerator(title, text, images, page) {
+function FLayOutGenerator(title, text, images, page, links) {
   return `
   <div id="Flayout-container">
     <div id="Fcolumn1">
-      <img id="act-inicio-img" src="images/actividad_inicio.png">
+      <img id="act-inicio-img" src="images/${images[page][0]}">
       <h1 class="titles">${title[page]}</h1>
       <p class="text"> ${text[page]}</p>
     </div>
     <div id="Fcolumn2">
-      <img id="Flayout-img" src="images/${images[page]}">
-      <button class="nav-buttons" id="Fdownload-button"> DESCARGAR</button>
-      <!--<div>
-      <a href="https://docs.google.com/document/d/1279QXm7hHXpcICKyRduFxn11gL_ShQEi/edit?usp=drive_link&ouid=118068284416475194361&rtpof=true&sd=true">DESCARGA 2</a>
-      </div>-->
+      <img id="Flayout-img" src="images/${images[page][1]}">
+      <!--<button class="nav-buttons" id="Fdownload-button"> DESCARGAR</button> -->
+      <div id="Flink-container">
+        <a id="Flink" href="${links[page]}">DESCARGAR</a>
+      </div>
     </div>
   </div>`;
 }
@@ -288,7 +347,7 @@ function HLayOutGenerator(title, text, page, popUp) {
     </div>
   </div>`;
 }
-function ILayOutGenerator(title, text, images, page) {
+function ILayOutGenerator(title, text, images, page, links) {
   // console.log(images[page][0]);
   return `
   <div id="Ilayout-container">
@@ -305,7 +364,9 @@ function ILayOutGenerator(title, text, images, page) {
       <div id="Icolumn2-image-container">
         <img id ="Iimage-column2" src="images/${images[page][0]}" />
       </div>
-      <button class="nav-buttons" id="Idownload-button"> DESCARGAR</button>
+      <div id="Ilink-container">
+        <a id="Ilink" href="${links[page]}">DESCARGAR</a>
+      </div>
     </div>
     <div id="Icolumn3">
       <div id="Icolumn3-image-container">
