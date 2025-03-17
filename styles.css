@@ -171,13 +171,14 @@ body {
 
 .text {
   text-align: justify;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   line-height: 1.2em;
 }
 .Blayout {
   padding: 2%;
-  line-height: 1.6em;
+  line-height: 1em;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 1px solid green; */
 }
 
@@ -213,7 +214,7 @@ body {
   text-align: left;
   padding: 2%;
   height: 80%;
-  font-size: 1.2em;
+  font-size: 1.2vw;
   /* border: 1px solid palegreen; */
 }
 
@@ -258,6 +259,7 @@ body {
   /* margin: 30px; */
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
 }
 .Dlayout h1 {
   /* text-align: left;
@@ -341,6 +343,7 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 1px solid green; */
 }
 
@@ -408,6 +411,7 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 1px solid gray; */
 }
 
@@ -477,6 +481,7 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 2px solid orchid; */
 }
 
@@ -489,7 +494,7 @@ body {
 .Glayout #Glayout-container #Grow1 {
   /* border: 2px solid black; */
   width: 100%;
-  height: 30%;
+  height: 45%;
   /* padding: 20px; */
 }
 
@@ -512,7 +517,7 @@ body {
 .Glayout #Glayout-container #Grow3 {
   /* border: 2px solid green; */
   width: 100%;
-  height: 60%;
+  height: 45%;
   display: flex;
 }
 
@@ -542,8 +547,9 @@ body {
 
 .Hlayout {
   padding: 2%;
-  line-height: 1.6;
+  line-height: 1em;
   height: 80%;
+  font-size: 1.1vw;
   /* border: 1px solid palevioletred; */
 }
 
@@ -650,6 +656,7 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 1px solid violet; */
 }
 
@@ -779,6 +786,8 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
+
   /* border: 1px solid violet; */
 }
 
@@ -866,6 +875,7 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 1px solid violet; */
 }
 
@@ -914,6 +924,7 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 1px solid violet; */
 }
 
@@ -983,6 +994,7 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 1px solid violet; */
 }
 
@@ -1101,6 +1113,7 @@ body {
   padding: 2%;
   line-height: 1.6;
   height: 80%;
+  font-size: 1.2vw;
   /* border: 1px solid violet; */
 }
 
