@@ -184,9 +184,9 @@ body {
 }
 .Blayout {
   padding: 2%;
-  line-height: 1em;
+  line-height: 1.1em;
   height: 80%;
-  font-size: 1.2vmax;
+  font-size: 1.1vmax;
   /* border: 1px solid green; */
 }
 
@@ -197,10 +197,11 @@ body {
 .Blayout #Btitle {
   /* border: 1px solid red; */
   margin: 0;
+  height: 5%;
 }
 
 .Blayout #Blayout-container #Btext-container {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   /* border: 1px solid blue; */
   margin: 0;
   height: 90%;
@@ -210,7 +211,7 @@ body {
 .Blayout #Blayout-container #Btext {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 45%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
