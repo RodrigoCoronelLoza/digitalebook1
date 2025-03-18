@@ -328,7 +328,7 @@ const textData = {
 
   51: "UNEFCO. (2022). CICLO: PROMOVIENDO LA CONVIVENCIA PACÍFICA Y ARMÓNICA EN LAS UNIDADES EDUCATIVAS. Tarija, Bolivia: UNEFCO.  <br> Oscar Vasquez. (2018). Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas Basada en la experiencia de la Fundación Terre des hommes en el Perú (2011-2017). Lima, Perú: Pixel Gráfico Impresores S.A.C. <br> Vargas, G. (2019). Factores protectores y afrontamiento de riesgos asociados al uso de sustancias psicoactivas en adolescentes y jóvenes. La Paz, Bolivia: WA-GUI. <br> Terres des hommes. (2014). Auditoría Social de niños, niñas y adolescentes ¿Es tiempo de derechos? Cochabamba, Bolivia: Kipus. <br> Hommes, T. d. (2018). Prevención de la violencia escolar y la convivencia pacífica. Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas. Perú: Pixel Gráfico Impresores S.A.C. <br> Progettomondo.Mlal, EDUCO, FUDEP. (2018). Prácticas restaurativas para la prevención y gestion de conflictos en el ámbito educativo. La Paz, Bolivia: Imprenta Cerro Azul S.R.L. <br> Oscar Vasquez. (2018). Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas Basada en la experiencia de la Fundación Terre des hommes en el Perú (2011-2017). Lima, Perú: Pixel Gráfico Impresores S.A.C. <br> Vargas, G. (2019). Factores protectores y afrontamiento de riesgos asociados al uso de sustancias psicoactivas en adolescentes y jóvenes. La Paz, Bolivia: WA-GUI. <br> Terres des hommes. (2014). Auditoría Social de niños, niñas y adolescentes ¿Es tiempo de derechos? Cochabamba, Bolivia: Kipus. <br> Hommes, T. d. (2018). Prevención de la violencia escolar y la convivencia pacífica. Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas. Perú: Pixel Gráfico Impresores S.A.C. <br> Progettomondo.Mlal, EDUCO, FUDEP. (2018). Prácticas restaurativas para la prevención y gestion de conflictos en el ámbito educativo. La Paz, Bolivia: Imprenta Cerro Azul S.R.L.",
 
-  52: "texto a remplazar",
+  // 52: "texto a remplazar",
 
   //   53: "texto a remplazar",
 
@@ -1016,7 +1016,7 @@ const popUpData = {
   49: "",
   50: "",
   51: "",
-  52: " ",
+  // 52: " ",
 
   //   14: [
   //     {
@@ -1111,7 +1111,7 @@ const imagesData = {
   49: "",
   50: "",
   51: "",
-  52: " ",
+  // 52: " ",
 
   //   14: "",
 };
@@ -1185,7 +1185,7 @@ const buttonsNameData = {
   49: "",
   50: "",
   51: "",
-  52: "",
+  // 52: "",
 
   //   12: ["Boton1 ", "Boton2 ", "Boton3 "],
   //   13: "",
@@ -1245,7 +1245,7 @@ const buttonsPageNumberData = {
   49: "",
   50: "",
   51: "",
-  52: "",
+  // 52: "",
 
   //   12: ["Boton1 ", "Boton2 ", "Boton3 "],
   //   13: "",
@@ -1304,5 +1304,5 @@ const linksData = {
   49: "",
   50: "",
   51: "",
-  52: "",
+  // 52: "",
 };
