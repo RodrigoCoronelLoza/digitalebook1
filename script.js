@@ -242,11 +242,11 @@ function CLayOutGenerator(titles, text, page) {
         <p class="index-text">Ventana de la disciplina social</p>         
       </div>
       <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(51)">Ir</button>
+        <button class="jump-buttons" onclick="setPage(50)">Ir</button>
         <p class="index-text">Glosario</p>         
       </div>
       <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(52)">Ir</button>
+        <button class="jump-buttons" onclick="setPage(51)">Ir</button>
         <p class="index-text">Bibliografia</p>          
       </div>
     </div>
