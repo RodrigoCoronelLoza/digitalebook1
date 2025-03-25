@@ -13,6 +13,7 @@ function renderPage() {
   const advButton = document.getElementById("adv-buttons");
 
   const overlay = document.getElementById("overlay");
+  const indexPermanent = document.getElementById("index-permanent");
 
   pageContent.addEventListener("click", handleDomCLick);
   overlay.addEventListener("click", handleOverlayClick);
@@ -21,10 +22,18 @@ function renderPage() {
     menuHeader.style.visibility = "hidden";
     titleContainer.style.display = "none";
     advButton.style.display = "none";
+    // indexPermanent.style.visibility = "hidden";
   } else {
     menuHeader.style.visibility = "visible";
     titleContainer.style.display = "block";
     advButton.style.display = "block";
+    // indexPermanent.style.visibility = "visible";
+  }
+
+  if (currentPage === 0 || currentPage === 2) {
+    indexPermanent.style.display = "none";
+  } else {
+    indexPermanent.style.display = "block";
   }
 
   pageContent.className = layoutData[currentPage];
@@ -40,11 +49,418 @@ function renderPage() {
     buttonsPageNumberData,
     linksData
   );
+
+  colorButton();
   console.log(Number(localStorage["boo1Unefco"]));
 
   // console.log(modalGenerator(popUpData, 4));
 }
 
+function colorButton() {
+  const allButtons = document.getElementById("index-permanent");
+  const indexButton1 = document.getElementById("index-button1");
+  const indexButton2 = document.getElementById("index-button2");
+  const indexButton3 = document.getElementById("index-button3");
+  const indexButton4 = document.getElementById("index-button4");
+  const indexButton5 = document.getElementById("index-button5");
+  const indexButton6 = document.getElementById("index-button6");
+  const indexButton7 = document.getElementById("index-button7");
+  const indexButton8 = document.getElementById("index-button8");
+  const indexButton9 = document.getElementById("index-button9");
+  const indexButton10 = document.getElementById("index-button10");
+  const indexButton11 = document.getElementById("index-button11");
+  const indexButton12 = document.getElementById("index-button12");
+  const indexButton13 = document.getElementById("index-button13");
+  const indexButton14 = document.getElementById("index-button14");
+  const indexButton15 = document.getElementById("index-button15");
+  const indexButton16 = document.getElementById("index-button16");
+  const indexButton17 = document.getElementById("index-button17");
+  const indexButton18 = document.getElementById("index-button18");
+  const indexButton19 = document.getElementById("index-button19");
+
+  if (currentPage >= 0 && currentPage <= 4) {
+    // allButtons.style.fontWeight = "normal";
+    indexButton1.style.fontWeight = "bold";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 5 && currentPage <= 6) {
+    indexButton2.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage === 7) {
+    indexButton3.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 8 && currentPage <= 9) {
+    indexButton4.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage === 10) {
+    indexButton5.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage === 11) {
+    indexButton6.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 12 && currentPage <= 16) {
+    indexButton7.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 17 && currentPage <= 18) {
+    indexButton8.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 19 && currentPage <= 22) {
+    indexButton9.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage === 23) {
+    indexButton10.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 24 && currentPage <= 25) {
+    indexButton11.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 26 && currentPage <= 32) {
+    indexButton12.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 33 && currentPage <= 34) {
+    indexButton13.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 35 && currentPage <= 37) {
+    indexButton14.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 38 && currentPage <= 40) {
+    indexButton15.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 41 && currentPage <= 43) {
+    indexButton16.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage >= 44 && currentPage <= 48) {
+    indexButton17.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage === 49) {
+    indexButton18.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton19.style.fontWeight = "normal";
+  } else if (currentPage === 50) {
+    indexButton19.style.fontWeight = "bold";
+    indexButton1.style.fontWeight = "normal";
+    indexButton2.style.fontWeight = "normal";
+    indexButton3.style.fontWeight = "normal";
+    indexButton4.style.fontWeight = "normal";
+    indexButton5.style.fontWeight = "normal";
+    indexButton6.style.fontWeight = "normal";
+    indexButton7.style.fontWeight = "normal";
+    indexButton8.style.fontWeight = "normal";
+    indexButton9.style.fontWeight = "normal";
+    indexButton10.style.fontWeight = "normal";
+    indexButton11.style.fontWeight = "normal";
+    indexButton12.style.fontWeight = "normal";
+    indexButton13.style.fontWeight = "normal";
+    indexButton14.style.fontWeight = "normal";
+    indexButton15.style.fontWeight = "normal";
+    indexButton16.style.fontWeight = "normal";
+    indexButton17.style.fontWeight = "normal";
+    indexButton18.style.fontWeight = "normal";
+  }
+}
 const handleDomCLick = (event) => {
   const clickedBtn = event.target;
   const classIdentifier = clickedBtn.className.slice(0, 4);
@@ -156,7 +572,7 @@ function createStructure(
 function ALayoutGenerator(titles, text, page) {
   return `
   <div class="Alayout-container">
-    <img id="caratula" src="images/caratula.jpeg">
+    <img id="caratula" src="images/caratula.png">
       <div class="button-caratula-container">
         <button class="nav-buttons" id="comenzar-button" onclick="nextPage()">Comienza</button>
       </div>
@@ -164,11 +580,12 @@ function ALayoutGenerator(titles, text, page) {
 }
 
 function BLayOutGenerator(titles, text, page) {
-  return ` <div id="Blayout-container">
-  <h1 class="titles" id="Btitle">${titles[page]}</h1>
-  <div id="Btext-container">
-  <p class="text" id="Btext">${text[page]}</p>
-  </div>
+  return ` 
+  <div id="Blayout-container">
+    <h1 class="titles" id="Btitle">${titles[page]}</h1>
+    <div id="Btext-container">
+      <p class="text" id="Btext">${text[page]}</p>
+    </div>
   </div>`;
 }
 
@@ -179,7 +596,7 @@ function CLayOutGenerator(titles, text, page) {
     <div id="Cindex-buttons">
       <div class="button-index-container">
         <button class="jump-buttons" onclick="setPage(3)">Ir</button> 
-        <p class="index-text">Presentacion</p>
+        <p class="index-text">Presentaci&oacuten</p>
       </div>
       <div class="button-index-container">
         <button class="jump-buttons" onclick="setPage(5)">Ir</button>
@@ -203,10 +620,10 @@ function CLayOutGenerator(titles, text, page) {
       </div>
       <div class="button-index-container">
         <button class="jump-buttons" onclick="setPage(12)">Ir</button>
-        <p class="index-text">TEMA 2: COMPREDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</p>   
+        <p class="index-text">TEMA 2: COMPRENDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</p>   
       </div>
       <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(15)">Ir</button>
+        <button class="jump-buttons" onclick="setPage(17)">Ir</button>
         <p class="index-text">El conflicto y sus características</p>     
       </div>
       <div class="button-index-container">
@@ -214,7 +631,7 @@ function CLayOutGenerator(titles, text, page) {
         <p class="index-text">Conflictos entre estudiantes</p>       
       </div>
       <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(22)">Ir</button>
+        <button class="jump-buttons" onclick="setPage(23)">Ir</button>
         <p class="index-text">Factores de riesgo en la unidad educativa</p>       
       </div>
       <div class="button-index-container">
@@ -226,19 +643,23 @@ function CLayOutGenerator(titles, text, page) {
         <p class="index-text">Glosario de violencia</p>         
       </div>
       <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(34)">Ir</button>
+        <button class="jump-buttons" onclick="setPage(33)">Ir</button>
         <p class="index-text">TEMA 3: ENFOQUE RESTAURATIVO</p>         
+      </div>
+      <div class="button-index-container">
+        <button class="jump-buttons" onclick="setPage(35)">Ir</button>
+        <p class="index-text">La importancia del enfoque restaurativo</p>         
       </div>
       <div class="button-index-container">
         <button class="jump-buttons" onclick="setPage(38)">Ir</button>
         <p class="index-text">Diferencias entre el enfoque restaurativo y punitivo en el ámbito educativo</p>         
       </div>
       <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(42)">Ir</button>
+        <button class="jump-buttons" onclick="setPage(41)">Ir</button>
         <p class="index-text">Características y principios del enfoque restaurativo</p>         
       </div>
       <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(45)">Ir</button>
+        <button class="jump-buttons" onclick="setPage(44)">Ir</button>
         <p class="index-text">Ventana de la disciplina social</p>         
       </div>
       <div class="button-index-container">
