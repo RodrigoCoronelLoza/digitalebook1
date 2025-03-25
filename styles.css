@@ -10,19 +10,15 @@ html {
 }
 body {
   font-family: Roboto;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   background-color: var(--backgroud);
-  /* flex-direction: column; */
   margin: 0;
   height: 100%;
   padding: 0;
 }
 
 #book-container {
-  /* width: 90%; */
   background: white;
   padding: 2%;
   padding-top: 0;
@@ -33,100 +29,65 @@ body {
   margin-top: 2%;
   margin-right: 0.2%;
   margin-left: 2%;
-  /* border: 3px solid orange; */
-  /* margin-bottom: 5%; */
   height: 90%;
 }
 
 #book-title-container {
-  /* border: 1px solid green; */
   height: 2%;
-  /* margin-right: 2%; */
-  /* margin-bottom: 1em; */
 }
 #book-title {
   color: white;
   background-color: var(--primary);
   width: 40%;
-  /* height: 40px; */
   border-radius: 20px;
   margin-left: auto;
   margin-right: 0;
-  /* text-align: right; */
   padding-right: 2em;
   padding-top: 0.5em;
   padding-bottom: 0.3em;
-  /* border-top: 30px; */
   position: relative;
   bottom: 1em;
-  /* font-size: 1.1em; */
   font-size: 1.2vw;
-  /* border: 1px solid gray; */
 }
-
-/* #book-container #big-container {
-  height: 100%;
-  border: 4px solid gray;
-}
-#book-container #big-container {
-  height: 100%;
-  border: 4px solid gray;
-} */
 
 #page-container {
   width: 100%;
   height: 90%;
-  /* border: 3px solid blue; */
-  /* margin-right: 10%; */
   display: flex;
 }
 
-/* #page-content {
-  height: 100%;
-} */
+/* Primera planilla */
 
 .Alayout {
-  /* border: 3px solid green; */
   height: 100%;
   width: 100%;
   margin-right: 2%;
 }
 
 .Alayout-container {
-  /* border: 5px solid red; */
   height: 100%;
-  /* width: 100%; */
   position: relative;
 }
 .Alayout-container #caratula {
-  /* content: url("images/caratula.jpeg"); */
   height: 100%;
   width: 100%;
-  /* object-fit: contain; */
-  /* border-bottom: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0px; */
-  /* position: relative; */
 }
 
 .button-caratula-container {
   position: absolute;
-  /* position: fixed; */
   bottom: 15%;
   left: 4%;
-  /* margin-left: 250px; */
-  /* margin-bottom: 100px; */
   width: 20vw;
   height: 10%;
-  /* background-color: black; */
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Botones de navegacion */
 .nav-buttons {
   color: white;
-  background-color: #3c96d2;
+  background-color: var(--secondary);
   font-size: 1.2vw;
   border-radius: 100px;
   width: 6em;
@@ -146,56 +107,45 @@ body {
 .jump-buttons {
   color: white;
   background-color: var(--primary);
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 1.2vw;
   border-radius: 100px;
   border: none;
   width: 5em;
   height: 80%;
   box-shadow: 1px 1px 10px #00000071;
-  /* margin-right: 12px; */
 }
 
 #home-button {
   width: 2em;
-  /* font-size: large; */
 }
+/* Header del menu */
 #menu-header {
   margin-right: 2%;
   display: flex;
-  /* border: 1px solid red; */
   height: 10%;
 }
 #menu-buttons {
   text-align: left;
   width: 100%;
-  /* border: 1px solid aqua; */
 }
 #menu-image-container {
   text-align: right;
-  /* border: 1px solid violet; */
   width: 30%;
   height: 70%;
   margin: auto;
-  /* position: relative;
-  bottom: 0; */
 }
 
 #menu-image-container #logo {
   height: auto;
   width: 80%;
-  /* align-items: end; */
-  /* position: relative; */
-  /* bottom: 0; */
 }
-
+/* Botones inferiores */
 #adv-buttons {
-  /* border: 1px solid orange; */
   text-align: right;
   margin-right: 2%;
   height: 7%;
 }
-
+/* Titulos y texto en general */
 .titles {
   text-align: left;
   font-size: 1.8vw;
@@ -204,14 +154,11 @@ body {
 
 .text {
   text-align: justify;
-  /* font-size: 1.2em; */
-  /* line-height: 1.2em; */
 }
+/* Plantilla B */
 .Blayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* padding-top: 1%; */
   line-height: 1.1em;
   height: 100%;
   font-size: 1.1vmax;
@@ -219,18 +166,14 @@ body {
 }
 
 .Blayout #Blayout-container {
-  /* border: 1px solid black; */
   height: 100%;
 }
 .Blayout #Btitle {
-  /* border: 1px solid red; */
   margin: 0;
   height: 5%;
 }
 
 .Blayout #Blayout-container #Btext-container {
-  /* margin-top: 10px; */
-  /* border: 1px solid blue; */
   margin: 0;
   height: 90%;
   position: relative;
@@ -244,42 +187,34 @@ body {
   transform: translateY(-50%);
 }
 
+/* Plantilla C */
+
 .Clayout {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* line-height: 1.6; */
   text-align: left;
   padding: 2%;
   height: 80%;
   font-size: 1.1vw;
-  /* border: 1px solid palegreen; */
   width: 95%;
 }
 
 .Clayout #Clayout-container {
   height: 100%;
-  /* border: 1px green solid; */
 }
 
 .Clayout #Clayout-container #Ctitle {
-  /* border: 2px solid orange; */
   margin: 0;
   height: 10%;
 }
 .Clayout #Cindex-buttons {
   column-count: 2;
   column-gap: 10px;
-  /* border: 3px solid seagreen; */
   height: 90%;
   position: relative;
 }
 
 .Clayout .button-index-container {
   display: flex;
-  /* background-color: red; */
-  /* border: 1px solid orange; */
   height: 5%;
-  /* width:70%; */
   padding: 1.5%;
 }
 
@@ -291,59 +226,42 @@ body {
   padding-left: 3em;
 }
 
+/* Plantilla D */
+
 .Dlayout {
-  /* border: 1px solid green; */
   padding-left: 1%;
   padding-right: 1%;
-  /* padding: 2%; */
-  /* margin: 30px; */
-  /* line-height: 1.6; */
   height: 100%;
   font-size: 1.2vmax;
-  /* width: 90%; */
   width: 85%;
 }
 .Dlayout h1 {
-  /* text-align: left;
-  color: #3c96d2; */
-  /* border: 2px solid red; */
   margin: 0;
-  /* margin-top: 1%; */
   height: 10%;
 }
 
 .Dlayout #Dlayout-container {
-  /* background-color: yellow; */
   display: flex;
   height: 90%;
-  /* border: 3px solid blue; */
 }
 .Dlayout #Dlayout-container #Dbutton {
-  /* background-color: black; */
-  /* border: 1px solid red; */
   width: 5%;
   height: 100%;
-  /* border: 3px solid green; */
 }
 
 .Dlayout #Dlayout-container #Dbutton #Dmodals-container {
-  /* border-radius: 20px; */
   height: 100%;
 }
 
 .Dlayout #Dlayout-container #Dbutton #Dmodals-container #modal-container0 {
-  /* border: 1px solid black; */
   height: 10%;
   width: 100%;
 }
 
 .Dlayout #Dlayout-container #Dbutton #Dmodals-container #modal-container1 {
-  /* background-color: #1d3e8b; */
-  /* border: 1px solid black; */
   height: 90%;
   width: 100%;
   margin: 0;
-  /* border-radius: 20px; */
 }
 
 .Dlayout #Dbutton .open-button0 {
@@ -364,42 +282,35 @@ body {
 }
 
 .Dlayout #Dtext {
-  /* background-color: purple; */
   width: 55%;
   padding-left: 3%;
   padding-right: 3%;
-  /* margin-top: -2%; */
-  /* text-align: justify; */
 }
 
 .Dlayout #Dimage-container {
   background-color: var(--primary);
   width: 40%;
   height: 90%;
-  /* padding: 0.2%; */
 }
 
 .Dlayout #Dimage-container #Dimage {
-  /* content: url(images/layOutD.jpg); */
   height: 100%;
   width: 100%;
 }
 
+/* Plantilla E */
+
 .Elayout {
-  /* padding: 1%; */
-  /* line-height: 1.6; */
   padding-left: 1%;
   padding-right: 1%;
   height: 100%;
   font-size: 1.3vw;
-  /* border: 1px solid green; */
   width: 85%;
 }
 
 .Elayout #Elayout-container {
   display: flex;
   height: 100%;
-  /* border: 1px solid blue; */
 }
 
 .Elayout #Eimage-container {
@@ -411,28 +322,19 @@ body {
   height: 100%;
 }
 .Elayout #Elayout-container #index-button-container {
-  /* border: 1px solid black; */
   width: 40%;
   height: 100%;
-  /* text-align: center; */
-  /* margin: 10%;  */
-  /* margin-top: 10%; */
-  /* border: 3px solid black; */
   position: relative;
 }
 
 .Elayout #Elayout-container #index-button-container #index-buttons {
   width: 100%;
-
-  /* text-align: center; */
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  /* padding: 10%; */
-  /* border: 3px solid green; */
   height: 70%;
 }
 
@@ -441,10 +343,7 @@ body {
   #index-button-container
   #index-buttons
   .button-index-container {
-  /* border: 1px solid violet; */
-  /* padding: 15px; */
   height: 25%;
-  /* margin-top: 1px; */
 }
 
 .Elayout
@@ -457,44 +356,38 @@ body {
   font-size: 1.2em;
 }
 
+/* Plantilla F */
+
 .Flayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1.6; */
   height: 100%;
   font-size: 1.2vw;
-  /* border: 1px solid gray; */
   width: 85%;
 }
 
 .Flayout #Flayout-container {
   display: flex;
-  /* border: 1px solid green; */
   height: 100%;
 }
 
 .Flayout #Flayout-container #Fcolumn1 {
   width: 60%;
-  /* border: 1px solid red; */
   padding: 30px;
 }
 
 .Flayout #Flayout-container #Fcolumn1 #act-inicio-img {
-  /* border: 1px solid red; */
   height: 10%;
   width: 80%;
 }
 
 .Flayout #Flayout-container #Fcolumn2 {
   width: 40%;
-  /* border: 1px solid blue; */
 }
 
 .Flayout #Flayout-container #Fcolumn2 #Flayout-img {
   width: 80%;
   height: 70%;
-  /* border: 1px solid blue; */
 }
 
 .Flayout #Flayout-container #Fcolumn2 #Fdownload-button {
@@ -527,52 +420,40 @@ body {
   text-decoration: none;
   font-size: 1.2vw;
   color: white;
-  /* border: 1px solid red; */
 }
 
+/* Plantilla G */
+
 .Glayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1.6; */
   height: 100%;
   font-size: 1.2vw;
-  /* border: 1px solid orchid; */
   width: 85%;
 }
 
 .Glayout #Glayout-container {
   height: 100%;
-  /* border: 1px solid greenyellow; */
-  /* padding: 30px; */
 }
 
 .Glayout #Glayout-container #Grow1 {
-  /* border: 2px solid black; */
   width: 100%;
   height: 50%;
-  /* padding: 20px; */
 }
 
 .Glayout #Glayout-container #Grow1 #Gtitle1 {
-  /* border: 1px solid red; */
   margin: 0;
   height: 20%;
 }
 .Glayout #Glayout-container #Grow2 {
-  /* border: 2px solid blue; */
   width: 100%;
   height: 10%;
-  /* margin: 0; */
-  /* padding: 20px; */
 }
 .Glayout #Glayout-container #Grow2 #Gtitle2 {
   margin: 0;
-  /* border: 1px solid red; */
 }
 
 .Glayout #Glayout-container #Grow3 {
-  /* border: 2px solid green; */
   width: 100%;
   height: 50%;
   display: flex;
@@ -580,13 +461,11 @@ body {
 
 .Glayout #Grow3 #Gmodal-container {
   width: 40%;
-  /* border: 5px solid orange; */
   height: 90%;
 }
 
 .Glayout #Grow3 #Gnext-modal {
   width: 60%;
-  /* border: 5px solid pink; */
 }
 
 .Glayout #Grow3 #Gmodal-container #modal-container0 {
@@ -602,46 +481,37 @@ body {
   font-size: 1.2em;
 }
 
+/* Plantilla H */
+
 .Hlayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1em; */
   height: 95%;
   font-size: 1.1vw;
-  /* border: 1px solid palevioletred; */
   width: 85%;
 }
 
 .Hlayout #Hlayout-container {
   height: 100%;
-  /* border: 1px solid gray; */
   width: 100%;
 }
 
 .Hlayout #Hlayout-container #Hrow1 {
-  /* border: 1px solid green; */
   height: 50%;
   position: relative;
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Htitle1 {
-  /* border: 1px solid orange; */
   height: 15%;
   margin: 0;
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Htext1 {
   height: 35%;
-  /* border: 1px solid blue; */
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 {
-  /* margin: auto; */
-  /* margin-top: 1%; */
-  /* border: 2px solid pink; */
   text-align: center;
-  /* padding-left: 25%; */
   padding-right: auto;
   display: flex;
   justify-content: center;
@@ -651,28 +521,21 @@ body {
   width: 100%;
 }
 .Hlayout #Hlayout-container #Hrow2 {
-  /* border: 1px solid green; */
   height: 50%;
   position: relative;
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Htitle2 {
-  /* border: 1px solid orange; */
   height: 15%;
   margin: 0;
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Htext2 {
   height: 35%;
-  /* border: 1px solid blue; */
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 {
-  /* margin: auto; */
-  /* margin-top: 1%; */
-  /* border: 2px solid pink; */
   text-align: center;
-  /* padding-left: 25%; */
   padding-right: auto;
   display: flex;
   justify-content: center;
@@ -687,7 +550,6 @@ body {
 #modal-container2,
 #modal-container3,
 #modal-container4 {
-  /* border: 1px solid green; */
   margin-left: 2%;
   margin-right: 2%;
   height: 100%;
@@ -703,7 +565,6 @@ body {
   margin-left: 2%;
   margin-right: 2%;
   height: 100%;
-  /* font-size: 12em; */
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0,
@@ -732,34 +593,28 @@ body {
   font-size: 1.2em;
 }
 
+/* Plantilla I */
+
 .Ilayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1.6; */
   height: 100%;
   font-size: 1.2vw;
-  /* border: 1px solid violet; */
   width: 85%;
 }
 
 .Ilayout #Ilayout-container {
   height: 100%;
-  /* border: 1px solid green; */
   display: flex;
 }
 
 .Ilayout #Ilayout-container #Icolumn1 {
   width: 50%;
-  /* border: 1px solid blue; */
-  /* padding-left: 1%; */
-  /* padding-right: 1%; */
 }
 
 .Ilayout #Ilayout-container #Icolumn1 #Icolumn1-image-container {
   width: 100%;
   height: 30%;
-  /* border: 1px solid orange; */
 }
 
 .Ilayout
@@ -772,15 +627,11 @@ body {
 }
 
 .Ilayout #Ilayout-container #Icolumn1 #Ititle {
-  /* border: 1px solid green; */
   margin: 0;
 }
 
 .Ilayout #Ilayout-container #Icolumn1 #Itext-container {
-  /* border: 1px solid black; */
   height: 60%;
-  /* padding-left: 3%; */
-  /* padding-right: 3%; */
   position: relative;
 }
 
@@ -797,15 +648,12 @@ body {
 
 .Ilayout #Ilayout-container #Icolumn2 {
   width: 25%;
-  /* border: 1px solid yellowgreen; */
 }
 
 .Ilayout #Ilayout-container #Icolumn2-image-container {
-  /* width: 100%; */
   height: 60%;
   margin: 5%;
   margin-top: 20%;
-  /* border: 1px solid orange; */
 }
 
 .Ilayout #Ilayout-container #Icolumn2-image-container #Iimage-column2 {
@@ -818,7 +666,6 @@ body {
   width: 80%;
   height: 15%;
   font-size: 1.2em;
-  /* height: 70%; */
 }
 
 .Ilayout #Ilayout-container #Icolumn2 #Ilink-container {
@@ -826,7 +673,6 @@ body {
   width: 80%;
   height: 15%;
   font-size: 1.2em;
-  /* border: 1px solid black; */
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -844,20 +690,16 @@ body {
   text-decoration: none;
   font-size: 1.2vw;
   color: white;
-  /* border: 1px solid red; */
 }
 
 .Ilayout #Ilayout-container #Icolumn3 {
   width: 25%;
-  /* border: 1px solid pink; */
 }
 
 .Ilayout #Ilayout-container #Icolumn3-image-container {
-  /* width: 100%; */
   height: 80%;
   margin: 5%;
   margin-top: 20%;
-  /* border: 1px solid gray; */
 }
 
 .Ilayout #Ilayout-container #Icolumn3-image-container #Iimage-column3 {
@@ -865,52 +707,41 @@ body {
   height: 100%;
 }
 
+/* Plantilla J */
+
 .Jlayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1.6; */
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
-  /* border: 1px solid violet; */
 }
 
 .Jlayout #Jlayout-container {
-  /* border: 1px solid green; */
   height: 100%;
 }
 
 .Jlayout #Jlayout-container #Jtitle {
-  /* border: 1px solid orange; */
   height: 10%;
   margin: 0;
 }
 .Jlayout #Jlayout-container #Jtext-container {
   height: 10%;
-  /* border: 1px solid green; */
 }
 
 .Jlayout #Jlayout-container #Jcarousel-container {
-  /* border: 1px solid blue; */
   height: 80%;
   position: relative;
 }
 .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
-  /* border: 1px solid violet; */
   height: 100%;
   width: 80%;
   margin: 0;
-  /* margin-top: 0; */
-  /* margin-bottom: 0; */
-  /* margin-left: 25%;
-  margin-right: auto; */
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  /* margin: 20px; */
 }
 
 .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel #Jimage {
@@ -919,7 +750,6 @@ body {
 }
 
 .Jlayout #Jlayout-container #Jcarousel-container #JnextSlide-container {
-  /* border: 3px solid green; */
   position: absolute;
   margin: 0;
   bottom: 35%;
@@ -956,30 +786,26 @@ body {
   color: white;
 }
 
+/* Plantilla K */
+
 .Klayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1.6; */
   height: 100%;
   font-size: 1.2vw;
   width: 85%;
-  /* border: 1px solid violet; */
 }
 
 .Klayout #Klayout-container {
   height: 100%;
-  /* border: 1px solid green; */
 }
 .Klayout #Klayout-container #Ktitle {
-  /* border: 2px solid orange; */
   margin: 0;
   height: 10%;
 }
 .Klayout #Klayout-container #Ktext-container1,
 #Ktext-container2 {
   margin-top: 10px;
-  /* border: 1px solid blue; */
   margin: 0;
   height: 30%;
   position: relative;
@@ -998,9 +824,7 @@ body {
   background-color: var(--backgroud);
 }
 .Klayout #Klayout-container #Kimage-container {
-  /* border: 1px solid blue; */
   height: 30%;
-  /* padding: 20px; */
 }
 
 .Klayout #Klayout-container #Kimage-container #Kbanner {
@@ -1008,31 +832,27 @@ body {
   width: 100%;
 }
 
+/* Plantilla L */
+
 .Llayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1.6; */
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
-  /* border: 1px solid violet; */
 }
 
 .Llayout #Llayout-container {
   height: 100%;
-  /* border: 1px solid green; */
 }
 
 .Llayout #Llayout-container #Ltitle {
-  /* border: 1px solid orange; */
   margin: 0;
   height: 10%;
 }
 
 .Llayout #Llayout-container #Ltext-container {
   margin-top: 10px;
-  /* border: 1px solid blue; */
   margin: 0;
   height: 60%;
   position: relative;
@@ -1047,9 +867,7 @@ body {
 }
 
 .Llayout #Llayout-container #Lmodals-container {
-  /* border: 1px solid pink; */
   text-align: center;
-  /* padding-left: 25%; */
   padding-right: auto;
   display: flex;
   justify-content: center;
@@ -1062,7 +880,6 @@ body {
 #modal-container3,
 #modal-container4 {
   width: 20%;
-  /* border: 1px solid black; */
   margin-left: 2%;
   margin-right: 2%;
   height: 100%;
@@ -1081,31 +898,27 @@ body {
   font-size: 1.2em;
 }
 
+/* Plantilla M */
+
 .Mlayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1.6; */
   height: 95%;
   width: 85%;
   font-size: 1.2vw;
-  /* border: 1px solid violet; */
 }
 
 .Mlayout #Mlayout-container {
   height: 100%;
-  /* border: 1px solid green; */
 }
 
 .Mlayout #Mlayout-container #Mtitle {
-  /* border: 1px solid orange; */
   margin: 0;
   height: 10%;
 }
 
 .Mlayout #Mlayout-container #Mtext-container {
   margin-top: 2em;
-  /* border: 1px solid blue; */
   margin: 0;
   height: 30%;
   position: relative;
@@ -1120,71 +933,44 @@ body {
 }
 
 .Mlayout #Mcarousel-container {
-  /* border: 1px solid black; */
   height: 58%;
-  /* margin-top: 2%; */
   background-color: var(--backgroud);
   padding-top: 1em;
-  /* width: 60%; */
   justify-content: center;
 }
 
 .Mlayout #Mcarousel-container #Mbuttons {
-  /* border: 2px solid orange; */
   width: 80%;
   height: 14%;
   margin: auto;
-  /* padding: 3em; */
   position: relative;
   background-color: white;
-
-  /* margin: 20px; */
 }
 
 .Mlayout #Mcarousel-container #Mbuttons #Mbuttons-container {
   display: inline-block;
-  /* border: 1px solid greenyellow; */
   width: 96%;
   height: 100%;
   padding-left: 0%;
   margin-left: 2%;
-  /* align-items: left; */
   position: absolute;
   left: 0;
   bottom: 0;
-  /* background-color: white; */
-
-  /* margin: auto; */
-  /* margin: 20px; */
 }
 
 .Mlayout #Mcarousel-container #Mparag-container {
-  /* border: 1px solid #1d3e8b; */
   background-color: white;
-
-  /* border-radius: 20px; */
   width: 80%;
   height: 74%;
   margin: auto;
   padding-top: 1%;
-  /* position: relative; */
-  /* justify-content: center; */
-  /* margin: 20px; */
 }
 
 .Mlayout #Mcarousel-container #Mparag-container #Mparag {
-  /* border: 1px solid blue; */
-  /* width: 100%; */
   height: 100%;
   margin: 0;
   margin-left: 2%;
   margin-right: 2%;
-  /* position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); */
-  /* justify-content: center; */
-  /* margin: 20px; */
 }
 
 .Mlayout #Mcarousel-container #Mbuttons #Mbuttons-container .paragButton {
@@ -1195,39 +981,29 @@ body {
   border: none;
   width: 7em;
   margin-right: 1%;
-  /* width: 10%; */
 }
 
-/* .Mlayout #Mcarousel-container #Mbuttons #Mbuttons-container .paragButton:focus {
-  background-color: red;
-  color: black;
-} */
+/* Plantilla N */
 
 .Nlayout {
-  /* padding: 2%; */
   padding-left: 1%;
   padding-right: 1%;
-  /* line-height: 1.6; */
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
-  /* border: 1px solid violet; */
 }
 
 .Nlayout #Nlayout-container {
   height: 100%;
-  /* border: 1px solid green; */
 }
 
 .Nlayout #Nlayout-container #Ntitle {
-  /* border: 1px solid orange; */
   margin: 0;
   height: 10%;
 }
 
 .Nlayout #Nlayout-container #Ntext-container {
   height: 60%;
-  /* border: 1px solid purple; */
   display: flex;
 }
 
@@ -1235,8 +1011,6 @@ body {
 #Ntext-containerRight {
   height: 100%;
   width: 50%;
-  /* border: 1px solid blue; */
-  /* padding: 1%; */
   position: relative;
 }
 
@@ -1246,19 +1020,13 @@ body {
   margin-bottom: 0;
   margin-left: 3%;
   margin-right: 3%;
-  /* border: 1px solid blue; */
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .Nlayout #Nlayout-container #Nmodals-container {
-  /* border: 1px solid violet; */
   height: 30%;
-  display: flex;
-  /* text-align: center; */
-  /* padding-left: 25%; */
-  /* padding-right: auto; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -1266,7 +1034,6 @@ body {
 
 .Nlayout #Nlayout-container #Nmodals-container #modal-container0 {
   width: 30%;
-  /* border: 1px solid black; */
   margin-left: 10%;
   margin-right: 10%;
   height: 100%;
@@ -1274,7 +1041,6 @@ body {
 
 .Nlayout #Nlayout-container #Nmodals-container #modal-container1 {
   width: 30%;
-  /* border: 1px solid black; */
   margin-left: 10%;
   margin-right: 10%;
   height: 100%;
@@ -1297,21 +1063,16 @@ body {
   font-size: 1.2vw;
 }
 
+/* Barra lateral del indice */
+
 #index-permanent {
-  /* border: 2px solid #1d3e8b; */
   height: 95%;
   width: 15%;
   background-color: #e3f2fd;
-  /* border-radius: 2px; */
 }
 
 .index-element-container {
-  /* border: 1px solid green; */
-
   height: 5.5%;
-  /* margin: 0; */
-  /* margin-top: 1.5%; */
-  /* margin-bottom: 1.5%; */
 }
 
 .index-buttons {
@@ -1328,6 +1089,8 @@ body {
   background-color: var(--primary);
   color: white;
 }
+
+/* Pop-ups */
 
 .modal {
   position: fixed;

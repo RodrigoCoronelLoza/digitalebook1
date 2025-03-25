@@ -6,6 +6,7 @@ if (candidate > -1 && candidate < Object.keys(textData).length - 1) {
 let currentSlideNumberCarousel = 0;
 let currentParagNumber = 1;
 
+// Esta funcion hace la renderizacion de cada una de las paginas
 function renderPage() {
   const pageContent = document.getElementById("page-content");
   const titleContainer = document.getElementById("book-title-container");
@@ -22,12 +23,10 @@ function renderPage() {
     menuHeader.style.visibility = "hidden";
     titleContainer.style.display = "none";
     advButton.style.display = "none";
-    // indexPermanent.style.visibility = "hidden";
   } else {
     menuHeader.style.visibility = "visible";
     titleContainer.style.display = "block";
     advButton.style.display = "block";
-    // indexPermanent.style.visibility = "visible";
   }
 
   if (currentPage === 0 || currentPage === 2) {
@@ -37,7 +36,6 @@ function renderPage() {
   }
 
   pageContent.className = layoutData[currentPage];
-  //   pageContent.innerHTML = pageData.content;
   pageContent.innerHTML = createStructure(
     titlesData,
     textData,
@@ -49,13 +47,9 @@ function renderPage() {
     buttonsPageNumberData,
     linksData
   );
-
   colorButton();
-  console.log(Number(localStorage["boo1Unefco"]));
-
-  // console.log(modalGenerator(popUpData, 4));
 }
-
+//Poner color al indice de la barra lateral
 function colorButton() {
   const allButtons = document.getElementById("index-permanent");
   const indexButton1 = document.getElementById("index-button1");
@@ -79,7 +73,6 @@ function colorButton() {
   const indexButton19 = document.getElementById("index-button19");
 
   if (currentPage >= 0 && currentPage <= 4) {
-    // allButtons.style.fontWeight = "normal";
     indexButton1.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
@@ -461,6 +454,7 @@ function colorButton() {
     indexButton18.style.fontWeight = "normal";
   }
 }
+//Rastrear el click en en DOM dinamico
 const handleDomCLick = (event) => {
   const clickedBtn = event.target;
   const classIdentifier = clickedBtn.className.slice(0, 4);
@@ -473,22 +467,20 @@ const handleDomCLick = (event) => {
     closeModal(modal);
   } else if (classIdentifier === "para") {
     let targetIdButton = "buttonParag" + currentParagNumber;
-    // console.log(typeof targetIdButton);
     const pointedButton = document.getElementById(targetIdButton);
     pointedButton.style.backgroundColor = "#1d3e8b";
   }
 };
 
 const handleOverlayClick = (event) => {
-  //   console.log("en el overlay");
   const clickedBtn = event.target;
-  //   console.log(clickedBtn);
   const modals = document.querySelectorAll(".modal.active");
   modals.forEach((modal) => {
     closeModal(modal);
   });
 };
 
+//Siguiente pagina
 function nextPage() {
   if (currentPage < Object.keys(textData).length - 1) {
     currentPage++;
@@ -499,6 +491,7 @@ function nextPage() {
   }
 }
 
+//Pagina anterior
 function prevPage() {
   if (currentPage > 0) {
     currentPage--;
@@ -507,21 +500,21 @@ function prevPage() {
   }
 }
 
+//Pagina arbitraria
 function setPage(value) {
-  // console.log(value);
   currentPage = value;
   setSlidetoInitial();
   setParagh(1);
   cachePage();
   masterRender();
 }
-
+//Guardar en la memoria cache
 function cachePage() {
   let currentPageString = String(currentPage);
   localStorage["boo1Unefco"] = currentPageString;
-  // console.log(currentPageString);
 }
 
+//Crear el DOM dinamico
 function createStructure(
   titles,
   text,
@@ -568,7 +561,7 @@ function createStructure(
   }
   return content;
 }
-
+// Plantilla A
 function ALayoutGenerator(titles, text, page) {
   return `
   <div class="Alayout-container">
@@ -579,6 +572,7 @@ function ALayoutGenerator(titles, text, page) {
   </div>  `;
 }
 
+// Plantilla B
 function BLayOutGenerator(titles, text, page) {
   return ` 
   <div id="Blayout-container">
@@ -589,6 +583,7 @@ function BLayOutGenerator(titles, text, page) {
   </div>`;
 }
 
+// Plantilla C
 function CLayOutGenerator(titles, text, page) {
   return ` 
   <div id="Clayout-container">
@@ -674,6 +669,7 @@ function CLayOutGenerator(titles, text, page) {
   </div>`;
 }
 
+// Plantilla D
 function DLayOutGenerator(titles, text, page, images, popUp) {
   return `<h1 class="titles">${titles[page]}</h1>
   <div id="Dlayout-container">
@@ -691,6 +687,7 @@ function DLayOutGenerator(titles, text, page, images, popUp) {
   </div>`;
 }
 
+// Plantilla E
 function ELayOutGenerator(images, page, buttonName, buttonsPageNumber) {
   return `
   <div id="Elayout-container">
@@ -706,9 +703,9 @@ function ELayOutGenerator(images, page, buttonName, buttonsPageNumber) {
       </div>
     </div>
   </div>`;
-  // return `<div>${images[page]}</div>`;
 }
 
+// Plantilla F
 function FLayOutGenerator(title, text, images, page, links) {
   return `
   <div id="Flayout-container">
@@ -727,6 +724,7 @@ function FLayOutGenerator(title, text, images, page, links) {
   </div>`;
 }
 
+// Plantilla G
 function GLayOutGenerator(title, text, page, popUp) {
   return `
   <div id="Glayout-container">
@@ -744,8 +742,8 @@ function GLayOutGenerator(title, text, page, popUp) {
   </div>`;
 }
 
+// Plantilla H
 function HLayOutGenerator(title, text, page, popUp) {
-  // console.log(modalGenerator(popUp, page, 0));
   return `
   <div id="Hlayout-container">
     <div id="Hrow1">
@@ -768,8 +766,9 @@ function HLayOutGenerator(title, text, page, popUp) {
     </div>
   </div>`;
 }
+
+// Plantilla I
 function ILayOutGenerator(title, text, images, page, links) {
-  // console.log(images[page][0]);
   return `
   <div id="Ilayout-container">
     <div id="Icolumn1">
@@ -796,9 +795,10 @@ function ILayOutGenerator(title, text, images, page, links) {
     </div>
   </div>`;
 }
+
+// Plantilla J
 function JLayOutGenerator(title, text, images, page) {
   let numberOfSlidesCarousel = images[page].length;
-  // console.log(numberOfSlidesCarousel);
   return `
   <div id="Jlayout-container">
     <h1 class="titles" id="Jtitle">${title[page]}</h1>
@@ -819,6 +819,7 @@ function JLayOutGenerator(title, text, images, page) {
   </div>`;
 }
 
+//Carrusel siguiente
 function nextSlide(numberOfSlides) {
   if (currentSlideNumberCarousel < numberOfSlides - 1) {
     currentSlideNumberCarousel++;
@@ -826,6 +827,7 @@ function nextSlide(numberOfSlides) {
   }
 }
 
+//Carrusel anterior
 function prevSlide() {
   if (currentSlideNumberCarousel > 0) {
     currentSlideNumberCarousel--;
@@ -833,9 +835,12 @@ function prevSlide() {
   }
 }
 
+//Carrusel arbitrario
 function setSlidetoInitial() {
   currentSlideNumberCarousel = 0;
 }
+
+//Plantilla K
 function KLayOutGenerator(title, text, images, page) {
   return `
   <div id="Klayout-container">
@@ -851,6 +856,8 @@ function KLayOutGenerator(title, text, images, page) {
     </div>
   </div>`;
 }
+
+//Plantilla L
 function LLayOutGenerator(title, text, page, popUp) {
   return `
   <div id="Llayout-container">
@@ -863,9 +870,10 @@ function LLayOutGenerator(title, text, page, popUp) {
     </div>
   </div>`;
 }
+
+//Plantilla M
 function MLayOutGenerator(title, text, images, page, buttonName) {
   let numberOfParagraphs = text[page].length;
-  // console.log(numberOfParagraphs);
   return `
   <div id="Mlayout-container">
     <h1 class="titles" id="Mtitle">${title[page]}</h1>
@@ -884,6 +892,7 @@ function MLayOutGenerator(title, text, images, page, buttonName) {
     </div>
   </div>`;
 }
+
 function MbuttonGenerator(numberOfParagraphs, page, buttonName) {
   let result = "";
   for (let i = 1; i < numberOfParagraphs; i++) {
@@ -900,6 +909,8 @@ function setParagh(numberToSet) {
   currentParagNumber = numberToSet;
   masterRender();
 }
+
+//Plantilla N
 function NLayOutGenerator(title, text, page, popUp) {
   return `<div id="Nlayout-container">
   <h1 class="titles" id="Ntitle">${title[page]}</h1>
@@ -916,6 +927,7 @@ function NLayOutGenerator(title, text, page, popUp) {
   </div>
   </div>`;
 }
+
 function WLayOutGenerator(titles, text, page, popUp) {
   return `<h2>${
     titles[page]
@@ -941,6 +953,7 @@ function WLayOutGenerator(titles, text, page, popUp) {
     </div>`;
 }
 
+//Generar los pop-ups
 function modalGenerator(popUp, page, selector) {
   let initial = 0;
   let final = 0;
@@ -956,8 +969,6 @@ function modalGenerator(popUp, page, selector) {
     }
   }
 
-  // let result = `<div class="modals-container">`;
-
   let result = "";
 
   for (let i = initial; i < final; i++) {
@@ -966,11 +977,11 @@ function modalGenerator(popUp, page, selector) {
       `<div id="modal-container${i}">
         <button data-modal-target="#modal${i}" 
           class="open-button${i}">${modalExtractor(
-          popUp,
-          page,
-          "buttonName",
-          i
-        )}
+        popUp,
+        page,
+        "buttonName",
+        i
+      )}
         </button>
         <div class="modal" id="modal${i}">
           <div class="modal-header">
@@ -983,9 +994,10 @@ function modalGenerator(popUp, page, selector) {
         </div>
       </div>`;
   }
-  // result = result + `</div>`;
   return result;
 }
+
+//extraer la informacion de los modals
 function modalExtractor(popUps, page, partofModal, numberModal) {
   if (partofModal === "title") {
     return popUps[page][numberModal].title;
@@ -1002,12 +1014,14 @@ function modalExtractor(popUps, page, partofModal, numberModal) {
   }
 }
 
+//abrir pop-up
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add("active");
   overlay.classList.add("active");
 }
 
+//cerrar pop-up
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove("active");
@@ -1020,6 +1034,5 @@ function masterRender() {
   if (pointedButton && currentParagNumber === 1) {
     pointedButton.style.backgroundColor = "#1d3e8b";
   }
-  // console.log(pointedButton);
 }
 masterRender();
