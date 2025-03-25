@@ -963,22 +963,25 @@ function modalGenerator(popUp, page, selector) {
   for (let i = initial; i < final; i++) {
     result =
       result +
-      `<div id="modal-container${i}"><button data-modal-target="#modal${i}" class="open-button${i}">${modalExtractor(
-        popUp,
-        page,
-        "buttonName",
-        i
-      )}</button>
-    <div class="modal" id="modal${i}">
-      <div class="modal-header">
-        <div class="title">${modalExtractor(popUp, page, "title", i)}</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        ${modalExtractor(popUp, page, "contentModal", i)}
-      </div>
-    </div>
-    </div>`;
+      `<div id="modal-container${i}">
+        <button data-modal-target="#modal${i}" 
+          class="open-button${i}">${modalExtractor(
+          popUp,
+          page,
+          "buttonName",
+          i
+        )}
+        </button>
+        <div class="modal" id="modal${i}">
+          <div class="modal-header">
+            <div class="title">${modalExtractor(popUp, page, "title", i)}</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            ${modalExtractor(popUp, page, "contentModal", i)}
+          </div>
+        </div>
+      </div>`;
   }
   // result = result + `</div>`;
   return result;
