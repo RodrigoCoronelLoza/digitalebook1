@@ -302,6 +302,7 @@ body {
   border: none;
   color: white;
   box-shadow: 10px 10px 5px var(--backgroud);
+  font-size: 1.2vw;
 }
 .Dlayout #Dbutton .open-button0:hover {
   background-image: linear-gradient(
@@ -319,6 +320,7 @@ body {
   border-radius: 20px;
   color: white;
   box-shadow: 10px 10px 5px var(--backgroud);
+  font-size: 1.2vw;
 }
 
 .Dlayout #Dlayout-container #Dbutton .open-button1:hover {
