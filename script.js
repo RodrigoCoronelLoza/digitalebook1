@@ -589,81 +589,85 @@ function CLayOutGenerator(titles, text, page) {
   <div id="Clayout-container">
     <h1 class="titles" id="Ctitle">${titles[page]}</h1>
     <div id="Cindex-buttons">
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(3)">Ir</button> 
-        <p class="index-text">Presentaci&oacuten</p>
+      <div id="column1">
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(3)">Presentaci&oacuten</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: BASE NORMATIVA</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(7)">Normativa internacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(8)">Normativa nacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(3)">Presentaci&oacuten</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: BASE NORMATIVA</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(7)">Normativa internacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(8)">Normativa nacional</button>
+        </div>
+        
       </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(5)">Ir</button>
-        <p class="index-text">TEMA 1: BASE NORMATIVA</p> 
+      <div id="column2">
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(7)">Normativa internacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(8)">Normativa nacional</button>
+        </div>
+         <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(8)">Normativa nacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(3)">Presentaci&oacuten</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: BASE NORMATIVA</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(7)">Normativa internacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(8)">Normativa nacional</button>
+        </div>
+         <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: BASE NORMATIVA</button> 
+        </div>
+        
       </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(7)">Ir</button>
-        <p class="index-text">Normativa internacional</p>
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(8)">Ir</button>
-        <p class="index-text">Normativa nacional</p>
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(10)">Ir</button>
-        <p class="index-text">Protocolo de prevención</p>
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(11)">Ir</button>
-        <p class="index-text">Estrategias para la Prevención de Conflictos</p>   
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(12)">Ir</button>
-        <p class="index-text">TEMA 2: COMPRENDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</p>   
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(17)">Ir</button>
-        <p class="index-text">El conflicto y sus características</p>     
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(19)">Ir</button>
-        <p class="index-text">Conflictos entre estudiantes</p>       
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(23)">Ir</button>
-        <p class="index-text">Factores de riesgo en la unidad educativa</p>       
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(24)">Ir</button>
-        <p class="index-text">Violencia en el ámbito educativo</p>       
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(26)">Ir</button>
-        <p class="index-text">Glosario de violencia</p>         
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(33)">Ir</button>
-        <p class="index-text">TEMA 3: ENFOQUE RESTAURATIVO</p>         
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(35)">Ir</button>
-        <p class="index-text">La importancia del enfoque restaurativo</p>         
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(38)">Ir</button>
-        <p class="index-text">Diferencias entre el enfoque restaurativo y punitivo en el ámbito educativo</p>         
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(41)">Ir</button>
-        <p class="index-text">Características y principios del enfoque restaurativo</p>         
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(44)">Ir</button>
-        <p class="index-text">Ventana de la disciplina social</p>         
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(49)">Ir</button>
-        <p class="index-text">Glosario</p>         
-      </div>
-      <div class="button-index-container">
-        <button class="jump-buttons" onclick="setPage(50)">Ir</button>
-        <p class="index-text">Bibliografia</p>          
+       <div id="column3">
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(3)">Presentaci&oacuten</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: BASE NORMATIVA</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(7)">Normativa internacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(8)">Normativa nacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(3)">Presentaci&oacuten</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: BASE NORMATIVA</button> 
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(7)">Normativa internacional</button>
+        </div>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(8)">Normativa nacional</button>
+        </div>
       </div>
     </div>
   </div>`;

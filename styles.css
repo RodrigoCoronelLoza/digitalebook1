@@ -32,7 +32,7 @@ body {
   text-align: center;
   margin-top: 2%;
   margin-right: 2%;
-  margin-left: 0.2%;
+  margin-left: 0.8%;
   height: 90%;
 }
 
@@ -103,7 +103,7 @@ body {
   width: 6em;
   height: 80%;
   border: none;
-  box-shadow: 10px 10px 5px var(--primary);
+  box-shadow: 5px 7px 10px var(--primary);
 }
 
 .nav-buttons:hover {
@@ -127,14 +127,14 @@ body {
 .jump-buttons {
   color: white;
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--backgroud), var(--primary));
+  background-image: linear-gradient(to right, var(--secondary), var(--primary));
   font-size: 1.2vw;
   border-radius: 100px;
   border: none;
   width: 5em;
   height: 70%;
   /* box-shadow: 1px 1px 10px #00000071; */
-  box-shadow: 10px 10px 5px var(--backgroud);
+  box-shadow: 5px 7px 10px var(--backgroud);
 }
 
 .jump-buttons:hover {
@@ -219,39 +219,74 @@ body {
 
 .Clayout {
   text-align: left;
-  padding: 2%;
-  height: 80%;
+  /* padding: 2%; */
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100%;
   font-size: 1.1vw;
   width: 95%;
 }
 
 .Clayout #Clayout-container {
   height: 100%;
+  /* border: 1px solid red; */
 }
 
 .Clayout #Clayout-container #Ctitle {
   margin: 0;
   height: 10%;
+  /* border: 1px solid green; */
 }
 .Clayout #Cindex-buttons {
-  column-count: 2;
-  column-gap: 10px;
+  /* column-count: 2; */
+  /* column-gap: 10px; */
   height: 90%;
-  position: relative;
+  /* position: relative; */
+  /* border: 1px solid violet; */
+  display: flex;
+  /* background-color: white; */
+}
+
+.Clayout #Cindex-buttons #column1 {
+  /* border: 1px solid red; */
+  width: 33%;
+}
+
+.Clayout #Cindex-buttons #column2 {
+  /* border: 1px solid green; */
+  width: 33%;
+}
+.Clayout #Cindex-buttons #column3 {
+  /* border: 1px solid green; */
+  width: 34%;
 }
 
 .Clayout .button-index-container {
   display: flex;
-  height: 5%;
-  padding: 1.5%;
+  height: 10%;
+  /* padding: 1.5%; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 1.2vw;
+  /* border: 1px solid violet; */
 }
 
-.Clayout .button-index-container .jump-buttons {
-  height: 150%;
+.Clayout .button-index-container .index-big-buttons {
+  background-color: white;
+  font-size: 1.5vw;
+  margin: 0;
+  border: none;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
 }
-
-.Clayout .button-index-container .index-text {
-  padding-left: 3em;
+.Clayout .button-index-container .index-big-buttons:hover {
+  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  color: white;
+  /* font-weight: bolder; */
+  /* color: #1d3e8b; */
 }
 
 /* Plantilla D */
@@ -538,7 +573,7 @@ body {
   width: 60%;
   height: 80%;
   border-radius: 50%;
-  font-size: 1.2em;
+  font-size: 1.2vw;
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
 }
@@ -648,7 +683,7 @@ body {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1vw;
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
 }
@@ -709,8 +744,9 @@ body {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1vw;
   box-shadow: 10px 10px 5px var(--backgroud);
+  border: none;
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 .open-button5:hover {
@@ -947,14 +983,19 @@ body {
 }
 
 .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton {
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
+  background-image: linear-gradient(
+    to right,
+    var(--backgroud),
+    var(--secondary)
+  );
   width: 100%;
   height: 100%;
   border-radius: 50%;
   font-size: 2.5em;
   border: none;
   color: white;
-  box-shadow: 10px 10px 5px var(--backgroud);
+  /* box-shadow: 10px 10px 5px var(--backgroud); */
 }
 
 .Jlayout #Jlayout-container #Jcarousel-container .SlideCarouselButton:hover {
@@ -1072,7 +1113,7 @@ body {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1vw;
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
 }
@@ -1313,13 +1354,13 @@ body {
 /* Barra lateral del indice */
 
 #index-permanent {
-  height: 95%;
+  height: 101%;
   width: 15%;
   background-color: #e3f2fd;
 }
 
 .index-element-container {
-  height: 5.5%;
+  height: 4.3%;
 }
 
 .index-buttons {
