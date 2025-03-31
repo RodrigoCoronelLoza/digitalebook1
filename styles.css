@@ -1,9 +1,11 @@
 :root {
-  --primary: #1d3e8b;
-  --secondary: #48b2e6;
-  --backgroud: #97d4eb;
-  --hoverbuttons1: #2a005d;
-  --hoverbuttons0: #e5d0ff;
+  --primary: #030d7b;
+  --auxiliar: #7000e0;
+  --secondary: #2f67e1;
+  --backgroud: #c0f9ff;
+  --hoverbuttons1: #5da7e1;
+  --hoverbuttons0: #ca05fa;
+  --auxiliar2: #7e64dc;
 }
 html {
   margin: 0;
@@ -15,7 +17,11 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: var(--backgroud); */
-  background-image: linear-gradient(to right, var(--primary), var(--backgroud));
+  background-image: linear-gradient(
+    to right,
+    var(--secondary),
+    var(--hoverbuttons1)
+  );
   margin: 0;
   height: 100%;
   padding: 0;
@@ -92,11 +98,7 @@ body {
 .nav-buttons {
   color: white;
   /* background-color: var(--secondary); */
-  background-image: linear-gradient(
-    to right,
-    var(--backgroud),
-    var(--secondary)
-  );
+  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
 
   font-size: 1.2vw;
   border-radius: 100px;
@@ -110,7 +112,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -127,11 +129,11 @@ body {
 .jump-buttons {
   color: white;
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   font-size: 1.2vw;
   border-radius: 100px;
   border: none;
-  width: 5em;
+  width: 7.5em;
   height: 70%;
   /* box-shadow: 1px 1px 10px #00000071; */
   box-shadow: 5px 7px 10px var(--backgroud);
@@ -140,7 +142,7 @@ body {
 .jump-buttons:hover {
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -176,8 +178,8 @@ body {
 /* Titulos y texto en general */
 .titles {
   text-align: left;
-  font-size: 1.8vw;
-  color: var(--primary);
+  font-size: 1.6vw;
+  color: var(--secondary);
 }
 
 .text {
@@ -185,11 +187,11 @@ body {
 }
 /* Plantilla B */
 .Blayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   line-height: 1.1em;
   height: 100%;
-  font-size: 1.1vmax;
+  font-size: 1.2vmax;
   width: 85%;
 }
 
@@ -220,10 +222,10 @@ body {
 .Clayout {
   text-align: left;
   /* padding: 2%; */
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 100%;
-  font-size: 1.1vw;
+  font-size: 1.2vmax;
   width: 95%;
 }
 
@@ -292,8 +294,8 @@ body {
 /* Plantilla D */
 
 .Dlayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 100%;
   font-size: 1.2vmax;
   width: 85%;
@@ -329,7 +331,7 @@ body {
 
 .Dlayout #Dbutton .open-button0 {
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -341,26 +343,27 @@ body {
 .Dlayout #Dbutton .open-button0:hover {
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--secondary),
     var(--hoverbuttons1)
   );
 }
 .Dlayout #Dlayout-container #Dbutton .open-button1 {
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
   width: 100%;
-  height: 100%;
+  margin-top: 20%;
+  height: 80%;
   border: none;
   border-radius: 20px;
   color: white;
-  box-shadow: 10px 10px 5px var(--backgroud);
-  font-size: 1.2vw;
+  box-shadow: 8px 8px 5px var(--backgroud);
+  font-size: 1.1vmax;
 }
 
 .Dlayout #Dlayout-container #Dbutton .open-button1:hover {
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--secondary),
     var(--hoverbuttons1)
   );
 }
@@ -372,8 +375,8 @@ body {
 }
 
 .Dlayout #Dimage-container {
-  background-color: var(--primary);
-  width: 40%;
+  /* background-color: var(--primary); */
+  width: 45%;
   height: 90%;
 }
 
@@ -385,8 +388,8 @@ body {
 /* Plantilla E */
 
 .Elayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 100%;
   font-size: 1.3vw;
   width: 85%;
@@ -435,9 +438,9 @@ body {
   #index-button-container
   #index-buttons
   .jump-buttons {
-  width: 90%;
-  height: 90%;
-  font-size: 1.2em;
+  width: 85%;
+  height: 70%;
+  font-size: 0.9em;
 }
 
 /* Plantilla F */
@@ -457,12 +460,12 @@ body {
 
 .Flayout #Flayout-container #Fcolumn1 {
   width: 60%;
-  padding: 30px;
+  padding: 20px;
 }
 
 .Flayout #Flayout-container #Fcolumn1 #act-inicio-img {
-  height: 10%;
-  width: 80%;
+  height: 15%;
+  width: 70%;
 }
 
 .Flayout #Flayout-container #Fcolumn2 {
@@ -471,18 +474,18 @@ body {
 
 .Flayout #Flayout-container #Fcolumn2 #Flayout-img {
   width: 80%;
-  height: 70%;
+  height: 75%;
 }
 
 .Flayout #Flayout-container #Fcolumn2 #Fdownload-button {
-  margin-top: 2em;
+  margin-top: 1em;
   width: 80%;
   height: 15%;
   font-size: 1.2vw;
 }
 
 .Flayout #Flayout-container #Fcolumn2 #Flink-container {
-  margin-top: 2em;
+  margin-top: 0.9em;
   width: 80%;
   height: 15%;
   font-size: 1.2em;
@@ -491,17 +494,17 @@ body {
   margin-right: auto;
   position: relative;
   /* background-color: var(--secondary); */
-  background-image: linear-gradient(
-    to right,
-    var(--backgroud),
-    var(--secondary)
-  );
+  background-image: linear-gradient(to right, var(--secondary), var(--primary));
   border-radius: 15px;
-  box-shadow: 10px 10px 5px var(--backgroud);
+  box-shadow: 5px 5px 5px var(--backgroud);
 }
 .Flayout #Flayout-container #Fcolumn2 #Flink-container:hover {
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--backgroud), var(--primary));
+  background-image: linear-gradient(
+    to right,
+    var(--auxiliar),
+    var(--hoverbuttons1)
+  );
 }
 
 .Flayout #Flayout-container #Fcolumn2 #Flink-container #Flink {
@@ -519,8 +522,8 @@ body {
 /* Plantilla G */
 
 .Glayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 100%;
   font-size: 1.2vw;
   width: 85%;
@@ -532,16 +535,16 @@ body {
 
 .Glayout #Glayout-container #Grow1 {
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 
 .Glayout #Glayout-container #Grow1 #Gtitle1 {
   margin: 0;
-  height: 20%;
+  height: 15%;
 }
 .Glayout #Glayout-container #Grow2 {
   width: 100%;
-  height: 10%;
+  height: 15%;
 }
 .Glayout #Glayout-container #Grow2 #Gtitle2 {
   margin: 0;
@@ -568,31 +571,33 @@ body {
 
 .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0 {
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
   color: white;
   width: 60%;
   height: 80%;
   border-radius: 50%;
-  font-size: 1.2vw;
-  box-shadow: 10px 10px 5px var(--backgroud);
+  font-size: 1.1vw;
+  box-shadow: 8px 8px 10px var(--backgroud);
   border: none;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0:hover {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
-    var(--hoverbuttons1)
+    var(--auxiliar2),
+    var(--hoverbuttons0)
   );
 }
 
 /* Plantilla H */
 
 .Hlayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 95%;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   width: 85%;
 }
 
@@ -602,17 +607,18 @@ body {
 }
 
 .Hlayout #Hlayout-container #Hrow1 {
-  height: 50%;
+  height: 48%;
   position: relative;
+  margin-bottom: 2%;
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Htitle1 {
-  height: 15%;
+  height: 10%;
   margin: 0;
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Htext1 {
-  height: 35%;
+  height: 50%;
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 {
@@ -620,18 +626,18 @@ body {
   padding-right: auto;
   display: flex;
   justify-content: center;
-  height: 45%;
+  height: 50%;
   position: absolute;
   bottom: 4%;
   width: 100%;
 }
 .Hlayout #Hlayout-container #Hrow2 {
-  height: 50%;
+  height: 45%;
   position: relative;
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Htitle2 {
-  height: 15%;
+  height: 10%;
   margin: 0;
 }
 
@@ -644,7 +650,7 @@ body {
   padding-right: auto;
   display: flex;
   justify-content: center;
-  height: 45%;
+  height: 50%;
   position: absolute;
   bottom: 0%;
   width: 100%;
@@ -672,27 +678,69 @@ body {
   height: 100%;
 }
 
-.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0,
-.open-button1,
-.open-button2,
-.open-button3,
-.open-button4 {
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0 {
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
   color: white;
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  font-size: 1.1vw;
-  box-shadow: 10px 10px 5px var(--backgroud);
+  font-size: 1vw;
+  box-shadow: 8px 8px 5px var(--backgroud);
   border: none;
 }
+
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button1 {
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 8px 8px 5px var(--backgroud);
+  border: none;
+}
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button2{
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 8px 8px 5px var(--backgroud);
+  border: none;
+}
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button3 {
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 8px 8px 5px var(--backgroud);
+  border: none;
+}
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button4 {
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 8px 8px 5px var(--backgroud);
+  border: none;
+}
+
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0:hover {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -701,7 +749,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -710,7 +758,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -719,7 +767,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -728,7 +776,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -739,12 +787,12 @@ body {
 .open-button8,
 .open-button9 {
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   color: white;
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  font-size: 1.1vw;
+  font-size: 1vw;
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
 }
@@ -753,7 +801,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -762,7 +810,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -771,7 +819,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -780,7 +828,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -789,7 +837,7 @@ body {
   /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
-    var(--hoverbuttons0),
+    var(--auxiliar2),
     var(--hoverbuttons1)
   );
 }
@@ -797,8 +845,8 @@ body {
 /* Plantilla I */
 
 .Ilayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 100%;
   font-size: 1.2vw;
   width: 85%;
@@ -811,11 +859,14 @@ body {
 
 .Ilayout #Ilayout-container #Icolumn1 {
   width: 50%;
+  /* border: 1px solid red; */
 }
 
 .Ilayout #Ilayout-container #Icolumn1 #Icolumn1-image-container {
   width: 100%;
-  height: 30%;
+  height: 20%;
+  margin-top: 9%;
+  /* border: 1px solid green; */
 }
 
 .Ilayout
@@ -824,21 +875,25 @@ body {
   #Icolumn1-image-container
   #Iimage-column1 {
   width: 100%;
-  height: 90%;
+  height: 70%;
 }
 
 .Ilayout #Ilayout-container #Icolumn1 #Ititle {
-  margin: 0;
+  /* margin-top: 10%; */
+  margin-left: 3%;
+  /* margin-bottom: 10%; */
+  /* border: 1px solid violet; */
 }
 
 .Ilayout #Ilayout-container #Icolumn1 #Itext-container {
+  /* border: 1px solid orange; */
   height: 60%;
   position: relative;
 }
 
 .Ilayout #Ilayout-container #Icolumn1 #Itext-container #Itext {
-  margin-top: 0;
-  margin-bottom: 0;
+  /* margin-top: 8%; */
+  /* margin-bottom: 0; */
   margin-left: 3%;
   margin-right: 3%;
   position: absolute;
@@ -878,17 +933,17 @@ body {
   margin-right: auto;
   position: relative;
   /* background-color: var(--primary); */
-  background-image: linear-gradient(
-    to right,
-    var(--backgroud),
-    var(--secondary)
-  );
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
   border-radius: 15px;
   box-shadow: 10px 10px 5px var(--backgroud);
 }
 .Ilayout #Ilayout-container #Icolumn2 #Ilink-container:hover {
   /* background-color: var(--secondary); */
-  background-image: linear-gradient(to right, var(--backgroud), var(--primary));
+  background-image: linear-gradient(
+    to right,
+    var(--auxiliar),
+    var(--hoverbuttons1)
+  );
 }
 
 .Ilayout #Ilayout-container #Icolumn2 #Ilink-container #Ilink {
@@ -921,8 +976,8 @@ body {
 /* Plantilla J */
 
 .Jlayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
@@ -937,7 +992,7 @@ body {
   margin: 0;
 }
 .Jlayout #Jlayout-container #Jtext-container {
-  height: 10%;
+  height: 8%;
 }
 
 .Jlayout #Jlayout-container #Jcarousel-container {
@@ -946,7 +1001,7 @@ body {
 }
 .Jlayout #Jlayout-container #Jcarousel-container #Jcarousel {
   height: 100%;
-  width: 80%;
+  width: 70%;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -986,7 +1041,7 @@ body {
   /* background-color: var(--secondary); */
   background-image: linear-gradient(
     to right,
-    var(--backgroud),
+    var(--auxiliar),
     var(--secondary)
   );
   width: 100%;
@@ -1006,8 +1061,8 @@ body {
 /* Plantilla K */
 
 .Klayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 100%;
   font-size: 1.2vw;
   width: 85%;
@@ -1018,11 +1073,11 @@ body {
 }
 .Klayout #Klayout-container #Ktitle {
   margin: 0;
-  height: 10%;
+  height: 8%;
 }
 .Klayout #Klayout-container #Ktext-container1,
 #Ktext-container2 {
-  margin-top: 10px;
+  margin-top: 2%;
   margin: 0;
   height: 30%;
   position: relative;
@@ -1032,12 +1087,14 @@ body {
 #Ktext2 {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 30%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .Klayout #Klayout-container #Ktext1 {
+  padding-left: 2%;
+  padding-right: 2%;
   background-color: var(--backgroud);
 }
 .Klayout #Klayout-container #Kimage-container {
@@ -1046,14 +1103,14 @@ body {
 
 .Klayout #Klayout-container #Kimage-container #Kbanner {
   height: 100%;
-  width: 100%;
+  width: 80%;
 }
 
 /* Plantilla L */
 
 .Llayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
@@ -1071,7 +1128,7 @@ body {
 .Llayout #Llayout-container #Ltext-container {
   margin-top: 10px;
   margin: 0;
-  height: 60%;
+  height: 45%;
   position: relative;
 }
 
@@ -1114,7 +1171,7 @@ body {
   height: 100%;
   width: 100%;
   font-size: 1.1vw;
-  box-shadow: 10px 10px 5px var(--backgroud);
+  box-shadow: 10px 10px 5px var(--auxiliar2);
   border: none;
 }
 
@@ -1202,6 +1259,7 @@ body {
   background-color: var(--backgroud);
   padding-top: 1em;
   justify-content: center;
+  border-radius: 50px;
 }
 
 .Mlayout #Mcarousel-container #Mbuttons {
@@ -1239,20 +1297,26 @@ body {
 }
 
 .Mlayout #Mcarousel-container #Mbuttons #Mbuttons-container .paragButton {
-  background-color: var(--primary);
+  background-color: var(--secondary);
+  /* background-image: linear-gradient(
+    to right,
+    var(--secondary),
+    var(--primary)
+  ); */
   color: white;
   height: 100%;
-  border-radius: 1em;
+  border-radius: 50px;
   border: none;
-  width: 7em;
+  width: 7vw;
   margin-right: 1%;
+  font-size: 1vw;
 }
 
 /* Plantilla N */
 
 .Nlayout {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
@@ -1301,14 +1365,14 @@ body {
   width: 30%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 100%;
+  height: 90%;
 }
 
 .Nlayout #Nlayout-container #Nmodals-container #modal-container1 {
   width: 30%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 100%;
+  height: 90%;
 }
 
 .Nlayout #Nlayout-container #Nmodals-container .open-button0 {
@@ -1317,7 +1381,7 @@ body {
   color: white;
   border-radius: 50%;
   height: 100%;
-  width: 100%;
+  width: 70%;
   font-size: 1.2vw;
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
@@ -1333,11 +1397,12 @@ body {
 }
 
 .Nlayout #Nlayout-container #Nmodals-container .open-button1 {
-  background-color: #1d3e8b;
+  /* background-color: #1d3e8b; */
+  background-image: linear-gradient(to right, var(--secondary), var(--primary));
   color: white;
   border-radius: 50%;
   height: 100%;
-  width: 100%;
+  width: 70%;
   font-size: 1.2vw;
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
@@ -1351,12 +1416,49 @@ body {
   );
 }
 
+.Olayout {
+  padding-left: 1%;
+  padding-right: 1%;
+  line-height: 1.1em;
+  height: 100%;
+  font-size: 1.1vmax;
+  width: 85%;
+  /* border: 1px solid red; */
+}
+
+.Olayout #Olayout-container {
+  height: 100%;
+  /* border: 2px solid green; */
+}
+.Olayout #Otitle {
+  /* border: 2px solid orange; */
+  margin: 0;
+  height: 5%;
+}
+
+.Olayout #Olayout-container #Oimage-container {
+  margin: 0;
+  height: 90%;
+  /* position: relative; */
+  /* border: 2px solid violet; */
+}
+
+.Olayout #Olayout-container #Oimage-container #Oimage {
+  /* margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  height: 100%;
+  width: 100%;
+}
+
 /* Barra lateral del indice */
 
 #index-permanent {
   height: 101%;
   width: 15%;
-  background-color: #e3f2fd;
+  background-color: #92f7eb;
 }
 
 .index-element-container {
@@ -1364,7 +1466,7 @@ body {
 }
 
 .index-buttons {
-  background-color: #e3f2fd;
+  background-color: #c0f9ff;
   font-size: 1.1vw;
   margin: 0;
   border: none;
@@ -1375,7 +1477,7 @@ body {
 }
 .index-buttons:hover {
   /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
   color: white;
 }
 
@@ -1393,7 +1495,7 @@ body {
   background-color: white;
   width: 80%;
   max-width: 80%;
-  height: 70%;
+  /* height: 70%; */
 }
 
 .modal.active {
@@ -1405,7 +1507,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--secondary);
   background-color: var(--primary);
   color: white;
 }
@@ -1432,7 +1534,9 @@ body {
 }
 
 .modal-body #image-modal-body {
-  height: 100%;
+  /* border: 1px solid forestgreen; */
+  /* height: 50%; */
+  height: 35vw;
   width: 100%;
 }
 
