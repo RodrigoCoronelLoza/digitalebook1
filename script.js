@@ -221,7 +221,7 @@ function colorButton() {
     indexButton21.style.fontWeight = "normal";
     indexButton22.style.fontWeight = "normal";
     indexButton23.style.fontWeight = "normal";
-  } else if (currentPage >= 11 && currentPage <= 12) {
+  } else if (currentPage ===11) {
     indexButton7.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
@@ -245,7 +245,7 @@ function colorButton() {
     indexButton21.style.fontWeight = "normal";
     indexButton22.style.fontWeight = "normal";
     indexButton23.style.fontWeight = "normal";
-  } else if (currentPage === 13) {
+  } else if (currentPage === 12) {
     indexButton8.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
@@ -269,7 +269,7 @@ function colorButton() {
     indexButton21.style.fontWeight = "normal";
     indexButton22.style.fontWeight = "normal";
     indexButton23.style.fontWeight = "normal";
-  } else if (currentPage === 14) {
+  } else if (currentPage ===13) {
     indexButton9.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
@@ -293,7 +293,7 @@ function colorButton() {
     indexButton21.style.fontWeight = "normal";
     indexButton22.style.fontWeight = "normal";
     indexButton23.style.fontWeight = "normal";
-  } else if (currentPage >= 15 && currentPage <= 16) {
+  } else if (currentPage >= 14 && currentPage <= 16) {
     indexButton10.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
@@ -461,7 +461,7 @@ function colorButton() {
     indexButton21.style.fontWeight = "normal";
     indexButton22.style.fontWeight = "normal";
     indexButton23.style.fontWeight = "normal";
-  } else if (currentPage === 35) {
+  } else if (currentPage >= 35 && currentPage <= 36) {
     indexButton17.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
@@ -485,7 +485,7 @@ function colorButton() {
     indexButton21.style.fontWeight = "normal";
     indexButton22.style.fontWeight = "normal";
     indexButton23.style.fontWeight = "normal";
-  } else if (currentPage >= 36 && currentPage <= 40) {
+  } else if (currentPage >= 37 && currentPage <= 40) {
     indexButton18.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
