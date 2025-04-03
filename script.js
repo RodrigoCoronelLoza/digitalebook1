@@ -221,7 +221,7 @@ function colorButton() {
     indexButton21.style.fontWeight = "normal";
     indexButton22.style.fontWeight = "normal";
     indexButton23.style.fontWeight = "normal";
-  } else if (currentPage ===11) {
+  } else if (currentPage === 11) {
     indexButton7.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
@@ -269,7 +269,7 @@ function colorButton() {
     indexButton21.style.fontWeight = "normal";
     indexButton22.style.fontWeight = "normal";
     indexButton23.style.fontWeight = "normal";
-  } else if (currentPage ===13) {
+  } else if (currentPage === 13) {
     indexButton9.style.fontWeight = "bold";
     indexButton2.style.fontWeight = "normal";
     indexButton3.style.fontWeight = "normal";
@@ -770,80 +770,84 @@ function CLayOutGenerator(titles, text, page) {
     <div id="Cindex-buttons">
       <div id="column1">
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(3)">Presentaci&oacuten</button> 
+          <button class="index-big-buttons" onclick="setPage(3)">&#9674 Presentaci&oacuten</button> 
+        </div>
+        <hr/>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: BASE NORMATIVA</button> 
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: Base normativa</button> 
+          <button class="index-big-buttons" onclick="setPage(6)">&#9674 Actividad de inicio </button>
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(6)">Actividad de inicio </button>
+          <button class="index-big-buttons" onclick="setPage(7)">&#9674 Normativa Internacional</button>
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(7)">Normativa Internacional</button>
+          <button class="index-big-buttons" onclick="setPage(8)">&#9674 Normativa Nacional</button> 
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(8)">Normativa Nacional</button> 
+          <button class="index-big-buttons" onclick="setPage(9)">&#9674 Normativa emitida por el Ministerio de Educación</button> 
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(9)">Normativa emitida por el Ministerio de Educación</button> 
+          <button class="index-big-buttons" onclick="setPage(11)">&#9674 Actividad Sugerida</button>
         </div>
+        <hr/>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(11)">Actividad Sugerida</button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(12)">TEMA 2: Comprender el conflicto en el entorno educativo</button>
+          <button class="index-big-buttons" onclick="setPage(12)">TEMA 2: COMPREDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</button>
         </div>
         
       </div>
       <div id="column2">
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(13)">Actividad de inicio</button>
+          <button class="index-big-buttons" onclick="setPage(13)">&#9674 Actividad de inicio</button>
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(14)">Conflicto en el ambito educativo</button>
+          <button class="index-big-buttons" onclick="setPage(14)">&#9674 Conflicto en el ambito educativo</button>
         </div>
          <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(17)">Características del conflicto</button>
+          <button class="index-big-buttons" onclick="setPage(17)">&#9674 Características del conflicto</button>
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(22)">Factores de riesgo y violencia</button>
+          <button class="index-big-buttons" onclick="setPage(22)">&#9674 Factores de riesgo y violencia</button>
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(28)">Herramientas restaurativas</button>
+          <button class="index-big-buttons" onclick="setPage(28)">&#9674 Herramientas restaurativas</button>
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(32)">Actividad sugerida</button> 
+          <button class="index-big-buttons" onclick="setPage(32)">&#9674 Actividad sugerida</button> 
+        </div>
+        <hr/>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(33)">TEMA 3: ENFOQUE RESTAURATIVO</button> 
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(33)">TEMA 3: Enfoque restaurativo</button> 
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(34)">Actividad de inicio </button>
+          <button class="index-big-buttons" onclick="setPage(34)">&#9674 Actividad de inicio </button>
         </div>
         
         
       </div>
        <div id="column3">
        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(35)">Enfoque restaurativo</button>
+          <button class="index-big-buttons" onclick="setPage(35)">&#9674 Enfoque restaurativo</button>
         </div>
          <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(37)">Enfoques punitivo y restaurativo</button> 
+          <button class="index-big-buttons" onclick="setPage(37)">&#9674 Enfoques punitivo y restaurativo</button> 
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(41)">Principios restaurativos</button> 
+          <button class="index-big-buttons" onclick="setPage(41)">&#9674 Principios restaurativos</button> 
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(44)">Disciplina social</button> 
+          <button class="index-big-buttons" onclick="setPage(44)">&#9674 Disciplina social</button> 
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(47)">Actividad sugerida</button> 
+          <button class="index-big-buttons" onclick="setPage(47)">&#9674 Actividad sugerida</button> 
+        </div>
+        <hr/>
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(48)">&#9674 Glosario</button>
         </div>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(48)">Glosario</button>
-        </div>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(49)">Bibliografía</button>
+          <button class="index-big-buttons" onclick="setPage(49)">&#9674 Bibliografía</button>
         </div>
       </div>
     </div>
@@ -881,7 +885,7 @@ function ELayOutGenerator(images, page, buttonName, buttonsPageNumber) {
         <div class="button-index-container"><button class="jump-buttons" onclick="setPage(${buttonsPageNumber[page][1]})">${buttonName[page][1]}</button></div>
         <div class="button-index-container"><button class="jump-buttons" onclick="setPage(${buttonsPageNumber[page][2]})">${buttonName[page][2]}</button></div>
         <div class="button-index-container"><button class="jump-buttons"onclick="setPage(${buttonsPageNumber[page][3]})">${buttonName[page][3]}</</button></div>
-        <div class="button-index-container"><button class="jump-buttons"onclick="setPage(${buttonsPageNumber[page][3]})">${buttonName[page][3]}</</button></div>
+        <div class="button-index-container"><button class="jump-buttons"onclick="setPage(${buttonsPageNumber[page][4]})">${buttonName[page][4]}</</button></div>
       </div>
     </div>
   </div>`;

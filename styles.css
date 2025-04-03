@@ -193,6 +193,8 @@ body {
   height: 100%;
   font-size: 1.2vmax;
   width: 85%;
+  background-image: url("images/CHA_10.jpeg");
+  background-size: 100% 100%;
 }
 
 .Blayout #Blayout-container {
@@ -227,6 +229,8 @@ body {
   height: 100%;
   font-size: 1.2vmax;
   width: 95%;
+  background-image: url("images/CHA_10.jpeg");
+  background-size: 100% 100%;
 }
 
 .Clayout #Clayout-container {
@@ -239,6 +243,16 @@ body {
   height: 10%;
   /* border: 1px solid green; */
 }
+
+hr { 
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; 
+}
+
 .Clayout #Cindex-buttons {
   /* column-count: 2; */
   /* column-gap: 10px; */
@@ -264,6 +278,7 @@ body {
 }
 
 .Clayout .button-index-container {
+  background-color: transparent;
   display: flex;
   height: 10%;
   /* padding: 1.5%; */
@@ -275,7 +290,7 @@ body {
 }
 
 .Clayout .button-index-container .index-big-buttons {
-  background-color: white;
+  background-color: transparent;
   font-size: 1.5vw;
   margin: 0;
   border: none;
@@ -299,6 +314,8 @@ body {
   height: 100%;
   font-size: 1.2vmax;
   width: 85%;
+  background-image: url("images/CHA_10.jpeg");
+  background-size: 100% 100%;
 }
 .Dlayout h1 {
   margin: 0;
@@ -393,6 +410,8 @@ body {
   height: 100%;
   font-size: 1.3vw;
   width: 85%;
+  background-image: url("images/CHA_14.jpeg");
+  background-size: 100% 100%;
 }
 
 .Elayout #Elayout-container {
@@ -451,6 +470,8 @@ body {
   height: 100%;
   font-size: 1.2vw;
   width: 85%;
+  background-image: url("images/CHA_8.jpeg");
+  background-size: 100% 100%;
 }
 
 .Flayout #Flayout-container {
@@ -527,6 +548,8 @@ body {
   height: 100%;
   font-size: 1.2vw;
   width: 85%;
+  background-image: url("images/CHA_10.jpeg");
+  background-size: 100% 100%;
 }
 
 .Glayout #Glayout-container {
@@ -599,6 +622,8 @@ body {
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
+  background-image: url("images/CHA_10.jpeg");
+  background-size: 100% 100%;
 }
 
 .Hlayout #Hlayout-container {
@@ -701,7 +726,7 @@ body {
   box-shadow: 8px 8px 5px var(--backgroud);
   border: none;
 }
-.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button2{
+.Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button2 {
   /* background-color: var(--primary); */
   background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
   color: white;
@@ -734,7 +759,6 @@ body {
   box-shadow: 8px 8px 5px var(--backgroud);
   border: none;
 }
-
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0:hover {
   /* background-color: var(--hoverbuttons1); */
@@ -850,6 +874,8 @@ body {
   height: 100%;
   font-size: 1.2vw;
   width: 85%;
+  background-image: url("images/CHA_8.jpeg");
+  background-size: 100% 100%;
 }
 
 .Ilayout #Ilayout-container {
@@ -981,6 +1007,8 @@ body {
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
+  background-image: url("images/CHA_8.jpeg");
+  background-size: 100% 100%;
 }
 
 .Jlayout #Jlayout-container {
@@ -1066,6 +1094,8 @@ body {
   height: 100%;
   font-size: 1.2vw;
   width: 85%;
+  background-image: url("images/CHA_14.jpeg");
+  background-size: 100% 100%;
 }
 
 .Klayout #Klayout-container {
@@ -1114,6 +1144,8 @@ body {
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
+  background-image: url("images/CHA_10.jpeg");
+  background-size: 100% 100%;
 }
 
 .Llayout #Llayout-container {
@@ -1320,6 +1352,8 @@ body {
   height: 95%;
   font-size: 1.2vw;
   width: 85%;
+  background-image: url("images/CHA_10.jpeg");
+  background-size: 100% 100%;
 }
 
 .Nlayout #Nlayout-container {
