@@ -737,6 +737,8 @@ function createStructure(
     content = WLayOutGenerator(titles, text, page, popUp);
   } else if (currentLayout === "Olayout") {
     content = OLayOutGenerator(titles, images, page);
+  } else if (currentLayout === "Playout") {
+    content = PLayOutGenerator(titles, text, page, images, popUp);
   }
   return content;
 }
@@ -1139,6 +1141,7 @@ function WLayOutGenerator(titles, text, page, popUp) {
     </div>`;
 }
 
+// Plantilla O
 function OLayOutGenerator(titles, images, page) {
   return ` 
   <div id="Olayout-container">
@@ -1146,6 +1149,21 @@ function OLayOutGenerator(titles, images, page) {
     <div id="Oimage-container">
       <img id="Oimage" src="images/${images[page]}">
     </div>
+  </div>`;
+}
+
+// Plantilla P
+function PLayOutGenerator(titles, text, page, images, popUp) {
+  return `<h1 class="titles">${titles[page]}</h1>
+  <div id="Playout-container">
+  <div id="Pbutton">
+    <div id="Pmodals-container">
+    ${modalGenerator(popUp, page, 0)}
+    </div>
+  </div> 
+  <div id="Pimage-container">
+  <img id="Pimage" src="images/${images[page]}">
+  </div>
   </div>`;
 }
 //Generar los pop-ups

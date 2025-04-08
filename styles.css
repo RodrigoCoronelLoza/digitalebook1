@@ -1487,6 +1487,108 @@ hr {
   width: 100%;
 }
 
+/* Plantilla P */
+
+.Playout {
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 100%;
+  font-size: 1.2vmax;
+  width: 85%;
+  background-image: url("images/CHA_10.jpeg");
+  background-size: 100% 100%;
+  border: 1px solid red;
+}
+.Playout h1 {
+  margin: 0;
+  height: 10%;
+}
+
+.Playout #Playout-container {
+  display: flex;
+  height: 90%;
+}
+.Playout #Playout-container #Pbutton {
+  width: 5%;
+  height: 100%;
+  border: 1px solid green;
+}
+
+.Playout #Playout-container #Pbutton #Pmodals-container {
+  height: 100%;
+}
+
+.Playout #Playout-container #Pbutton #Pmodals-container #modal-container0 {
+  height: 10%;
+  width: 100%;
+}
+
+.Playout #Playout-container #Pbutton #Pmodals-container #modal-container1 {
+  height: 90%;
+  width: 100%;
+  margin: 0;
+}
+
+.Playout #Pbutton .open-button0 {
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  box-shadow: 10px 10px 5px var(--backgroud);
+  font-size: 1.2vw;
+}
+.Playout #Pbutton .open-button0:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary),
+    var(--hoverbuttons1)
+  );
+}
+.Playout #Playout-container #Pbutton .open-button1 {
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
+  width: 100%;
+  margin-top: 20%;
+  height: 80%;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 8px 8px 5px var(--backgroud);
+  font-size: 1.1vmax;
+}
+
+.Playout #Playout-container #Pbutton .open-button1:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary),
+    var(--hoverbuttons1)
+  );
+}
+
+/* .Dlayout #Dtext {
+  width: 55%;
+  padding-left: 3%;
+  padding-right: 3%;
+} */
+
+.Playout #Pimage-container {
+  /* background-color: var(--primary); */
+  border: 1px solid orange;
+  width: 95%;
+  height: 90%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.Playout #Pimage-container #Pimage {
+  height: 100%;
+  width: 100%;
+}
+
+
 /* Barra lateral del indice */
 
 #index-permanent {
