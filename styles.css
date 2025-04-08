@@ -235,13 +235,11 @@ body {
 
 .Clayout #Clayout-container {
   height: 100%;
-  /* border: 1px solid red; */
 }
 
 .Clayout #Clayout-container #Ctitle {
   margin: 0;
   height: 10%;
-  /* border: 1px solid green; */
 }
 
 hr {
@@ -873,14 +871,12 @@ hr {
 
 .Ilayout #Ilayout-container #Icolumn1 {
   width: 50%;
-  /* border: 1px solid red; */
 }
 
 .Ilayout #Ilayout-container #Icolumn1 #Icolumn1-image-container {
   width: 100%;
   height: 20%;
   margin-top: 9%;
-  /* border: 1px solid green; */
 }
 
 .Ilayout
@@ -1613,8 +1609,6 @@ hr {
 }
 
 .modal-body #image-modal-body {
-  /* border: 1px solid forestgreen; */
-  /* height: 50%; */
   height: 35vw;
   width: 100%;
 }
