@@ -261,8 +261,8 @@ const textData = {
     "Maestras y maestros conocen la importancia de cuidar el interés superior de la niñez y adolescencia que guía su actuar ante una situación de violencia de no pares en el sistema educativo, por un lado; y por otro lado pueden actuar conforme a la normativa boliviana que respalda los derechos de sus estudiantes.",
   ],
   9: [
-    "La normativa emitida por el Ministerio de Educación: R.M. N° 001/2018 Subsistema de Educación Regular, Normas generales para la gestión educativa y escolar; R. M. N° 1204/2018 Violencia entre pares o acoso escolar, promulgado en noviembre del 2018; R. M. N° 0001/2024 Normas generales para la gestión educativa 2024 del Subsistema de Educación Regular; R. M. N° 864/2019",
-    "Protocolo de prevención, actuación y denuncia en casos de violencia física, psicológica y sexual en unidades educativas y centros de educación especial promulgada en agosto del 2019, protege los derechos y garantías de la niñez y la adolescencia en las unidades educativas.",
+    "La normativa emitida por el Ministerio de Educación establece un marco. La <b> R. M. N° 001/2018 </b>, que regula las <b>normas generales para la gestión educativa y escolar </b>, así como la <b>R.M. N° 1204/2018</b>, que aborda la<b> prevención e intervención en casos de violencia entre pares o acoso escolar.</b>",
+    "Por otro lado, la normativa más reciente <b> R.M. N° 0001/2024 </b> establece las <b> normas generales para la gestión educativa 2024. </b> Asimismo, la <b> R.M. N° 864/2019</b>, promulgada en agosto de 2019, presenta un <b>protocolo claro de prevención, actuación y denuncia.</b>",
   ],
   10: "<br> Este contenido, puede ser transmitido también a sus estudiantes, para que puedan comprender la importancia de sus derechos y su rol en el ejercicio; reconociéndose como sujetas y sujetos de derechos, que son parte de la protección y participación para la elaboración del Plan de Convivencia Pacífica y Armónica, y generar corresponsabilidad en las Rutas de Referencia y Contra referencia. <br> <br> Puedes encontrar el documento en la carpeta de recursos adicionales, escanear el QR o utilizar el botón. ",
   11: "<br>Esta actividad tiene como propósito invitarte a <b>  reconocer los distintos tipos de conflictos </b> que pueden surgir en el entorno educativo y reflexionar sobre cómo estos impactan en la convivencia escolar. A través de un ejercicio participativo, analizarás situaciones reales o hipotéticas y explorarás posibles respuestas desde un enfoque restaurativo. <br> <br> <b>  Te recomendamos realizar esta actividad de manera individual o grupal </b>, para compartir experiencias y enriquecer la comprensión colectiva del conflicto como oportunidad de aprendizaje. <br> <br>Recuerda <b> descargar la plantilla </b> Actividad sugerida tema 1 o abrirla en la carpeta de <b> recursos adicionales </b> para llenar tus respuestas.",
@@ -337,10 +337,9 @@ const textData = {
   46: "",
   47: "Esta actividad tiene como objetivo promover una mirada crítica y reflexiva sobre la evolución de los enfoques de atención a los conflictos y la violencia en las unidades educativas, desde el año 2000 hasta la actualidad. A través del trabajo colaborativo, maestras y maestros analizarán experiencias pasadas y presentes, compartirán vivencias, y construirán de forma creativa una línea de tiempo que represente los cambios, aprendizajes y desafíos enfrentados en estos 24 años. <br><br> El trabajo será socializado en plenaria, fomentando el intercambio de aprendizajes y el fortalecimiento del compromiso colectivo hacia una convivencia pacífica y armónica. <br><br>  Recuerda <b> descargar la plantilla </b> Actividad de inicio tema 2 o abrirla en la carpeta de <b> recursos adicionales </b> para llenar tus respuestas.",
   48: "<b>Comunidad Educativa</b>. Engloba a todos los miembros de la institución educativa, incluyendo estudiantes, directoras/es, maestras, maestros, personal administrativo y madres y padres de familias, que colaboran en la promoción de un ambiente de convivencia positiva.  <br><b>Círculos Restaurativos</b>. Son espacios donde se reúnen las partes involucradas en un conflicto, junto con un facilitador, para dialogar, expresar emociones y buscar acuerdos.  <br>  <b>Diálogo Restaurativo</b>. Consiste en promover conversaciones significativas y respetuosas entre las personas afectadas por un conflicto para buscar soluciones colaborativas.  <br>  <b>Escucha Activa</b>. Habilidad de prestar atención de manera consciente a lo que la otra persona está comunicando, fomentando la empatía y la comprensión mutua.  <br> <b>Enfoque restaurativo</b>. Es la forma de abordar una situación de conflicto o violencia, involucrando a ambas partes, para la atención de sus necesidades. Cuya característica principal, es la reparación de daño.  <br>  <b>Justicia Restaurativa</b>. Se refiere a un modelo de justicia que prioriza la reparación del daño causado y la restauración de las relaciones entre las partes involucradas.  <br>  <b>Prácticas Restaurativas</b>. Son un enfoque que busca gestionar conflictos de manera dialogada y participativa, involucrando a los afectados y a la comunidad en la resolución de problemas de comportamiento.  <br> <b>Prevención de Conflictos</b>. Estrategias y acciones destinadas a anticipar y evitar situaciones conflictivas, promoviendo la comunicación efectiva y el respeto mutuo.  ",
+  49: "Bolivariano, I. E. (2023). Institución Educativa Bolivariano. <br> <br> Candia Moreno, Fernando (Coord). (1999). Diccionario de pedagogía y psicología. Madrid, España: Editorial Cultural. <br> <br> Educación, Ministerio de. (2022). Ciclo: Promoviendo la convivencia pacífica y armónica en las unidades educativas. Bolivia: Comunicación conceptual. <br> <br> Fernández, I. (2003). Escuela sin violencia: Resolución de conflictos. México: Grupo Editores Alfaomega. <br> <br> Hommes, T. d. (2018). Prevención de la violencia escolar y la convivencia pacífica. Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas. Perú: Pixel Gráfico Impresores S.A.C. <br> <br> Informe de 2013. (2016). Promover la justicia restaurativa para las niñas, niños y adolescentes. New York, Estados Unidos: Oficina del Representante Especial del Secretario General sobre la violencia contra los niños. <br> <br> Paulero, R. (2021). Conflictos entre maestras y maestros y maestras y maestros y directivos de nivel primario. Representaciones, vivencias, comportamientos y consecuencias en la práctica docente. Revista Latinoamericana de Políticas y Administración de la Educación, 140–152.",
 
-  49: "Bolivariano, I. E. (2023). Institución Educativa Bolivariano. <br>Informe de 2013. (2016). Promover la justicia restaurativa para las niñas, niños y adolescentes. New York, Estados unidos: Oficina del representante Especial del secretario general sobre la violencia contra los niños. <br> Schmitz, J. (2020). Prácticas restaurativas en el ámbito educativo. Ecuador. <br> Candia Moreno, Fernando (Coord). (1999). Diccionario de pedagogía y psicología. Madrid, España: Editorial Cultural. <br> Fernández, I. (2003). Escuela sin violencia: Resolución de conflictos. México: Grupo Editores Alfaomega. <br> San Martín, J. A. (2003). La mediación escolar. Un camino para la gestión del conflicto escolar. Madrid, España. <br> Rodríguez, R. (2005). La acción tutorial para favorecer la convivencia: la disciplina. <br> Educación, M. d. (2022). CICLO: PROMOVIENDO LA CONVIVENCIA PACÍFICA Y ARMÓNICA EN LAS UNIDADES EDUCATIVAS. Bolivia: Comunicación conceptual. <br> Paulero, R. (2021). Conflictos entre maestras y maestros y maestras y maestros y directivos de nivel primario. Representaciones, vivencias, comportamientos y consecuencias en la práctica docente. Revista Latinoamérica de Políticas y administración de la educación, 140-152.",
-
-  50: "UNEFCO. (2022). CICLO: PROMOVIENDO LA CONVIVENCIA PACÍFICA Y ARMÓNICA EN LAS UNIDADES EDUCATIVAS. Tarija, Bolivia: UNEFCO.  <br> Oscar Vasquez. (2018). Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas Basada en la experiencia de la Fundación Terre des hommes en el Perú (2011-2017). Lima, Perú: Pixel Gráfico Impresores S.A.C. <br> Vargas, G. (2019). Factores protectores y afrontamiento de riesgos asociados al uso de sustancias psicoactivas en adolescentes y jóvenes. La Paz, Bolivia: WA-GUI. <br> Terres des hommes. (2014). Auditoría Social de niños, niñas y adolescentes ¿Es tiempo de derechos? Cochabamba, Bolivia: Kipus. <br> Hommes, T. d. (2018). Prevención de la violencia escolar y la convivencia pacífica. Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas. Perú: Pixel Gráfico Impresores S.A.C. <br> Progettomondo.Mlal, EDUCO, FUDEP. (2018). Prácticas restaurativas para la prevención y gestion de conflictos en el ámbito educativo. La Paz, Bolivia: Imprenta Cerro Azul S.R.L. <br> Oscar Vasquez. (2018). Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas Basada en la experiencia de la Fundación Terre des hommes en el Perú (2011-2017). Lima, Perú: Pixel Gráfico Impresores S.A.C. <br> Vargas, G. (2019). Factores protectores y afrontamiento de riesgos asociados al uso de sustancias psicoactivas en adolescentes y jóvenes. La Paz, Bolivia: WA-GUI. <br> Terres des hommes. (2014). Auditoría Social de niños, niñas y adolescentes ¿Es tiempo de derechos? Cochabamba, Bolivia: Kipus. <br> Hommes, T. d. (2018). Prevención de la violencia escolar y la convivencia pacífica. Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas. Perú: Pixel Gráfico Impresores S.A.C. <br> Progettomondo.Mlal, EDUCO, FUDEP. (2018). Prácticas restaurativas para la prevención y gestion de conflictos en el ámbito educativo. La Paz, Bolivia: Imprenta Cerro Azul S.R.L.",
+  50: "Progettomondo.Mlal, EDUCO, FUDEP. (2018). Prácticas restaurativas para la prevención y gestión de conflictos en el ámbito educativo. La Paz, Bolivia: Imprenta Cerro Azul S.R.L. <br> <br> Rodríguez, R. (2005). La acción tutorial para favorecer la convivencia: la disciplina. <br> <br> San Martín, J. A. (2003). La mediación escolar. Un camino para la gestión del conflicto escolar. Madrid, España. <br> <br> Schmitz, J. (2020). Prácticas restaurativas en el ámbito educativo. Ecuador. <br> <br> Terres des hommes. (2014). Auditoría Social de niños, niñas y adolescentes: ¿Es tiempo de derechos? Cochabamba, Bolivia: Kipus. <br> <br> UNEFCO. (2022). Ciclo: Promoviendo la convivencia pacífica y armónica en las unidades educativas. Tarija, Bolivia: UNEFCO. <br> <br>Vargas, G. (2019). Factores protectores y afrontamiento de riesgos asociados al uso de sustancias psicoactivas en adolescentes y jóvenes. La Paz, Bolivia: WA-GUI. <br> <br>Vasquez, Oscar. (2018). Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas. Basada en la experiencia de la Fundación Terre des hommes en el Perú (2011–2017). Lima, Perú: Pixel Gráfico Impresores S.A.C.",
 
   // 52: "texto a remplazar",
 
@@ -358,10 +357,7 @@ const titlesData = {
   6: "Primeras Miradas: ¿Qué entendemos por conflicto y restauración?",
   7: ["<br>Base normativa", "Normativa internacional:"],
   8: ["Normativa nacional", "Ley 548 Codigo niño, niña, adolescente"],
-  9: [
-    "Ministerio de educación",
-    "Normativa emitida por el Ministerio de Educación",
-  ],
+  9: ["Ministerio de educación", "Esfuerzo institucional"],
   10: "Protocolo de prevención",
   11: "Reconociendo Conflictos y Caminos para la Convivencia",
   12: " ",
@@ -583,14 +579,9 @@ const popUpData = {
       title: " ",
       typeofContent: "image",
       contentModal: "PAG9POP-1.png",
-      buttonName: "Resolución Ministerial N° 001/2018 - Artículo 10 ",
+      buttonName: "Resolución Ministerial N° 001/2018 - Artículo 10 y 89 ",
     },
-    {
-      title: "",
-      typeofContent: "image",
-      contentModal: "PAG9POP-2.png",
-      buttonName: "Resolución Ministerial N° 001/2018 - Artículo 89",
-    },
+
     {
       title: "",
       typeofContent: "image",
@@ -624,8 +615,14 @@ const popUpData = {
     {
       title: "",
       typeofContent: "image",
+      contentModal: "PAG9POP-2.png",
+      buttonName: "Resolución Ministerial N° 0001/2024 - Artículo 95 I y II",
+    },
+    {
+      title: "",
+      typeofContent: "image",
       contentModal: "PAG9POP-8.png",
-      buttonName: "Resolución Ministerial N° 0001/2024 - Artículo 95",
+      buttonName: "Resolución Ministerial N° 0001/2024 - Artículo 95 III",
     },
     {
       title: "",
@@ -885,7 +882,8 @@ const popUpData = {
       title: "",
       typeofContent: "image",
       contentModal: "PAG36POP-1.png",
-      buttonName: "Prácticas restaurativas",
+      buttonName:
+        "¿Qué buscan las practicas restaurativas con enfoque de derechos humanos?",
     },
   ],
   36: [

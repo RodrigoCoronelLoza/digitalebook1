@@ -690,8 +690,7 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0 {
-  /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -702,8 +701,7 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button1 {
-  /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -713,8 +711,7 @@ hr {
   border: none;
 }
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button2 {
-  /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -724,8 +721,7 @@ hr {
   border: none;
 }
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button3 {
-  /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -735,8 +731,7 @@ hr {
   border: none;
 }
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button4 {
-  /* background-color: var(--primary); */
-  background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
+  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -791,12 +786,7 @@ hr {
   );
 }
 
-.Hlayout #Hlayout-container #Hmodals-container2 .open-button5,
-.open-button6,
-.open-button7,
-.open-button8,
-.open-button9 {
-  /* background-color: var(--primary); */
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button5{
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   color: white;
   border-radius: 50%;
@@ -806,6 +796,66 @@ hr {
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
 }
+
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button6{
+  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 10px 10px 5px var(--backgroud);
+  border: none;
+}
+
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button7{
+  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 10px 10px 5px var(--backgroud);
+  border: none;
+}
+
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button8{
+  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 10px 10px 5px var(--backgroud);
+  border: none;
+}
+
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button9{
+  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 10px 10px 5px var(--backgroud);
+  border: none;
+}
+
+
+/* .Hlayout #Hlayout-container #Hmodals-container2 .open-button5,
+.open-button6,
+.open-button7,
+.open-button8,
+.open-button9 {
+  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
+  color: white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+  box-shadow: 10px 10px 5px var(--backgroud);
+  border: none;
+} */
 
 .Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 .open-button5:hover {
   /* background-color: var(--hoverbuttons1); */
