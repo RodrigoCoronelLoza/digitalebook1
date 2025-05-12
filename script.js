@@ -1018,7 +1018,7 @@ function ILayOutGenerator(title, text, images, page, links) {
         <img id ="Iimage-column2" src="images/${images[page][0]}" />
       </div>
       <div id="Ilink-container">
-        <a id="Ilink" href="${links[page]} target="_blank">ABRIR EN UNA NUEVA PESTAÑA</a>
+        <a id="Ilink" href="${links[page]}" target="_blank">ABRIR EN UNA NUEVA PESTAÑA</a>
       </div>
     </div>
     <div id="Icolumn3">
