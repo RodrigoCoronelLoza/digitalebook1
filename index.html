@@ -26,77 +26,131 @@
         </div>
       </div>
       <div id="page-container">
-        <div id="index-permanent">
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button1" onclick="setPage(3)">Presentaci&oacuten</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button2" onclick="setPage(5)">TEMA 1</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button3" onclick="setPage(6)">Actividad de inicio </button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button4" onclick="setPage(7)">Normativa internacional</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button5" onclick="setPage(8)">Normativa nacional</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button6" onclick="setPage(9)">Normativa Ministerio</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button7" onclick="setPage(11)">Actividad Sugerida</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button8" onclick="setPage(12)">TEMA 2</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button9" onclick="setPage(13)">Actividad de inicio </button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button10" onclick="setPage(14)">Conflicto  educativo</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button11" onclick="setPage(17)">Características conflicto</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button12" onclick="setPage(22)">Factores de riesgo</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button13" onclick="setPage(28)">Herramientas restaurativas</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button14" onclick="setPage(32)">Actividad sugerida</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button15" onclick="setPage(33)">TEMA 3</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button16" onclick="setPage(34)">Actividad de inicio </button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button17" onclick="setPage(35)">Enfoque restaurativo</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button18" onclick="setPage(37)">Diferentes enfoques</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button19" onclick="setPage(41)">Principios restaurativos</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button20" onclick="setPage(44)">Disciplina social </button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button21" onclick="setPage(47)">Actividad sugerida</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button22"onclick="setPage(48)">Glosario</button>
-          </div>
-          <div class="index-element-container">
-            <button class="index-buttons" id="index-button23"onclick="setPage(49)">Bibliograf&iacutea</button>
-          </div>
-        </div>
+        <nav id="index-permanent">
+          <ul class="index-desp">
+            <li class="list-item">
+              <div class="list-button">
+                <button class="index-buttons" id="index-button1" onclick="setPage(3)">Presentaci&oacuten</button>
+              </div>
+            </li>
+            <li class="list-item list-item--click">
+              <div class="list-button" id="tema1">
+                <button class="index-buttons" id="index-button2" onclick="setVisible(1)">TEMA 1&nbsp&nbsp&#711</button>
+              </div>
+              <ul class="list-show" id="show1">
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button3" onclick="setPage(6)">&nbsp&nbsp&nbspActividad de inicio </button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button4" onclick="setPage(7)">&nbsp&nbsp&nbspNormativa internacional</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button5" onclick="setPage(8)">&nbsp&nbsp&nbspNormativa nacional</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button6" onclick="setPage(9)">&nbsp&nbsp&nbspNormativa Ministerio</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button7" onclick="setPage(11)">&nbsp&nbsp&nbspActividad Sugerida</button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item list-item--click">
+              <div class="list-button" >
+                <button class="index-buttons" id="index-button8" onclick="setVisible(2)">TEMA 2&nbsp&nbsp&#711</button>
+              </div>
+              <ul class="list-show" id="show2">
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button9" onclick="setPage(13)">&nbsp&nbsp&nbspActividad de inicio </button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button10" onclick="setPage(14)">&nbsp&nbsp&nbspConflicto educativo </button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button11" onclick="setPage(17)">&nbsp&nbsp&nbspCaracterísticas conflicto</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button12" onclick="setPage(22)">&nbsp&nbsp&nbspFactores de riesgo</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button13" onclick="setPage(28)">&nbsp&nbsp&nbspHerramientas restaurativas</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button14" onclick="setPage(32)">&nbsp&nbsp&nbspActividad Sugerida</button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item list-item--click">
+              <div class="list-button" >
+                <button class="index-buttons" id="index-button15" onclick="setVisible(3)">TEMA 3&nbsp&nbsp&#711</button>
+              </div>
+              <ul class="list-show" id="show3">
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button16" onclick="setPage(34)">&nbsp&nbsp&nbspActividad de inicio </button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button17" onclick="setPage(35)">&nbsp&nbsp&nbspEnfoque restaurativo</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button18" onclick="setPage(37)">&nbsp&nbsp&nbspDiferentes enfoques</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button19" onclick="setPage(41)">&nbsp&nbsp&nbspPrincipios restaurativos</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button20" onclick="setPage(44)">&nbsp&nbsp&nbspDisciplina social</button>
+                  </div>
+                </li>
+                <li class="list-inside">
+                  <div class="list-button">
+                    <button class="index-buttons" id="index-button21" onclick="setPage(47)">&nbsp&nbsp&nbspActividad sugerida</button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <div class="list-button">
+                <button class="index-buttons" id="index-button22" onclick="setPage(48)">Glosario</button>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="list-button">
+                <button class="index-buttons" id="index-button23" onclick="setPage(49)">Bibliograf&iacutea</button>
+              </div>
+            </li>
+          </ul>
+        </nav>
         <div id="page-content"></div>
       </div>
       

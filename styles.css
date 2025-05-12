@@ -690,7 +690,11 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0 {
-  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
+  background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--hoverbuttons1)
+  );
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -701,7 +705,11 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button1 {
-  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
+  background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--hoverbuttons1)
+  );
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -711,7 +719,11 @@ hr {
   border: none;
 }
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button2 {
-  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
+  background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--hoverbuttons1)
+  );
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -721,7 +733,11 @@ hr {
   border: none;
 }
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button3 {
-  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
+  background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--hoverbuttons1)
+  );
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -731,7 +747,11 @@ hr {
   border: none;
 }
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button4 {
-  background-image: linear-gradient(to right, var(--primary), var(--hoverbuttons1));
+  background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--hoverbuttons1)
+  );
   color: white;
   border-radius: 50%;
   height: 100%;
@@ -786,7 +806,7 @@ hr {
   );
 }
 
-.Hlayout #Hlayout-container #Hmodals-container2 .open-button5{
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button5 {
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   color: white;
   border-radius: 50%;
@@ -797,7 +817,7 @@ hr {
   border: none;
 }
 
-.Hlayout #Hlayout-container #Hmodals-container2 .open-button6{
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button6 {
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   color: white;
   border-radius: 50%;
@@ -808,7 +828,7 @@ hr {
   border: none;
 }
 
-.Hlayout #Hlayout-container #Hmodals-container2 .open-button7{
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button7 {
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   color: white;
   border-radius: 50%;
@@ -819,7 +839,7 @@ hr {
   border: none;
 }
 
-.Hlayout #Hlayout-container #Hmodals-container2 .open-button8{
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button8 {
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   color: white;
   border-radius: 50%;
@@ -830,7 +850,7 @@ hr {
   border: none;
 }
 
-.Hlayout #Hlayout-container #Hmodals-container2 .open-button9{
+.Hlayout #Hlayout-container #Hmodals-container2 .open-button9 {
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   color: white;
   border-radius: 50%;
@@ -840,7 +860,6 @@ hr {
   box-shadow: 10px 10px 5px var(--backgroud);
   border: none;
 }
-
 
 /* .Hlayout #Hlayout-container #Hmodals-container2 .open-button5,
 .open-button6,
@@ -1584,11 +1603,41 @@ hr {
 #index-permanent {
   height: 101%;
   width: 15%;
-  background-color: #92f7eb;
+  /* background-color: black; */
 }
-
-.index-element-container {
-  height: 4.3%;
+.index-desp {
+  padding-left: 0;
+}
+.list-item {
+  list-style-type: none;
+  overflow: hidden;
+}
+/* .list-item--click {
+ 
+} */
+#show1 {
+  list-style-type: none;
+  padding-left: 0;
+  /* border-left: 2px solid black; */
+  transition: height 0.4s;
+  height: 0;
+}
+#show2 {
+  list-style-type: none;
+  padding-left: 0;
+  /* border-left: 2px solid black; */
+  transition: height 0.4s;
+  height: 0;
+}
+#show3 {
+  list-style-type: none;
+  padding-left: 0;
+  /* border-left: 2px solid black; */
+  transition: height 0.4s;
+  height: 0;
+}
+.list-button {
+  height: 3em;
 }
 
 .index-buttons {
