@@ -824,7 +824,7 @@ function CLayOutGenerator(titles, text, page) {
         </div>
         <hr/>
         <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(5)">TEMA 1: BASE NORMATIVA</button> 
+          <button class="index-big-buttons" onclick="setPage(5)"> <b>TEMA 1: BASE NORMATIVA</b></button> 
         </div>
         <div class="button-index-container">
           <button class="index-big-buttons" onclick="setPage(6)">&#9674 Actividad de inicio </button>
@@ -841,13 +841,13 @@ function CLayOutGenerator(titles, text, page) {
         <div class="button-index-container">
           <button class="index-big-buttons" onclick="setPage(11)">&#9674 Actividad Sugerida</button>
         </div>
-        <hr/>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(12)">TEMA 2: COMPREDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</button>
-        </div>
+        
         
       </div>
       <div id="column2">
+        <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(12)"><b>TEMA 2: COMPREDER EL CONFLICTO EN EL ENTORNO EDUCATIVO</b></button>
+        </div>
         <div class="button-index-container">
           <button class="index-big-buttons" onclick="setPage(13)">&#9674 Actividad de inicio</button>
         </div>
@@ -866,17 +866,15 @@ function CLayOutGenerator(titles, text, page) {
         <div class="button-index-container">
           <button class="index-big-buttons" onclick="setPage(32)">&#9674 Actividad sugerida</button> 
         </div>
-        <hr/>
-        <div class="button-index-container">
-          <button class="index-big-buttons" onclick="setPage(33)">TEMA 3: ENFOQUE RESTAURATIVO</button> 
+        
+      </div>
+       <div id="column3">
+       <div class="button-index-container">
+          <button class="index-big-buttons" onclick="setPage(33)"><b>TEMA 3: ENFOQUE RESTAURATIVO</b></button> 
         </div>
         <div class="button-index-container">
           <button class="index-big-buttons" onclick="setPage(34)">&#9674 Actividad de inicio </button>
         </div>
-        
-        
-      </div>
-       <div id="column3">
        <div class="button-index-container">
           <button class="index-big-buttons" onclick="setPage(35)">&#9674 Enfoque restaurativo</button>
         </div>
