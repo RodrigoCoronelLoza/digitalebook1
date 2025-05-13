@@ -719,18 +719,26 @@ function setVisible(value) {
       alt1 = "15em";
     }
     show1.style.height = alt1;
+    show2.style.height = 0;
+    show3.style.height = 0;
   } else if (value === 2) {
     let alt2 = 0;
     if (show2.clientHeight === 0) {
       alt2 = "18em";
     }
     show2.style.height = alt2;
+    show1.style.height = 0;
+    show3.style.height = 0;
   } else if (value === 3) {
     let alt3 = 0;
     if (show3.clientHeight === 0) {
       alt3 = "18em";
     }
+  
     show3.style.height = alt3;
+    show1.style.height = 0;
+    show2.style.height = 0;
+    
   }
 }
 //Guardar en la memoria cache

@@ -1642,7 +1642,8 @@ hr {
 }
 
 .index-buttons {
-  background-color: #c0f9ff;
+  /* background-color: #c0f9ff; */
+  background-color: white;
   font-size: 1vw;
   margin: 0;
   border: none;
