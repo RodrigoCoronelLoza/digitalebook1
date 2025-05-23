@@ -1602,6 +1602,7 @@ hr {
 /* Barra lateral del indice */
 
 #index-permanent {
+  font-size: 1.2vmax;
   height: 101%;
   width: 15%;
   /* background-color: black; */
@@ -1638,7 +1639,7 @@ hr {
   height: 0;
 }
 .list-button {
-  height: 3em;
+  height: 1.5em;
 }
 
 .index-buttons {
