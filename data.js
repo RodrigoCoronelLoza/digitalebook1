@@ -1,5 +1,5 @@
 const textData = {
-  0: "mmmm",
+  0: "",
   1: "<strong>Fecha de publicación:</strong> Marzo de 2024 </br>  <strong>Lugar:</strong> Estado Plurinacional de Bolivia</br> </br> <b>Institución responsable:</b> </br> Viceministerio de Educación Superior de Formación Profesional</br>Dirección General de Formación de Maestros</br>Unidad Especializada de Formación Continua – UNEFCO</br> </br> <b>Equipo de redacción y dirección:</b> </br>Fundación Ayuda en Acción </br> ProggettoMondo </br> Unidad Especializada de Formación Continua – UNEFCO </br> </br> <b>Créditos de las imágenes y flujogramas:</b> </br>Ilustraciones y dibujos: Fundación Ayuda en Acción; ProgettoMondo </br> Flujogramas: Fundación Ayuda en Acción </br>   </br> <b>Sitios oficiales:</b> </br> www.minedu.gob.bo </br> http://unefco.gob.bo/ </br> Bolivia, marzo, 2024  ",
   2: "Presiona los botones para navegar en el libro",
   3: "<br> <br> <br>  El Plan de Formación para Maestras y Maestros es una modalidad de aprendizaje, compuesta por cursos cortos, desarrollada por el Ministerio de Educación a través de la Unidad Especializada de Formación Continua (UNEFCO) para profundizar y fortalecer habilidades y capacidades en la labor educativa, con un enfoque en la mejora de las prácticas y procesos formativos. Su propósito, de acuerdo con la Ley de Educación N° 070 “Avelino Siñani – Elizardo Pérez”, es trabajar por la universalización del Modelo Educativo Sociocomunitario Productivo, en atención a los diferentes niveles y áreas temáticas, con relevancia cultural y lingüística. <br> <br> Las prácticas restaurativas se han venido consolidando como una ciencia social emergente desde aproximadamente el 2013, época en la cual se estudian las acciones individuales y efectivas dirigidas hacia tres objetivos: el fortalecimiento comunitario, la resolución pacífica de conflictos y la  del daño o falta u ofensa cuando se produce. Se definen las mismas como respuestas no punitivas orientadas a la reparación del daño, potenciar las relaciones interpersonales, fortalecer la resolución de los conflictos y desarrollar soluciones que incluyan a todas las personas involucradas en un daño o falta u ofensa; tomando en cuenta que el manejo restaurativo de los afectos en el aula mejora la capacidad para el aprendizaje y la resiliencia. <br> <br> Los cuadernos del ciclo formativo: <b> “PRÁCTICAS RESTAURATIVAS PARA LA RESOLUCIÓN DE CONFLICTOS Y UNA VIDA LIBRE DE VIOLENCIA” </b>, nos invitan a replantearnos la manera en que enfrentamos los conflictos, desafiando los paradigmas arraigados de confrontación y castigo. A medida que nos sumergimos en las profundidades de las prácticas restaurativas, descubrimos su capacidad no solo para restaurar el daño o falta u ofensa causado por los conflictos, sino también para fortalecer nuestros lazos comunitarios y fomentar un clima de confianza y respeto mutuo. Este ciclo cuenta con tres cursos, en el Primer Curso, se aborda la parte normativa, lo que es y no es conflicto para luego introducir al enfoque restaurativo; en el Segundo Curso, se presenta; y en el Tercer Curso presentamos una caja de herramientas práctica para la aplicación en el quehacer educativo. <br> <br><b> COORDINACIÓN GENERAL - UNEFCO",
@@ -23,26 +23,15 @@ const textData = {
   12: "Tema 2",
   13: "<br>Iniciar un proceso de aprendizaje sobre convivencia y prácticas restaurativas requiere mirar hacia adentro y hacia nuestro entorno. Esta actividad busca generar un <b> espacio de reflexión personal y colectiva </b> sobre cómo entendemos el conflicto, cómo lo vivimos en la comunidad educativa y qué actitudes asumimos frente a él. <br> <br> A través de esta dinámica, podrás identificar tus percepciones, emociones y experiencias vinculadas al conflicto escolar, sentando así las bases para desarrollar una mirada más comprensiva, empática y transformadora.<br> <br> Recuerda <b> descargar la plantilla </b> Actividad de inicio tema 2 o abrirla en la carpeta de <b> recursos adicionales </b> para llenar tus respuestas.",
   14: "Para profundizar en el <b> Conflicto en el ámbito educativo</b>, utiliza las flechas para revisar más información, antes de continuar avanzando.",
-  //15: [
-  //"La diferencia se establece entre problema y conflicto, dando a conocer que el problema es totalmente individual relacionado al sujeto, teniendo en cuenta que puede haber involucrados al problema afectando a demás personas a diferencia del conflicto debe existir dos o más personas que estén implicados, en efecto debe darse la resolución para ambas partes, en el cual debe existir conformidad",
-  //"<br> <br> <br> Habitualmente, la palabra “conflicto” lleva asociada connotaciones peyorativas. Seguramente esto es debido a que solemos identificarla con “violencia”. Es cierto que en ocasiones la violencia es la negación del conflicto, en la medida que pretende eliminar al diferente, negar su humanidad e imponer una falsa solución por la fuerza”. (Progettomondo.Mlal, EDUCO, FUDEP, 2018)",
-  //],
   15: "",
-  //16: "El <b>conflicto</b> no es ajeno al <b>ámbito educativo</b> y el <b>reto</b> es aprender a <b>construir</b> a partir de él, <b>convivir</b> con el conflicto y estar <b>preparados</b> para educar para la <b>búsqueda de una solución</b>, ya que este debe entenderse como una <b>oportunidad de cambio</b>, de <b>crecimiento</b> y de <b>aprendizaje</b>.  <br><br> En general, el <b>conflicto</b> se puede entender como una <b>oportunidad de cambio</b> y <b>transformación</b> por la comunidad. <br><br> En este sentido, los <b>conflictos</b> son <b>inevitables</b>, a veces <b>impredecibles</b>, pero la gran mayoría de ellos se pueden <b>administrar</b> y <b>resolver</b>.  <br><br> En consecuencia, los <b>conflictos</b> surgen y se expresan de <b>diferente manera</b>, por <b>motivos diversos</b> y con <b>distinta intensidad</b> entre las personas.  <br><br> Depende mucho del <b>lugar desde donde uno ve el conflicto</b>, lo que no significa la <b>imposibilidad de llegar a acuerdos</b> y <b>soluciones</b> a través del <b>diálogo</b>.  <br><br>",
   16: "",
-  //17: "El <b>conflicto</b> es una parte <b>inherente a la vida humana</b> y surge de <b>desacuerdos</b> entre dos o más personas, pudiendo escalar hasta la <b>violencia</b> si no se <b>gestiona adecuadamente</b>. Es un fenómeno <b>visible</b>, que a menudo refleja <b>problemas más profundos</b> y puede tener <b>impactos tanto positivos como negativos</b> en la convivencia.  <br><br> Aunque algunos <b>conflictos buscan dañar</b>, también representan <b>oportunidades para el aprendizaje</b> y el <b>cambio</b>. La <b>clave</b> no es evitarlos, sino aprender a <b>enfrentarlos de manera constructiva</b>, ya que seguirán surgiendo en la medida en que <b>interactuamos</b> y <b>evolucionamos</b>.  <br><br> La <b>resolución de un conflicto</b> no implica que a continuación no surjan otros. En la medida que estamos vivos y seguimos <b>interaccionando</b> y <b>creciendo</b>, seguirán apareciendo <b>conflictos</b> que nos darán <b>oportunidades para avanzar</b> o <b>retroceder</b>, según cómo los <b>enfrentemos</b> y <b>resolvamos</b>. (<b>UNESCO, 2019</b>)",
   17: "",
   18: "Para profundizar en el <b> Conflicto entre personal docente</b>, utiliza las flechas para revisar más información, antes de continuar avanzando.",
-  //19: "<br> <br> Los conflictos entre estudiantes son situaciones de tensión o desacuerdo que pueden surgir en el entorno escolar y afectar la convivencia, el aprendizaje y el bienestar. Estos pueden manifestarse a través de discusiones, peleas, acoso escolar (bullying), conflictos por amistad o diferencias culturales y personales. <br> <br> Entre las principales causas de estos conflictos se encuentran la <b> subjetividad en la percepción, fallas en la comunicación, información incompleta, frustraciones personales, interdependencia excesiva, desequilibrio entre necesidades y recursos, y diferencias de carácter. </b> Comprender estas causas es fundamental para prevenir y gestionar los conflictos de manera efectiva dentro de la comunidad educativa.",
   19: "",
   20: "Los conflictos en estudiantes de <b> primaria y secundaria</b>  pueden variar debido a las diferencias en su desarrollo cognitivo, emocional y social. Mientras que en la <b> educación primaria</b>  los desacuerdos suelen girar en torno a juegos, amistad y pertenencia, en la<b>  educación secundaria </b>  emergen conflictos más complejos relacionados con la identidad, la presión social o las relaciones afectivas.  A continuación, se tienen algunas de las diferencias clave:",
-
   21: "Para profundizar en los <b> Conflictos en la Comunidad Educativa</b>, utiliza las flechas para revisar más información, antes de continuar avanzando.",
-  //22: "Los <b>factores de riesgo</b> en la <b>unidad educativa</b> se refieren a las <b>condiciones o circunstancias</b> que aumentan la probabilidad de <b>resultados negativos</b>, como <b>problemas de conducta</b>, <b>problemas de salud física o mental</b>, <b>bajo rendimiento académico</b>, <b>delincuencia</b> o <b>abuso de sustancias</b>. Algunos ejemplos de factores de riesgo en el contexto educativo incluyen la <b>pobreza</b>, la <b>depresión en los padres y madres</b>, el <b>estrés en los padres y madres</b>, los <b>conflictos familiares</b> o la <b>violencia</b>, el <b>abandono emocional</b> y el <b>consumo de alcohol o drogas</b> durante el embarazo. Estos factores pueden afectar el <b>desarrollo</b> y el <b>bienestar</b> de las y los estudiantes, destacando la importancia de <b>abordarlos</b> para promover un <b>entorno educativo saludable</b> propicio para el <b>aprendizaje</b>. (<b>Observatorio de la educación peruana, 2021</b>)  <br><br> Es esencial implementar <b>medidas preventivas</b> que promuevan el <b>desarrollo</b> y el <b>bienestar</b> de los estudiantes. Estas medidas pueden incluir <b>programas de aprendizaje social y emocional</b>, <b>programas de tutoría</b>, <b>iniciativas de participación familiar</b> y <b>asociaciones comunitarias</b>.  <br><br> Crear un <b>clima escolar positivo</b> que fomente el <b>respeto</b>, la <b>inclusión</b> y la <b>colaboración</b> <br>",
   22: "",
   23: "La <b>violencia juvenil</b> está influenciada por diversos <b>factores de riesgo</b> que operan en diferentes niveles.  <br> <br> <b>    *    A nivel individual</b>, la <b>falta de empatía</b>, la <b>baja autoestima</b>, la <b>impulsividad</b> y el <b>consumo de sustancias</b> pueden aumentar la propensión a <b>conductas violentas</b>.  <br> <b>    *    En el ámbito familiar</b>, la <b>crianza autoritaria</b>, la <b>violencia doméstica</b> y la <b>falta de comunicación</b> pueden contribuir a estos comportamientos.  <br>  <b>    *    En el entorno escolar</b>, normas poco claras, la <b>falta de atención a la diversidad</b> y la <b>ausencia de metodologías adecuadas</b> generan un <b>clima propicio para la violencia</b>.  Además, la <b>comunidad</b> juega un papel clave, ya que la <b>pobreza</b>, la <b>falta de oportunidades económicas</b> y la <b>baja participación social</b> pueden agravar la situación.  <br> Comprender estos <b>factores</b> es esencial para diseñar <b>estrategias efectivas</b> de <b>prevención</b> y <b>atención</b>.   ",
-
-  //24: "El <b>Código Niña, Niño y Adolescente</b> en su <b>artículo 150</b> menciona la <b>protección contra la violencia</b> en el sistema educativo: <b>La protección a la vida</b> y la <b>integridad física y psicológica</b> de los miembros de la <b>comunidad educativa</b>, implica la <b>prevención</b>, <b>atención</b> y <b>sanción</b> de la violencia ejercida en el <b>Sistema Educativo</b> del Estado Plurinacional de Bolivia, con la finalidad de consolidar la <b>convivencia pacífica y armónica</b>, la <b>cultura de paz</b>, <b>tolerancia</b> y <b>justicia</b>, en el marco del <b>Vivir Bien</b>, el <b>buen trato</b>, la <b>solidaridad</b>, el <b>respeto</b>, la <b>intraculturalidad</b>, la <b>interculturalidad</b> y la <b>no discriminación</b> entre sus miembros (<b>Estado Plurinacional de Bolivia, 2014</b>). Haciendo énfasis en la importancia de la <b>prevención</b>.  <br><br> En el <b>artículo 151</b> del Código, menciona <b>siete tipos de violencia</b>: 1. Violencia entre pares, 2. Violencia entre no pares, 3. Violencia Verbal, 4. Discriminación en el sistema educativo, 5. Violencia en Razón de Género, 6. Violencia en Razón de la Situación Económica , 7. Violencia Cibernética en el Sistema Educativo <br><br> La consideración de estos <b>tipos de violencia</b>, permiten establecer <b>medidas de prevención</b>, entre ellas:  <br>  Elaboración de Planes de Convivencia Pacífica y Armónica. <br>  Adoptación de procedimientos alternativos para resolver conflictos. <br> Programar actividades intencionadas para promover una cultura de buen trato y prevención de violencias. <br><br> Así mismo, el <b>protocolo de prevención, actuación y denuncia</b>, define la <b>violencia en el ámbito educativo</b> en <b>violencia física</b>, <b>psicológica</b> y <b>sexual</b> en unidades educativas y centros de educación especial.  <br><br>",
   24: "",
   25: "Para fortalecer el análisis y la reflexión sobre la convivencia pacífica, la prevención de conflictos y la promoción de derechos en el contexto educativo, te invitamos a revisar la <b>  Ley Nº 548 - Código Niña, Niño y Adolescente </b>. Este importante marco normativo, aprobado en 2014, establece los derechos, garantías y deberes de niñas, niños y adolescentes en Bolivia, reconociéndolos como sujetos plenos de derechos. <br> <br> Su lectura permitirá comprender las bases legales que sustentan la intervención educativa frente a situaciones de violencia, el enfoque de protección integral y los principios rectores como el interés superior, la corresponsabilidad, la equidad de género y la participación.",
   26: [
@@ -50,14 +39,12 @@ const textData = {
     "No todas las formas de violencia son evidentes o directas. En muchos casos, la omisión y la falta de protección pueden causar tanto daño como una agresión explícita. Por otro lado, la violencia sexual constituye una de las formas más graves de vulneración de derechos, ya que atenta contra la integridad, la dignidad y la seguridad de la persona. ",
   ],
   27: "Para profundizar en la <b> Resolución de conflictos</b>, utiliza las flechas para revisar más información, antes de continuar avanzando.",
-  //28: "Las prácticas restaurativas son herramientas que permiten generar relaciones armoniosas y sentido de comunidad, desarrollar habilidades para la vida, expresar emociones y resolver conflictos promoviendo que las personas asuman sus responsabilidades y las consecuencias de su conducta, intentando restaurar la relación con el otro” (Hommes, 2018; Terre des Hommes, 2014). <br> <br> Bajo esta perspectiva, las prácticas restaurativas no solo se aplican como respuesta a situaciones de violencia o conflicto, sino que también <b> se constituyen en estrategias preventivas </b>que fortalecen la cohesión social y el sentido de pertenencia dentro de la comunidad educativa. <br> <br>A continuación, se presenta los tipos de prácticas restaurativas según su propósito. Las <b>tres primeras </b> se utilizan principalmente de forma <b>proactiva y preventiva </b>, con el objetivo de construir relaciones sólidas, generar confianza y promover el diálogo antes de que surja un conflicto. Las <b> dos últimas, </b> en cambio, se aplican <b>tras la ocurrencia de un conflicto o situación de violencia</b>, con el fin de reparar el daño, restaurar vínculos y fomentar la responsabilidad de las personas involucradas.",
   28: "",
   29: "Para construir una convivencia pacífica y resolver conflictos de manera efectiva, las prácticas restaurativas ofrecen diversas herramientas que fomentan el diálogo, la empatía y la responsabilidad. Estas estrategias permiten que las personas involucradas en un conflicto expresen sus emociones, reparen el daño causado y fortalezcan sus relaciones.",
   30: [
     "<br> La violencia en el sistema educativo puede manifestarse de múltiples formas, desde agresiones verbales y físicas hasta el acoso escolar, la exclusión social o la discriminación. Estas expresiones de violencia no solo afectan la convivencia diaria, sino que también inciden de manera negativa en el  bienestar emocional, el desarrollo personal y el rendimiento académico. Sin embargo, cuando se adopta un enfoque restaurativo, estas situaciones dejan de ser únicamente problemáticas y se convierten en oportunidades para el aprendizaje, la reflexión y la transformación positiva.",
     "A continuación, presentamos una tabla que asocia los tipos de violencia más comunes en el ámbito educativo con prácticas restaurativas sugeridas, permitiendo una intervención efectiva y adaptada a cada contexto. Estas estrategias fomentan el diálogo, la responsabilidad y la reparación del daño, promoviendo un ambiente de respeto y confianza en el entorno escolar.",
   ],
-  //31: "El <b>Código Niña, Niño y Adolescente</b> menciona la <b>participación de la niñez y adolescencia</b> como un <b>principio y derecho</b>, a través del cual pueden involucrarse en la <b>vida familiar</b>, <b>comunitaria</b>, <b>social</b>, <b>escolar</b> y otros espacios de interés; para ser <b>escuchadas/os</b> y <b>tomados en cuenta</b>.  <br><br> Por su parte la <b>Ley No. 070</b> consolida un espacio de <b>protagonismo</b> a los <b>gobiernos estudiantiles</b> para ser representativos de sus pares y que logran consolidarse en las <b>unidades educativas</b>.  <br><br> La <b>resolución de conflictos</b> no solo es asunto del <b>plantel docente</b> o <b>administrativo</b>, sino también de los otros actores de la <b>comunidad educativa</b>; entre ellos; las y los <b>estudiantes</b>.  <br><br> Al hacerlos parte de la <b>resolución de conflictos</b>; se les reconoce su rol de <b>sujetas y sujetos de derechos</b>; con <b>capacidades de ser y actuar</b>; también de <b>poder decidir</b> y <b>aportar</b> para cambiar una situación que se da en su entorno más inmediato que es la <b>unidad educativa</b>. Por tanto, adoptan un <b>rol protagónico</b>, porque no es ajeno a los <b>conflictos</b> y situaciones de <b>violencia</b> que pasa en su contexto.  <br><br> Es por eso, que es importante <b>involucrarlos en la solución</b> y para ello, también se debe desarrollar capacidades de <b>escucha activa</b>, <b>diálogo</b>, <b>empatía</b>, incluso hasta de <b>mediación</b> con sus pares, lo cual permite desarrollar en ellas y ellos, la <b>corresponsabilidad</b>.  <br><br>",
   31: "",
   32: "A través de esta actividad, reflexionarás sobre situaciones reales o hipotéticas que se presentan en el contexto escolar, explorando sus causas, efectos y posibles soluciones desde un enfoque restaurativo. <br> <br> El objetivo es desarrollar una mirada más profunda y crítica sobre el conflicto, reconociéndolo como parte de la experiencia humana y educativa, y entendiendo que su gestión adecuada puede fortalecer los vínculos entre los miembros de la comunidad. .<br> <br> Recuerda <b> descargar la plantilla </b> Actividad sugerida tema 2 o abrirla en la carpeta de <b> recursos adicionales </b> para llenar tus respuestas.",
   33: "Tema 3",
@@ -67,9 +54,7 @@ const textData = {
     "Tomando en cuenta el ámbito normativo, este enfoque está basado en las disposiciones y estándares contenidos de los diferentes instrumentos internacionales de derechos humanos. Son el referente y fin último de las políticas públicas y estas, a su vez, son el instrumento o medio más idóneo para su realización <b>. implica realizar transformaciones sociales a partir del reconocimiento y análisis de las desigualdades  que se encuentran en el centro de los problemas del desarrollo </b>, a fin de corregir prácticas discriminatorias y el desigual reparto del poder que obstaculizan un desarrollo igual para todas.",
   ],
   36: "El enfoque restaurativo tiende a mirar <b> la resolución de problemas de manera colaborativa, brindando la oportunidad a las personas involucradas víctima y ofensora </b> ; en elaborar un plan para reparar daño causado. En el proceso, está involucradas ambas partes, porque permite generar empatía hacia la parte ofensora, comprendiendo la importancia de no repetir el daño; atendiendo así las necesidades de todas las personas involiucradas y restituyendo de esta forma el derecho a la víctima.  <br> <br> Vale decir, “... anima a la parte ofensora a responsabilizarse de sus acciones y del daño causado, a comprender las causas y efectos de su comportamiento en los otros; y a ofrecer soluciones que reparen el daño para merecer su reintegración en la comunidad, desde el reconocimiento que se juzgan los hechos y no al autor del delito” (Schmitz, El enfoque restaurativo para la construcción de paz desde la escuela, 2022). Por tanto,  <b> el enfoque restaurativo, es un camino para la construcción de la convivencia pacífica.</b>",
-  //37: "Históricamente el conflicto ha estado asociado a la <b>violencia</b>, al <b>malestar social</b>, al <b>desequilibrio</b> y al <b>caos</b>, y las formas de su <b>resolución</b> estaban basadas en los esfuerzos por su <b>eliminación</b> y/o <b>neutralización</b>. Los <b>caminos y medios</b> usados con más frecuencia estaban signados por la <b>represión</b>, en el sentido más amplio y el <b>castigo</b>.  <br><br> A este, se le relaciona con el <b>enfoque punitivo</b>, más aún cuando hasta hace algunos años, era permitido el <b>disciplinamiento</b>, como una <b>práctica social naturalizada</b> y <b>aceptada</b> por la misma <b>comunidad educativa</b>.  <br><br> En los <b>tiempos actuales</b> se observa la <b>emergencia</b> de diferentes <b>movimientos</b> y <b>colectivos sociales</b>, que interpelan las <b>normas</b>, <b>costumbres</b> y todas las formas de <b>control social</b> existentes, por lo cual, frente a la <b>resistencia</b> de las <b>fuerzas conservadoras</b>, los <b>conflictos</b> afloran con <b>fuerza</b> de distinta <b>intensidad</b>.  <br><br> Por otra parte, se coincide en que las diferentes formas de <b>violencia</b> se están manifestando con <b>mayor intensidad</b> en el <b>entramado social</b>, afectando la <b>vida cotidiana</b> de amplios <b>sectores sociales</b>. Es decir, nos encontramos frente a una <b>compleja trama social</b> en la que los <b>conflictos</b> irrumpen con diferente <b>fuerza</b> e <b>intensidad</b>. (Progettomondo.Mlal, EDUCO, FUDEP, 2018).  <br><br> Este <b>enfoque restaurativo</b>; es donde se ve de otra forma la <b>solución de conflictos</b>, <b>violencia</b> y <b>reparación de daño</b>.  <br><br> ",
   37: "",
-  //38: "La <b>disciplina punitiva</b> implica recurrir al <b>castigo</b> para el cumplimiento de las reglas, puede ser <b>dañina e injusta</b>. Las <b>prácticas restaurativas</b> ofrecen <b>soluciones esperanzadoras</b>. (Progettomondo.Mlal, EDUCO, FUDEP, 2018)  <br><br> Investigaciones muestran que el <b>enfoque restaurativo</b> ha transformado <b>actitudes y comportamientos</b> de estudiantes, construyendo <b>comunidades educativas saludables</b> con <b>menos violencia</b>.  <br><br> Las <b>prácticas restaurativas</b> alientan a estudiantes a <b>reflexionar</b>, <b>asumir responsabilidad</b> y <b>reparar daños</b>. (Schmitz, 2018)  <br><br> Los <b>castigos tradicionales</b> como suspensión <b>agravan los problemas</b>, llevando a educadores a explorar <b>alternativas restaurativas</b>. (Schmitz, 2018)  <br><br>",
   38: "",
   39: [
     "<b>Enfoque punitivo dentro del sistema de disciplina y convivencia educativa  </b> <br><br> El comportamiento indebido, de parte del estudiante, es considerado como un acto que va en contra de la unidad educativa. Es una idea bastante abstracta. <br> <br>Para este tipo de administración de disciplina educativa quien comete un acto indebido debe recibir una sanción por el daño ocasionado. Es el pensamiento del “ojo por ojo, diente por diente <br> <br> <br> <br>",
@@ -79,42 +64,32 @@ const textData = {
     "<b>Enfoque punitivo dentro del sistema de disciplina y convivencia educativa </b>  <br> <br> El enfoque punitivo se interesa únicamente por el hecho sucedido: ¿Por qué́ te comportaste de tal manera?, generando un sentimiento de culpa. <br>  Las personas responsables de la disciplina se enfocan en el error cometido: ¿Él o ella lo hizo? <br>  Lo que importa es la mala conducta, nada importa de saber lo que le ha llevado a comportarse de tal o cual manera.<br>",
     "<b> Enfoque restaurativo dentro del sistema de disciplina y convivencia educativa </b> <br><br> Si bien es importante que las personas responsables de la convivencia sepan lo que ha pasado, es fundamental interesarse en conocer por qué y pensar en el futuro.<br><br><br>",
   ],
-  //41: "El <b>enfoque restaurativo</b> en unidades educativas se caracteriza por abordar los <b>conflictos</b> desde un enfoque <b>social</b>, <b>afectivo</b>, <b>pedagógico</b> y de <b>derechos</b>, orientado por los principios de <b>protección integral</b> e <b>interés superior</b> de niños, niñas y adolescentes.  <br><br> La implementación de estas <b>prácticas</b> busca mejorar la <b>convivencia escolar</b> al crear <b>vínculos</b> entre los miembros de la comunidad educativa, resolver conflictos a través del <b>diálogo</b>, crear <b>entornos positivos</b> y <b>restaurar relaciones</b>. Además, se basan en el <b>diálogo restaurativo</b> y los <b>círculos de diálogo</b>, promoviendo la <b>reparación de daños</b>, <b>asunción de responsabilidades</b> y <b>prevención</b> de vulneraciones. (<b>GOV.CO, 2022</b>)  <br><br> En el contexto escolar se centra en el <b>daño</b> que produce la infracción, no en la infracción misma. Esto implica pasar de preguntarse sobre <b>normas infringidas</b> y <b>castigos</b>, a preguntarse sobre <b>personas perjudicadas</b> y <b>reparación</b>.  <br><br> Este enfoque ha demostrado ser <b>eficaz</b> en promover <b>relaciones profesionales</b> abiertas y justas, y en la <b>gestión de conflictos</b>. Además, es una herramienta efectiva para la <b>organización de la convivencia escolar</b>. (<b>imotiva, 2015</b>)  <br><br> El enfoque restaurativo es una filosofía que se centra en la víctima y la comunidad, y busca reparar el daño causado a través del diálogo y la comprensión del impacto de las acciones del infractor. Esta situación es presente en diversas culturas y busca la transformación y enriquecimiento humano de las partes del proceso y su sanación.",
   41: "",
-  //42: "<b>Justicia restaurativa (2002)</b>: a Organización de las Naciones Unidas determino que la justicia restaurativa es: “Todo proceso en que la víctima, el o la delincuente y, cuando procede, cualesquiera otras personas o integrantes de la comunidad afectados por un delito, participen conjuntamente de forma activa en la resolución de cuestiones derivadas del delito, por lo general con la ayuda de una persona facilitadora”.  <br><br> <b>Elementos clave</b> (Van Ness & Strong, 1997): <b>El encuentro</b>: Diálogo directo entre víctima, ofensor y sus redes de apoyo.  <br><br> <b>La reparación</b>: Compensación concreta (económica, trabajo o simbólica) que prioriza a la <b>víctima directa</b>.  <br><br> <b>Participación inclusiva</b>: Involucramiento <b>voluntario</b> de todas las partes en todas las etapas del proceso.  <br><br> <b>Reintegración</b>: Recuperación del rol <b>productivo</b> y <b>social</b> tanto de víctimas como ofensores.  <br><br> <b>Enfoque práctico</b>: Metodología que prioriza <b>comprensión del daño</b> y <b>responsabilidad activa</b> del agresor (Informe de 2013, 2016).  <br><br>",
   42: "",
   43: "Todos y cada uno de quienes conforman la comunidad educativa: estudiantes, maestras, maestros, administrativos, madres y padres de familia, deben y merecen ser valorados como personas, pero sobre todo con la posibilidad de generar ciudadanía y participación protagónica a través de los procesos de toma de decisiones dentro de un aula y escuela. <br><br> <b>  Cuando estudiantes sienten que una decisión que les afecta ha sido tomada de manera justa, confían y cooperan con el mundo adulto </b>, pero sobre todo con maestros y maestras, que tomaron una decisión. <br><br> Dicho proceso puede revelar la voluntad de una unidad educativa de confía r en el estamento estudiantil, y considerar sus ideas y experiencia o, por el contrario, rechazarlas, sin embargo, dentro de un marco de respeto y argumentación (Progettomondo.Mlal, EDUCO, FUDEP, 2018).",
-  //44: "En la ventana de la disciplina social, muestra el estilo de autoridad que una persona asume.La ventana de la disciplina social es un concepto que describe cuatro enfoques básicos para mantener las normas sociales y los límites conductuales. Puede ser aplicado al ámbito familiar como en el escolar. Las características que se describen a continuación permiten comprender mejor sus características:",
   44: " En la <b> ventana de la disciplina social, muestra el estilo de autoridad que una persona asume. </b> La ventana de la disciplina social es un concepto que describe cuatro enfoques básicos para mantener las normas sociales y los límites conductuales. Puede ser aplicado al ámbito familiar como en el escolar. <br><br>  El modo en que se ejerce la autoridad en el aula influye directamente en la convivencia, el aprendizaje y el desarrollo socioemocional de los estudiantes. La ventana de la disciplina social nos permite analizar los diferentes estilos de autoridad según el nivel de firmeza, control y apoyo que brindan.",
   45: "Para profundizar en el <b> Dialogo restaurativo</b>, utiliza las flechas para revisar más información, antes de continuar avanzando.",
-  //46: "La <b> psicología de los afectos </b>, desarrollada por el psicólogo estadounidense Silvan Tomkins, ofrece una comprensión profunda sobre el comportamiento humano y por qué las prácticas restaurativas resultan efectivas para la construcción de relaciones sanas y la reparación del daño. <br><br> Según Tomkins, <b> todas las personas nacen con nueve afectos innatos</b>, que constituyen la base biológica de nuestras emociones. Estos afectos se experimentan con distintas intensidades, desde una sensación leve hasta una fuerte, y son esenciales para nuestro desarrollo emocional y social. <br><br>   Uno de estos afectos, <b> sorpresa-sobresalto </b>, se considera un afecto neutro. Su función es comparable a la de un botón de reinicio, ya que interrumpe momentáneamente nuestros pensamientos y nos permite enfocarnos en lo que está ocurriendo en el presente. Por otro lado,<b> seis de los afectos son considerados negativos: </b>  vergüenza-humillación, aflicción-angustia, miedo-terror, enojo-rabia, disgusto y disolfato (un término acuñado por Tomkins para describir una reacción de rechazo ante estímulos desagradables, como sabores u olores).",
   46: "",
   47: "Esta actividad tiene como objetivo promover una mirada crítica y reflexiva sobre la evolución de los enfoques de atención a los conflictos y la violencia en las unidades educativas, desde el año 2000 hasta la actualidad. A través del trabajo colaborativo, maestras y maestros analizarán experiencias pasadas y presentes, compartirán vivencias, y construirán de forma creativa una línea de tiempo que represente los cambios, aprendizajes y desafíos enfrentados en estos 24 años. <br><br> El trabajo será socializado en plenaria, fomentando el intercambio de aprendizajes y el fortalecimiento del compromiso colectivo hacia una convivencia pacífica y armónica. <br><br>  Recuerda <b> descargar la plantilla </b> Actividad de inicio tema 2 o abrirla en la carpeta de <b> recursos adicionales </b> para llenar tus respuestas.",
   48: "<b>Comunidad Educativa</b>. Engloba a todos los miembros de la institución educativa, incluyendo estudiantes, directoras/es, maestras, maestros, personal administrativo y madres y padres de familias, que colaboran en la promoción de un ambiente de convivencia positiva.  <br><b>Círculos Restaurativos</b>. Son espacios donde se reúnen las partes involucradas en un conflicto, junto con un facilitador, para dialogar, expresar emociones y buscar acuerdos.  <br>  <b>Diálogo Restaurativo</b>. Consiste en promover conversaciones significativas y respetuosas entre las personas afectadas por un conflicto para buscar soluciones colaborativas.  <br>  <b>Escucha Activa</b>. Habilidad de prestar atención de manera consciente a lo que la otra persona está comunicando, fomentando la empatía y la comprensión mutua.  <br> <b>Enfoque restaurativo</b>. Es la forma de abordar una situación de conflicto o violencia, involucrando a ambas partes, para la atención de sus necesidades. Cuya característica principal, es la reparación de daño.  <br>  <b>Justicia Restaurativa</b>. Se refiere a un modelo de justicia que prioriza la reparación del daño causado y la restauración de las relaciones entre las partes involucradas.  <br>  <b>Prácticas Restaurativas</b>. Son un enfoque que busca gestionar conflictos de manera dialogada y participativa, involucrando a los afectados y a la comunidad en la resolución de problemas de comportamiento.  <br> <b>Prevención de Conflictos</b>. Estrategias y acciones destinadas a anticipar y evitar situaciones conflictivas, promoviendo la comunicación efectiva y el respeto mutuo.  ",
   49: "Bolivariano, I. E. (2023). Institución Educativa Bolivariano. <br> <br> Candia Moreno, Fernando (Coord). (1999). Diccionario de pedagogía y psicología. Madrid, España: Editorial Cultural. <br> <br> Educación, Ministerio de. (2022). Ciclo: Promoviendo la convivencia pacífica y armónica en las unidades educativas. Bolivia: Comunicación conceptual. <br> <br> Fernández, I. (2003). Escuela sin violencia: Resolución de conflictos. México: Grupo Editores Alfaomega. <br> <br> Hommes, T. d. (2018). Prevención de la violencia escolar y la convivencia pacífica. Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas. Perú: Pixel Gráfico Impresores S.A.C. <br> <br> Informe de 2013. (2016). Promover la justicia restaurativa para las niñas, niños y adolescentes. New York, Estados Unidos: Oficina del Representante Especial del Secretario General sobre la violencia contra los niños. <br> <br> Paulero, R. (2021). Conflictos entre maestras y maestros y maestras y maestros y directivos de nivel primario. Representaciones, vivencias, comportamientos y consecuencias en la práctica docente. Revista Latinoamericana de Políticas y Administración de la Educación, 140–152.",
 
   50: "Progettomondo.Mlal, EDUCO, FUDEP. (2018). Prácticas restaurativas para la prevención y gestión de conflictos en el ámbito educativo. La Paz, Bolivia: Imprenta Cerro Azul S.R.L. <br> <br> Rodríguez, R. (2005). La acción tutorial para favorecer la convivencia: la disciplina. <br> <br> San Martín, J. A. (2003). La mediación escolar. Un camino para la gestión del conflicto escolar. Madrid, España. <br> <br> Schmitz, J. (2020). Prácticas restaurativas en el ámbito educativo. Ecuador. <br> <br> Terres des hommes. (2014). Auditoría Social de niños, niñas y adolescentes: ¿Es tiempo de derechos? Cochabamba, Bolivia: Kipus. <br> <br> UNEFCO. (2022). Ciclo: Promoviendo la convivencia pacífica y armónica en las unidades educativas. Tarija, Bolivia: UNEFCO. <br> <br>Vargas, G. (2019). Factores protectores y afrontamiento de riesgos asociados al uso de sustancias psicoactivas en adolescentes y jóvenes. La Paz, Bolivia: WA-GUI. <br> <br>Vasquez, Oscar. (2018). Guía práctica para desarrollar prácticas restaurativas en las instituciones educativas. Basada en la experiencia de la Fundación Terre des hommes en el Perú (2011–2017). Lima, Perú: Pixel Gráfico Impresores S.A.C.",
-
-  // 52: "texto a remplazar",
-
-  //   53: "texto a remplazar",
-
-  //   14: "13Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,",
 };
 const titlesData = {
-  0: "titulo 0",
+  0: "",
   1: "Curso 1: Enfoque restaurativo dentro del sistema educativo",
   2: "Contenido",
   3: "PRESENTACIÓN",
   4: "DATOS GENERALES DEL CUADERNO",
-  5: " ",
+  5: "",
   6: "Primeras Miradas: ¿Qué entendemos por conflicto y restauración?",
   7: ["<br>Base normativa", "Normativa internacional:"],
   8: ["Normativa nacional", "Ley 548 Codigo niño, niña, adolescente"],
   9: ["Ministerio de educación", "Esfuerzo institucional"],
   10: "Protocolo de prevención",
   11: "Reconociendo Conflictos y Caminos para la Convivencia",
-  12: " ",
+  12: "",
   13: "Primeras Reflexiones sobre el Conflicto",
   14: "El conflicto en el ámbito educativo ",
   15: "Diferencia entre conflicto y problema",
@@ -127,9 +102,8 @@ const titlesData = {
   22: "Factores de riesgo en la unidad educativa",
   23: "Factores de riesgo considerando la violencia juvenil",
   24: "Violencia en el ámbito educativo",
-  25: " ",
+  25: "",
   26: ["Glosario violencia", "Violencia por negligencia y violencia sexual"],
-
   27: "Resolución de conflictos en unidades educativas",
   28: "Para cada tipo de violencia hay una práctica restaurativa",
   29: "Herramientas para la practica restaurativa",
@@ -139,7 +113,7 @@ const titlesData = {
   ],
   31: "Protagonismo estudiantil para la resolución de conflictos",
   32: "Diferencia entre conflicto y problema",
-  33: " ",
+  33: "",
   34: "La importancia del enfoque restaurativo",
   35: [
     "Enfoque de derecho como base para el enfoque restaurativo",
@@ -153,7 +127,6 @@ const titlesData = {
   41: "Características y principios del enfoque restaurativo",
   42: "Enfoque restaurativo",
   43: "Proceso justo",
-
   44: "Ventana de la disciplina social y Estilos de autoridad",
   45: "Qué es el dialogo restaurativo",
   46: "Los afectos y la brújula de la vergüenza",
@@ -161,10 +134,6 @@ const titlesData = {
   48: "Glosario",
   49: "Bibliografía",
   50: "Bibliografía",
-
-  //   53: " "
-
-  //   14: "Title14",
 };
 const layoutData = {
   0: "Alayout",
@@ -182,60 +151,43 @@ const layoutData = {
   12: "Elayout",
   13: "Flayout",
   14: "Jlayout",
-  //15: "Klayout",
   15: "Olayout",
-  //16: "Dlayout",
   16: "Playout",
-  //17: "Dlayout",
   17: "Playout",
   18: "Jlayout",
   19: "Dlayout",
   19: "Playout",
   20: "Llayout",
-
   21: "Jlayout",
-  //22: "Dlayout",
   22: "Playout",
   23: "Llayout",
-  //24: "Blayout",
   24: "Olayout",
   25: "Ilayout",
   26: "Hlayout",
-  // 27: "Flayout",
   27: "Jlayout",
-  //28: "Blayout",
   28: "Olayout",
   29: "Llayout",
   30: "Glayout",
-  //31: "Blayout",
   31: "Olayout",
   32: "Flayout",
   33: "Elayout",
   34: "Flayout",
   35: "Glayout",
   36: "Dlayout",
-  //37: "Blayout",
   37: "Olayout",
-  //38: "Blayout",
   38: "Olayout",
   39: "Nlayout",
   40: "Nlayout",
-  //41: "Blayout",
   41: "Olayout",
-  //42: "Blayout",
   42: "Olayout",
   43: "Dlayout",
   44: "Llayout",
   45: "Jlayout",
-  //46: "Dlayout",
   46: "Playout",
   47: "Flayout",
   48: "Blayout",
   49: "Blayout",
   50: "Blayout",
-  //   53: "Alayout",
-
-  //   14: "Wlayout",
 };
 const popUpData = {
   0: "",
@@ -398,12 +350,6 @@ const popUpData = {
   14: "",
   15: "",
   16: [
-    // {
-    //   title: "Titulo del modal000DDD",
-    //   typeofContent: "image",
-    //    contentModal: "layOutD.jpg",
-    //    buttonName: "IR1",
-    //  },
     {
       title: "",
       typeofContent: "image",
@@ -412,12 +358,6 @@ const popUpData = {
     },
   ],
   17: [
-    // {
-    //   title: "Titulo del modal000DDD",
-    //   typeofContent: "image",
-    //    contentModal: "layOutD.jpg",
-    //    buttonName: "IR1",
-    //  },
     {
       title: "",
       typeofContent: "image",
@@ -480,13 +420,6 @@ const popUpData = {
       contentModal: "PAG22POP-1.png",
       buttonName: "Abrir",
     },
-    // {
-    //   title: "Titulo del modal1111DDD",
-    //  typeofContent: "text",
-    // contentModal:
-    //    "1111DDDDLorem del MODAL ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    //  buttonName: "+",
-    // },
   ],
   23: [
     {
@@ -584,7 +517,6 @@ const popUpData = {
       buttonName: "Qué es la violencia sexual",
     },
   ],
-  // 27: "",
   27: "",
   28: "",
   29: [
@@ -647,13 +579,6 @@ const popUpData = {
       contentModal: "PAG37POP-1.png",
       buttonName: "Abrir",
     },
-    // {
-    // title: "Titulo del modal1111DDD",
-    //  typeofContent: "text",
-    //   contentModal:
-    //     "1111DDDDLorem del MODAL ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    //   buttonName: "IR2",
-    //  },
   ],
   37: "",
   38: "",
@@ -687,38 +612,6 @@ const popUpData = {
   ],
   41: "",
   42: "",
-  // 43: [
-  // {
-  //    title: " ",
-  //     typeofContent: "image",
-  //     contentModal: "PAG43POP-1.png",
-  //     buttonName: "POP UP BUTTON1",
-  //   },
-  //   {
-  //     title: "TITULO2",
-  //     typeofContent: "image",
-  //     contentModal: "PAG43POP-2.png",
-  //     buttonName: "POP UP BUTTON2",
-  //   },
-  //   {
-  //     title: "TITULO3",
-  //     typeofContent: "image",
-  //     contentModal: "PAG43POP-3.png",
-  //     buttonName: "POP UP BUTTON3",
-  //   },
-  //   {
-  //     title: "TITULO4",
-  //     typeofContent: "image",
-  //     contentModal: "PAG43POP-4.png",
-  //     buttonName: "POP UP BUTTON4",
-  //   },
-  //   {
-  //     title: "TITULO5",
-  //     typeofContent: "image",
-  //     contentModal: "PAG43POP-5.png",
-  //     buttonName: "POP UP BUTTON5",
-  //   },
-  // ],
   43: [
     {
       title: " ",
@@ -726,29 +619,7 @@ const popUpData = {
       contentModal: "PAG44POP-1.png",
       buttonName: "Abrir",
     },
-    // {
-    //   title: "Titulo del modal1111DDD",
-    //   typeofContent: "text",
-    //    contentModal:
-    //      "1111DDDDLorem del MODAL ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    //    buttonName: "IR2",
-    //   },
   ],
-  //44: [
-  //{
-  //  title: " ",
-  //  typeofContent: "image",
-  //  contentModal: "PAG45POP-1.png",
-  //  buttonName: "+",
-  //},
-  // {
-  //   title: "Titulo del modal1111DDD",
-  //   typeofContent: "text",
-  //    contentModal:
-  //      "1111DDDDLorem del MODAL ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-  //    buttonName: "IR2",
-  //   },
-  //],
   44: [
     {
       title: " ",
@@ -789,35 +660,11 @@ const popUpData = {
       contentModal: "PAG48POP1.png",
       buttonName: "Abrir",
     },
-    // {
-    //   title: "Titulo del modal1111DDD",
-    //   typeofContent: "text",
-    //    contentModal:
-    //      "1111DDDDLorem del MODAL ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    //    buttonName: "IR2",
-    //   }
   ],
   47: "",
   48: "",
   49: "",
   50: "",
-  // 52: " ",
-
-  //   14: [
-  //     {
-  //       title: "Titulo del modal000DDD",
-  //       typeofContent: "image",
-  //       contentModal: "layOutD.jpg",
-  //       buttonName: "IR1",
-  //     },
-  //     {
-  //       title: "Titulo del modal1111DDD",
-  //       typeofContent: "text",
-  //       contentModal:
-  //         "1111DDDDLorem del MODAL ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-  //       buttonName: "IR2",
-  //     },
-  //   ],
 };
 const imagesData = {
   1: "",
@@ -858,7 +705,6 @@ const imagesData = {
   24: "PAG24-1.png",
   25: ["PAG25-1.png", "PAG25-2.png"],
   26: " ",
-  // 27: "PAG27-1.png",
   27: [
     "PAG27-1.png",
     "PAG27-2.png",
@@ -882,7 +728,6 @@ const imagesData = {
   41: "PAG41-1.png",
   42: "PAG42-1.png",
   43: "PAG44-1.png",
-  //44: "PAG45-1.png",
   44: "",
   45: [
     "PAG47-1.png",
@@ -896,9 +741,6 @@ const imagesData = {
   48: "",
   49: "",
   50: "",
-  // 52: " ",
-
-  //   14: "",
 };
 
 const buttonsNameData = {
@@ -941,7 +783,6 @@ const buttonsNameData = {
   24: "",
   25: "",
   26: "",
-  // 27: "",
   27: "",
   28: "",
   29: "",
@@ -965,7 +806,6 @@ const buttonsNameData = {
   41: "",
   42: "",
   43: "",
-  //44: "",
   44: "",
   45: "",
   46: "",
@@ -973,10 +813,6 @@ const buttonsNameData = {
   48: "",
   49: "",
   50: "",
-  // 52: "",
-
-  //   12: ["Boton1 ", "Boton2 ", "Boton3 "],
-  //   13: "",
 };
 
 const buttonsPageNumberData = {
@@ -1007,7 +843,6 @@ const buttonsPageNumberData = {
   24: "",
   25: "",
   26: "",
-  // 27: "",
   27: "",
   28: "",
   29: "",
@@ -1025,7 +860,6 @@ const buttonsPageNumberData = {
   41: "",
   42: "",
   43: "",
-  //44: "",
   44: "",
   45: "",
   46: "",
@@ -1033,10 +867,6 @@ const buttonsPageNumberData = {
   48: "",
   49: "",
   50: "",
-  // 52: "",
-
-  //   12: ["Boton1 ", "Boton2 ", "Boton3 "],
-  //   13: "",
 };
 const linksData = {
   0: "",
@@ -1092,5 +922,4 @@ const linksData = {
   48: "",
   49: "",
   50: "",
-  // 52: "",
 };

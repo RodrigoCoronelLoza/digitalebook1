@@ -16,7 +16,6 @@ body {
   font-family: Roboto;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--backgroud); */
   background-image: linear-gradient(
     to right,
     var(--secondary),
@@ -34,7 +33,6 @@ body {
   padding-left: 0;
   padding-right: 0;
   border-radius: 10px;
-  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); */
   text-align: center;
   margin-top: 2%;
   margin-right: 2%;
@@ -52,7 +50,6 @@ body {
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-right: 2em; */
   padding-top: 0.5em;
   padding-bottom: 0.3em;
   position: relative;
@@ -66,7 +63,7 @@ body {
   display: flex;
 }
 
-/* Primera planilla */
+/* Planilla A */
 
 .Alayout {
   height: 100%;
@@ -97,7 +94,6 @@ body {
 /* Botones de navegacion */
 .nav-buttons {
   color: white;
-  /* background-color: var(--secondary); */
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
 
   font-size: 1.2vw;
@@ -109,7 +105,6 @@ body {
 }
 
 .nav-buttons:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -128,14 +123,12 @@ body {
 
 .jump-buttons {
   color: white;
-  /* background-color: var(--primary); */
   background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
   font-size: 1.2vw;
   border-radius: 100px;
   border: none;
   width: 7.5em;
   height: 70%;
-  /* box-shadow: 1px 1px 10px #00000071; */
   box-shadow: 5px 7px 10px var(--backgroud);
 }
 
@@ -185,6 +178,7 @@ body {
 .text {
   text-align: justify;
 }
+
 /* Plantilla B */
 .Blayout {
   padding-left: 2%;
@@ -223,7 +217,6 @@ body {
 
 .Clayout {
   text-align: left;
-  /* padding: 2%; */
   padding-left: 2%;
   padding-right: 2%;
   height: 100%;
@@ -334,7 +327,6 @@ hr {
 }
 
 .Dlayout #Dbutton .open-button0 {
-  /* background-color: var(--primary); */
   background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
   width: 100%;
   height: 100%;
@@ -352,7 +344,6 @@ hr {
   );
 }
 .Dlayout #Dlayout-container #Dbutton .open-button1 {
-  /* background-color: var(--primary); */
   background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
   width: 100%;
   margin-top: 20%;
@@ -379,7 +370,6 @@ hr {
 }
 
 .Dlayout #Dimage-container {
-  /* background-color: var(--primary); */
   width: 45%;
   height: 90%;
 }
@@ -497,17 +487,14 @@ hr {
   width: 80%;
   height: 15%;
   font-size: 1.2em;
-  /* border: 1px solid black; */
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  /* background-color: var(--secondary); */
   background-image: linear-gradient(to right, var(--secondary), var(--primary));
   border-radius: 15px;
   box-shadow: 5px 5px 5px var(--backgroud);
 }
 .Flayout #Flayout-container #Fcolumn2 #Flink-container:hover {
-  /* background-color: var(--primary); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar),
@@ -580,7 +567,6 @@ hr {
 }
 
 .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0 {
-  /* background-color: var(--primary); */
   background-image: linear-gradient(to right, var(--primary), var(--auxiliar));
   color: white;
   width: 60%;
@@ -593,7 +579,6 @@ hr {
   padding-right: 2%;
 }
 .Glayout #Grow3 #Gmodal-container #modal-container0 .open-button0:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -763,7 +748,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button0:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -772,7 +756,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button1:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -781,7 +764,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button2:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -790,7 +772,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button3:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -799,7 +780,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow1 #Hmodals-container1 .open-button4:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -862,23 +842,7 @@ hr {
   border: none;
 }
 
-/* .Hlayout #Hlayout-container #Hmodals-container2 .open-button5,
-.open-button6,
-.open-button7,
-.open-button8,
-.open-button9 {
-  background-image: linear-gradient(to right, var(--auxiliar), var(--primary));
-  color: white;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  font-size: 1vw;
-  box-shadow: 10px 10px 5px var(--backgroud);
-  border: none;
-} */
-
 .Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 .open-button5:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -887,7 +851,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 .open-button6:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -896,7 +859,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 .open-button7:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -905,7 +867,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 .open-button8:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -914,7 +875,6 @@ hr {
 }
 
 .Hlayout #Hlayout-container #Hrow2 #Hmodals-container2 .open-button9:hover {
-  /* background-color: var(--hoverbuttons1); */
   background-image: linear-gradient(
     to right,
     var(--auxiliar2),
@@ -1567,7 +1527,6 @@ hr {
   );
 }
 .Playout #Playout-container #Pbutton .open-button1 {
-  /* background-color: var(--primary); */
   background-image: linear-gradient(to right, var(--auxiliar2), var(--primary));
   width: 100%;
   margin-top: 20%;
@@ -1605,7 +1564,6 @@ hr {
   font-size: 1.2vmax;
   height: 101%;
   width: 15%;
-  /* background-color: black; */
 }
 .index-desp {
   padding-left: 0;
@@ -1614,27 +1572,21 @@ hr {
   list-style-type: none;
   overflow: hidden;
 }
-/* .list-item--click {
- 
-} */
 #show1 {
   list-style-type: none;
   padding-left: 0;
-  /* border-left: 2px solid black; */
   transition: height 0.4s;
   height: 0;
 }
 #show2 {
   list-style-type: none;
   padding-left: 0;
-  /* border-left: 2px solid black; */
   transition: height 0.4s;
   height: 0;
 }
 #show3 {
   list-style-type: none;
   padding-left: 0;
-  /* border-left: 2px solid black; */
   transition: height 0.4s;
   height: 0;
 }
@@ -1643,7 +1595,6 @@ hr {
 }
 
 .index-buttons {
-  /* background-color: #c0f9ff; */
   background-color: white;
   font-size: 1vw;
   margin: 0;
@@ -1672,7 +1623,6 @@ hr {
   background-color: white;
   width: 80%;
   max-width: 80%;
-  /* height: 70%; */
 }
 
 .modal.active {

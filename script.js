@@ -51,7 +51,6 @@ function renderPage() {
 }
 //Poner color al indice de la barra lateral
 function colorButton() {
-  // console.log(currentPage);
   const allButtons = document.getElementById("index-permanent");
   const indexButton1 = document.getElementById("index-button1");
   const indexButton2 = document.getElementById("index-button2");
@@ -789,8 +788,6 @@ function createStructure(
     content = MLayOutGenerator(titles, text, images, page, buttonName);
   } else if (currentLayout === "Nlayout") {
     content = NLayOutGenerator(titles, text, page, popUp);
-  } else if (currentLayout === "Wlayout") {
-    content = WLayOutGenerator(titles, text, page, popUp);
   } else if (currentLayout === "Olayout") {
     content = OLayOutGenerator(titles, images, page);
   } else if (currentLayout === "Playout") {
@@ -1169,31 +1166,6 @@ function NLayOutGenerator(title, text, page, popUp) {
   </div>`;
 }
 
-function WLayOutGenerator(titles, text, page, popUp) {
-  return `<h2>${
-    titles[page]
-  }</h2> <button data-modal-target="#modal0" class="open-button0">Open Modal</button>
-    <div class="modal" id="modal0">
-      <div class="modal-header">
-        <div class="title">${modalExtractor(popUp, page, "title", 0)}</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        ${modalExtractor(popUp, page, "contentModal", 0)}
-      </div>
-    </div>
-    <button data-modal-target="#modal1" class="open-button1">Open Modal</button>
-    <div class="modal" id="modal1">
-      <div class="modal-header">
-        <div class="title">${modalExtractor(popUp, page, "title", 1)}</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        ${modalExtractor(popUp, page, "contentModal", 1)}
-      </div>
-    </div>`;
-}
-
 // Plantilla O
 function OLayOutGenerator(titles, images, page) {
   return ` 
@@ -1297,7 +1269,6 @@ function closeModal(modal) {
 function masterRender() {
   renderPage();
   const pointedButton = document.getElementById("buttonParag1");
-  // console.log(currentParagNumber);
   if (pointedButton && currentParagNumber === 1) {
     pointedButton.style.backgroundColor = "#1d3e8b";
   }
